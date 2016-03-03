@@ -27,8 +27,9 @@
             <kind>1</kind>
             <string>///Initialize Player
 playerGravity = 2;
-horizontalSpeed = 5;
-verticalSpeed = 5;
+movementSpeed = 3;
+horizontalSpeed = 0;
+verticalSpeed = 0;
 jumpSpeed =  15;
 
 
@@ -185,14 +186,21 @@ pressedJump = keyboard_check_pressed(ord('W')) | keyboard_check_pressed(vk_space
             <string>///Player Movement
 
 //
+horizontalSpeed = (-keyMoveLeft + keyMoveRight) * movementSpeed;
 
-if (place_meeting(x-10, y, obj_Collision) || place_meeting(x+10, y, obj_Collision) ) 
+if (place_meeting(x+horizontalSpeed, y, obj_Collision) || place_meeting(x+horizontalSpeed, y, obj_Collision) ) 
 {
-   
+    
+    while(!place_meeting(x+sign(horizontalSpeed),y,obj_Collision))
+    {
+        //Slide over one pixel at a time until collision occurs
+        x += sign(horizontalSpeed)
+    }
+    horizontalSpeed = 0;
 }
 else
 {
-     x += (-keyMoveLeft + keyMoveRight) * horizontalSpeed; 
+     x += horizontalSpeed; 
 }
 
 
