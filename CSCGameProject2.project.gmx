@@ -6,17 +6,19 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_PlayerIdleRight</sprite>
-    <sprite>sprites\spr_PlayerIdleLeft</sprite>
-    <sprite>sprites\spr_PlayerRunRight</sprite>
-    <sprite>sprites\spr_PlayerRunLeft</sprite>
-    <sprite>sprites\spr_PlayerJump</sprite>
-    <sprite>sprites\sprite9</sprite>
-    <sprite>sprites\sprite8</sprite>
-    <sprite>sprites\sprite7</sprite>
     <sprite>sprites\spr_ArmorGold</sprite>
     <sprite>sprites\spr_Invisible</sprite>
     <sprite>sprites\sprite12</sprite>
+    <sprite>sprites\sprite7</sprite>
+    <sprites name="Player">
+      <sprite>sprites\spr_PlayerIdle</sprite>
+      <sprite>sprites\spr_PlayerRun</sprite>
+      <sprite>sprites\spr_PlayerJump</sprite>
+      <sprite>sprites\spr_PlayerFall</sprite>
+      <sprite>sprites\spr_PlayerDuck</sprite>
+    </sprites>
+    <sprite>sprites\spr_Fireball</sprite>
+    <sprite>sprites\sprite15</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_CastleTiles</background>
