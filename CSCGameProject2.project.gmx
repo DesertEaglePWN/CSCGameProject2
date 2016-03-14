@@ -30,6 +30,7 @@
     <object>objects\obj_Col_AngledRight</object>
     <object>objects\obj_Col_AngledLeft</object>
     <object>objects\obj_Player</object>
+    <object>objects\obj_Controller</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
