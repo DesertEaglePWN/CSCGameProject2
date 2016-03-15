@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\spr_ArmorGold</sprite>
     <sprite>sprites\spr_Invisible</sprite>
+    <sprite>sprites\spr_Teleport</sprite>
     <sprite>sprites\sprite12</sprite>
     <sprite>sprites\sprite7</sprite>
     <sprites name="Player">
@@ -31,9 +32,15 @@
     <object>objects\obj_Col_AngledLeft</object>
     <object>objects\obj_Player</object>
     <object>objects\obj_Controller</object>
+    <object>objects\obj_RoomTeleport</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\Castle_1</room>
+    <room>rooms\Castle_2</room>
+    <room>rooms\Castle_3</room>
+    <room>rooms\Castle_4</room>
+    <room>rooms\Gauntlet</room>
+    <room>rooms\Main_Menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

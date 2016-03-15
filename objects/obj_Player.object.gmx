@@ -4,7 +4,7 @@
   <solid>-1</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -38,6 +38,7 @@ image_speed = .2;
 // 0 Cannot Use
 // 1 Ready To Use 
 canJump = 1;
+canTeleport = 1;
 
 //0 Left Facing
 //1 Right Facing
@@ -94,6 +95,39 @@ playerDirection = 0;
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Check Teleport Cooldown
+if (!collision_rectangle(x - (sprite_width/2), y + sprite_height, x + (sprite_width/2), y, obj_RoomTeleport, false, false))
+{
+    //If not colliding with a teleport
+    canTeleport = 1;
+}
+else
+{
+    //Reset alarm to try again
+    alarm[10] = 10; 
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
@@ -144,9 +178,9 @@ if (canJump == -1)
 keyMoveLeft = (keyboard_check(ord('A')) || keyboard_check(vk_left));
 keyMoveRight = keyboard_check(ord('D')) || keyboard_check(vk_right);
 keyJump = keyboard_check_pressed(ord('W')) || keyboard_check_pressed(vk_space);
-keyFire = mouse_check_button(1) || keyboard_check(ord('J'));
+keyAttack = mouse_check_button(1) || keyboard_check(ord('J'));
 pressedJump = keyboard_check_pressed(ord('W')) || keyboard_check_pressed(vk_space);
-pressedFire = mouse_check_button_pressed(1) || keyboard_check_pressed('J');
+pressedAttack = mouse_check_button_pressed(1) || keyboard_check_pressed('J');
 
 
 </string>
@@ -173,9 +207,6 @@ pressedFire = mouse_check_button_pressed(1) || keyboard_check_pressed('J');
 
 //
 horizontalSpeed = (-keyMoveLeft + keyMoveRight) * movementSpeed;
-
-
-
 
 if (place_meeting(x+horizontalSpeed, y, obj_Collision))
 {
@@ -300,6 +331,101 @@ else
 </string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>408</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>-1</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>canTeleport</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Go To Room Entrance
+//Positions the player at the room entrance used
+if (instance_exists(global.dest_id))
+{
+    if ((global.dest_id).teleportDirection == 0)
+    {
+            //Teleport facing left
+            x = (global.dest_id).x - 8;
+            y = (global.dest_id).y + 64;
+    }
+    else
+    {
+            //Teleport facing right
+            x = (global.dest_id).x + 32;
+            y = (global.dest_id).y + 64;
+    }
+
+}
+else
+{
+    x = x;
+    y = y;
+}
+alarm[10] = 10;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
   </events>
