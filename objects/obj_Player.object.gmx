@@ -175,12 +175,28 @@ if (canJump == -1)
           <argument>
             <kind>1</kind>
             <string>///Process Player Input
+
+// Movement
 keyMoveLeft = (keyboard_check(ord('A')) || keyboard_check(vk_left));
 keyMoveRight = keyboard_check(ord('D')) || keyboard_check(vk_right);
 keyJump = keyboard_check_pressed(ord('W')) || keyboard_check_pressed(vk_space);
-keyAttack = mouse_check_button(1) || keyboard_check(ord('J'));
 pressedJump = keyboard_check_pressed(ord('W')) || keyboard_check_pressed(vk_space);
-pressedAttack = mouse_check_button_pressed(1) || keyboard_check_pressed('J');
+
+// Crouch
+keyAttack =  keyboard_check(vk_control) || keyboard_check(ord('C'));
+pressedAttack = keyboard_check_pressed(vk_control) || keyboard_check_pressed('C');
+
+// Melee Attack
+keyAttack = mouse_check_button(mb_left) || keyboard_check(ord('J'));
+pressedAttack = mouse_check_button_pressed(mb_left) || keyboard_check_pressed('J');
+
+// Spell Attack
+keyAttack = mouse_check_button(mb_right) || keyboard_check(ord('K'));
+pressedAttack = mouse_check_button_pressed(mb_right) || keyboard_check_pressed('K');
+
+// Spell Switch (with Q or mousewheel)
+spellSwitch = keyboard_check(ord('Q')); 
+pressedSpellSwitch =  keyboard_check_pressed('Q' || mouse_wheel_down() || mouse_wheel_up());
 
 
 </string>
