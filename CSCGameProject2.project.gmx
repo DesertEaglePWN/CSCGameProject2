@@ -7,9 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_ArmorGold</sprite>
-    <sprite>sprites\spr_Invisible</sprite>
-    <sprite>sprites\spr_Teleport</sprite>
-    <sprite>sprites\sprite12</sprite>
+    <sprite>sprites\spr_Walls</sprite>
     <sprite>sprites\sprite7</sprite>
     <sprites name="Player">
       <sprite>sprites\spr_PlayerIdle</sprite>
@@ -20,19 +18,43 @@
     </sprites>
     <sprite>sprites\spr_Fireball</sprite>
     <sprite>sprites\sprite15</sprite>
+    <sprites name="Pickups">
+      <sprite>sprites\spr_Mana</sprite>
+      <sprite>sprites\spr_Health</sprite>
+      <sprite>sprites\spr_Health_2</sprite>
+      <sprite>sprites\spr_Empty</sprite>
+    </sprites>
+    <sprites name="Misc">
+      <sprite>sprites\spr_Invisible</sprite>
+      <sprite>sprites\spr_Teleport</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_CastleTiles</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\obj_Collision</object>
-    <object>objects\obj_Col_FlatBottom</object>
-    <object>objects\obj_Col_AngledRight</object>
-    <object>objects\obj_Col_AngledLeft</object>
     <object>objects\obj_Player</object>
-    <object>objects\obj_Controller</object>
-    <object>objects\obj_RoomTeleport</object>
+    <objects name="Enemy">
+      <object>objects\obj_Bat</object>
+      <object>objects\obj_bat_with_path</object>
+      <object>objects\obj_monster_with_path</object>
+      <object>objects\obj_monster</object>
+    </objects>
+    <objects name="Pickups">
+      <object>objects\obj_Health_Potion</object>
+      <object>objects\obj_Mana_Potion</object>
+    </objects>
+    <objects name="Controllers">
+      <object>objects\obj_RoomTeleport</object>
+      <object>objects\obj_Controller</object>
+    </objects>
+    <objects name="Collision">
+      <object>objects\obj_Collision</object>
+      <object>objects\obj_Col_AngledLeft</object>
+      <object>objects\obj_Col_AngledRight</object>
+      <object>objects\obj_Col_FlatBottom</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\Castle_1</room>
