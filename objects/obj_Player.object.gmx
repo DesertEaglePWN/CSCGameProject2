@@ -175,28 +175,30 @@ if (canJump == -1)
           <argument>
             <kind>1</kind>
             <string>///Process Player Input
+//These are the variables used to check for player input. 
+//Key inputs get the present state of the input;
+//Pressed inputs are booleans values that return true if the input is being recieved in the current frame.
+
 
 // Movement
 keyMoveLeft = (keyboard_check(ord('A')) || keyboard_check(vk_left));
 keyMoveRight = keyboard_check(ord('D')) || keyboard_check(vk_right);
 keyJump = keyboard_check_pressed(ord('W')) || keyboard_check_pressed(vk_space);
 pressedJump = keyboard_check_pressed(ord('W')) || keyboard_check_pressed(vk_space);
-
-// Crouch
-keyAttack =  keyboard_check(vk_control) || keyboard_check(ord('C'));
-pressedAttack = keyboard_check_pressed(vk_control) || keyboard_check_pressed('C');
+keyCrouch =  keyboard_check(ord('S')) || keyboard_check(ord('vk_control'));
+pressedCrouch = keyboard_check_pressed(ord('S')) || keyboard_check_pressed('vk_control');
 
 // Melee Attack
 keyAttack = mouse_check_button(mb_left) || keyboard_check(ord('J'));
 pressedAttack = mouse_check_button_pressed(mb_left) || keyboard_check_pressed('J');
 
 // Spell Attack
-keyAttack = mouse_check_button(mb_right) || keyboard_check(ord('K'));
-pressedAttack = mouse_check_button_pressed(mb_right) || keyboard_check_pressed('K');
+keyUseSpell = mouse_check_button(mb_right) || keyboard_check(ord('K'));
+pressedUseSpell = mouse_check_button_pressed(mb_right) || keyboard_check_pressed('K');
 
 // Spell Switch (with Q or mousewheel)
-spellSwitch = keyboard_check(ord('Q')); 
-pressedSpellSwitch =  keyboard_check_pressed('Q' || mouse_wheel_down() || mouse_wheel_up());
+keySpellSwitch = keyboard_check(ord('Q')); 
+pressedSpellSwitch =  keyboard_check_pressed(ord('Q')) || mouse_wheel_down() || mouse_wheel_up();
 
 
 </string>
@@ -221,38 +223,34 @@ pressedSpellSwitch =  keyboard_check_pressed('Q' || mouse_wheel_down() || mouse_
             <kind>1</kind>
             <string>///Execute Player Movement
 
-//
 horizontalSpeed = (-keyMoveLeft + keyMoveRight) * movementSpeed;
+bbox_width = bbox_right - bbox_left;
 
-if (place_meeting(x+horizontalSpeed, y, obj_Collision))
+//Horizontal Collision
+if (place_meeting(x, y, obj_Collision))
 {
-    while(!place_meeting(x+sign(horizontalSpeed),y,obj_Collision))
+    while(!place_meeting(x,y,obj_Collision))
     {
-        //Slide over one pixel at a time until collision occurs
-        x += 1
+        x += sign(horizontalSpeed);
     }
     horizontalSpeed = 0;
 }
-else
-{   //Update Player Position
-    x += horizontalSpeed; 
-}
 
+
+x += horizontalSpeed;
+
+//Vertical Collision
 if (place_meeting(x, y + verticalSpeed, obj_Collision))
 {
-    show_debug_message(verticalSpeed)
     while(!place_meeting(x,y+sign(verticalSpeed),obj_Collision))
     {
-        //Drop one pixel at a time until collision occurs
-        y += 1;
+        y += sign(verticalSpeed);
     }
     verticalSpeed = 0;
 }
-else
-{   //Update Player Position
-    y += verticalSpeed;
-}
+y += verticalSpeed;
 
+//Platform Collision
 if (place_meeting(x, y+1, obj_Collision)) 
 {
     //Standing on a Solid Surface
@@ -343,6 +341,28 @@ else
 }
 
 
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Player Actions
 
 </string>
           </argument>
