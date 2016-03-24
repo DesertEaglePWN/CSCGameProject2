@@ -28,6 +28,7 @@
     <sprites name="Misc">
       <sprite>sprites\spr_Invisible</sprite>
       <sprite>sprites\spr_Teleport</sprite>
+      <sprite>sprites\spr_Health_Mana</sprite>
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\spr_Enemy</sprite>
@@ -52,6 +53,7 @@
     <objects name="Controllers">
       <object>objects\obj_RoomTeleport</object>
       <object>objects\obj_Controller</object>
+      <object>objects\obj_Controller_GUI</object>
     </objects>
     <objects name="Collision">
       <object>objects\obj_Collision</object>
