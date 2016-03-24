@@ -374,7 +374,7 @@ else
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_Mana_Potion">
+    <event eventtype="4" ename="obj_Mana_Up">
       <action>
         <libid>1</libid>
         <id>203</id>
@@ -414,7 +414,7 @@ else
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_Health_Potion">
+    <event eventtype="4" ename="obj_Health_Up">
       <action>
         <libid>1</libid>
         <id>203</id>

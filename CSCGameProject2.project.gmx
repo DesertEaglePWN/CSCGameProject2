@@ -23,10 +23,14 @@
       <sprite>sprites\spr_Health</sprite>
       <sprite>sprites\spr_Health_2</sprite>
       <sprite>sprites\spr_Empty</sprite>
+      <sprite>sprites\spr_Mana_Star</sprite>
     </sprites>
     <sprites name="Misc">
       <sprite>sprites\spr_Invisible</sprite>
       <sprite>sprites\spr_Teleport</sprite>
+    </sprites>
+    <sprites name="Enemy">
+      <sprite>sprites\spr_Enemy</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -36,14 +40,14 @@
   <objects name="objects">
     <object>objects\obj_Player</object>
     <objects name="Enemy">
-      <object>objects\obj_Bat</object>
+      <object>objects\obj_bat</object>
       <object>objects\obj_bat_with_path</object>
       <object>objects\obj_monster_with_path</object>
       <object>objects\obj_monster</object>
     </objects>
     <objects name="Pickups">
-      <object>objects\obj_Health_Potion</object>
-      <object>objects\obj_Mana_Potion</object>
+      <object>objects\obj_Health_Up</object>
+      <object>objects\obj_Mana_Up</object>
     </objects>
     <objects name="Controllers">
       <object>objects\obj_RoomTeleport</object>
