@@ -50,7 +50,8 @@ depth = room_height * -1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_healthbar(view_xview + 8, view_yview + 8, view_xview + 98, view_yview + 16, global.Stamina, c_black, c_red, c_red, 0, true, false )
+            <string>///Draw UI
+draw_healthbar(view_xview + 8, view_yview + 8, view_xview + 98, view_yview + 16, global.Stamina, c_black, c_red, c_red, 0, true, false )
 draw_healthbar(view_xview + 8, view_yview + 20, view_xview + 64, view_yview + 28, global.Mana, c_black, c_blue, c_blue, 0, true, false )
 
 </string>
