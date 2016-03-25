@@ -60,6 +60,9 @@
       <object>objects\obj_Col_AngledRight</object>
       <object>objects\obj_Col_FlatBottom</object>
     </objects>
+    <objects name="spells">
+      <object>objects\deathball</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\Castle_1</room>
