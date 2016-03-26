@@ -16,7 +16,6 @@
       <sprite>sprites\spr_PlayerFall</sprite>
       <sprite>sprites\spr_PlayerDuck</sprite>
     </sprites>
-    <sprite>sprites\spr_Fireball</sprite>
     <sprite>sprites\sprite15</sprite>
     <sprites name="Pickups">
       <sprite>sprites\spr_Mana</sprite>
@@ -31,6 +30,11 @@
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\spr_Enemy</sprite>
+    </sprites>
+    <sprites name="spells">
+      <sprite>sprites\spr_Fireball</sprite>
+      <sprite>sprites\spr_Fireball_Flipped</sprite>
+      <sprite>sprites\spr_pull_stone</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -61,7 +65,8 @@
       <object>objects\obj_Col_FlatBottom</object>
     </objects>
     <objects name="spells">
-      <object>objects\deathball</object>
+      <object>objects\obj_deathball</object>
+      <object>objects\obj_lifepull</object>
     </objects>
   </objects>
   <rooms name="rooms">
