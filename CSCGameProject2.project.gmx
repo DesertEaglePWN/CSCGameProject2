@@ -48,6 +48,7 @@
       <object>objects\obj_bat_with_path</object>
       <object>objects\obj_monster_with_path</object>
       <object>objects\obj_monster</object>
+      <object>objects\obj_stone_monster</object>
     </objects>
     <objects name="Pickups">
       <object>objects\obj_Health_Up</object>
@@ -67,6 +68,7 @@
     <objects name="spells">
       <object>objects\obj_deathball</object>
       <object>objects\obj_lifepull</object>
+      <object>objects\obj_stoner</object>
     </objects>
   </objects>
   <rooms name="rooms">

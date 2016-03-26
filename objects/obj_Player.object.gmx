@@ -560,14 +560,30 @@ if ( keyUseSpell )
             <string>/// Spell code
 var inst
 
+// if the current spell is the life pull, use it
 if ( spellIndex = 0 ) {
     
+    // if the image is facing right, spawn a right facing life pull
     if ( image_xscale &gt; 0 ) {
-        inst = instance_create( x + 5 , y - 40, obj_deathball );
+        inst = instance_create( x + 20 , y - 20, obj_lifepull );
+    
+    // otherwise spawn a left facing life pull
+    } else {
+        inst = instance_create( x - 20 , y - 20, obj_lifepull );
+    }
+    
+// else if the current spell is the death ball, use it
+} else if ( spellIndex = 1 ) {
+    
+    // if the image is facing right, spawn a right facing death ball
+     if ( image_xscale &gt; 0 ) {
+        inst = instance_create( x - 10 , y - 40, obj_deathball );
         with ( inst ) {
             speed = 10;
             direction = 0;
-        }  
+        }
+     
+     // otherwise spawn a left facing death ball
     } else {
         inst = instance_create( x - 10 , y - 40, obj_deathball );
         with ( inst ) {
@@ -576,19 +592,17 @@ if ( spellIndex = 0 ) {
         } 
     }
 
-} else if ( spellIndex = 1 ) {
-
-    if ( image_xscale &gt; 0 ) {
-        inst = instance_create( x + 5 , y - 40, obj_lifepull );
-         
-    } else {
-        inst = instance_create( x - 10 , y - 40, obj_lifepull );
-        
-    }
-    
+// otherwise spawn a stone spell
 } else {
     
+    // if the image is facing right, spawn a right facing life pull
+    if ( image_xscale &gt; 0 ) {
+        inst = instance_create( x + 20 , y - 20, obj_stoner );
     
+    // otherwise spawn a left facing life pull
+    } else {
+        inst = instance_create( x - 20 , y - 20, obj_stoner );
+    }
     
 } 
 </string>
@@ -701,178 +715,6 @@ alarm[10] = 10;
         <useapplyto>0</useapplyto>
         <exetype>1</exetype>
         <functionname>action_end_game</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-    </event>
-    <event eventtype="9" enumb="74">
-      <action>
-        <libid>1</libid>
-        <id>612</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_variable</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>image_xscale</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>2</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>206</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_create_object_motion</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>obj_deathball</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>5</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>-40</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>10</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>421</id>
-        <kind>3</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>206</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_create_object_motion</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>obj_deathball</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>-10</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>-40</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>10</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>180</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
