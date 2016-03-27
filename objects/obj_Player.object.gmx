@@ -557,7 +557,7 @@ if ( keyUseSpell )
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Spell code
+            <string>/// Spell Code
 var inst
 
 // if the current spell is the life pull, use it
@@ -577,7 +577,7 @@ if ( spellIndex = 0 ) {
     
     // if the image is facing right, spawn a right facing death ball
      if ( image_xscale &gt; 0 ) {
-        inst = instance_create( x - 10 , y - 40, obj_deathball );
+        inst = instance_create( x + 10 , y - 45, obj_deathball );
         with ( inst ) {
             speed = 10;
             direction = 0;
@@ -585,7 +585,7 @@ if ( spellIndex = 0 ) {
      
      // otherwise spawn a left facing death ball
     } else {
-        inst = instance_create( x - 10 , y - 40, obj_deathball );
+        inst = instance_create( x + 10 , y - 45, obj_deathball );
         with ( inst ) {
             speed = 10;
             direction = 180;
@@ -597,11 +597,11 @@ if ( spellIndex = 0 ) {
     
     // if the image is facing right, spawn a right facing life pull
     if ( image_xscale &gt; 0 ) {
-        inst = instance_create( x + 20 , y - 20, obj_stoner );
+        inst = instance_create( x + 60 , y - 20, obj_stoner );
     
     // otherwise spawn a left facing life pull
     } else {
-        inst = instance_create( x - 20 , y - 20, obj_stoner );
+        inst = instance_create( x - 60 , y - 20, obj_stoner );
     }
     
 } 
@@ -719,6 +719,76 @@ alarm[10] = 10;
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="9" enumb="75">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Spell code
+var inst
+
+// if the current spell is the life pull, use it
+if ( spellIndex = 0 ) {
+    
+    // if the image is facing right, spawn a right facing life pull
+    if ( image_xscale &gt; 0 ) {
+        inst = instance_create( x + 20 , y - 20, obj_lifepull );
+    
+    // otherwise spawn a left facing life pull
+    } else {
+        inst = instance_create( x - 20 , y - 20, obj_lifepull );
+    }
+    
+// else if the current spell is the death ball, use it
+} else if ( spellIndex = 1 ) {
+    
+    // if the image is facing right, spawn a right facing death ball
+     if ( image_xscale &gt; 0 ) {
+        inst = instance_create( x - 10 , y - 40, obj_deathball );
+        with ( inst ) {
+            speed = 10;
+            direction = 0;
+        }
+     
+     // otherwise spawn a left facing death ball
+    } else {
+        inst = instance_create( x - 10 , y - 40, obj_deathball );
+        with ( inst ) {
+            speed = 10;
+            direction = 180;
+        } 
+    }
+
+// otherwise spawn a stone spell
+} else {
+    
+    // if the image is facing right, spawn a right facing life pull
+    if ( image_xscale &gt; 0 ) {
+        inst = instance_create( x + 20 , y - 20, obj_stoner );
+    
+    // otherwise spawn a left facing life pull
+    } else {
+        inst = instance_create( x - 20 , y - 20, obj_stoner );
+    }
+    
+} 
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
     <event eventtype="9" enumb="69">

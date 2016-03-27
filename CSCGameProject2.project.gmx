@@ -8,13 +8,15 @@
   <sprites name="sprites">
     <sprite>sprites\spr_ArmorGold</sprite>
     <sprite>sprites\spr_Walls</sprite>
-    <sprite>sprites\sprite7</sprite>
     <sprites name="Player">
       <sprite>sprites\spr_PlayerIdle</sprite>
+      <sprite>sprites\spr_PlayerSpell</sprite>
       <sprite>sprites\spr_PlayerRun</sprite>
       <sprite>sprites\spr_PlayerJump</sprite>
       <sprite>sprites\spr_PlayerFall</sprite>
       <sprite>sprites\spr_PlayerDuck</sprite>
+      <sprite>sprites\spr_PlayerSpell_Low</sprite>
+      <sprite>sprites\spr_Player_Attack</sprite>
     </sprites>
     <sprite>sprites\sprite15</sprite>
     <sprites name="Pickups">
