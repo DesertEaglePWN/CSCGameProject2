@@ -41,6 +41,8 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bg_CastleTiles</background>
+    <background>background\bg_CastleObjectTiles</background>
+    <background>background\bg_CastleObjectTiles2</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">

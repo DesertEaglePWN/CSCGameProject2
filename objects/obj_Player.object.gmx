@@ -41,7 +41,7 @@ playerGravity = 2;
 movementSpeed = 5;
 horizontalSpeed = 0;
 verticalSpeed = 0;
-jumpSpeed =  10;
+jumpSpeed =  8;
 image_speed = .2;
 
 // -1 In Use
