@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>///Initialize Player
 
+depth = 0;
+
 // Current Health/mana
 global.Stamina = 100;
 global.Mana = 100;
@@ -687,14 +689,14 @@ if (instance_exists(global.dest_id))
     if ((global.dest_id).teleportDirection == 0)
     {
             //Teleport facing left
-            x = (global.dest_id).x - 8;
-            y = (global.dest_id).y + 64;
+            x = (global.dest_id).x - 64;
+            y = (global.dest_id).y + 96;
     }
     else
     {
             //Teleport facing right
-            x = (global.dest_id).x + 32;
-            y = (global.dest_id).y + 64;
+            x = (global.dest_id).x + 64;
+            y = (global.dest_id).y + 96;
     }
 
 }

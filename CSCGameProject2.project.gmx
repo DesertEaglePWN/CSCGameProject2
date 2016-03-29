@@ -19,7 +19,6 @@
       <sprite>sprites\spr_Player_Attack_Collision</sprite>
       <sprite>sprites\spr_Player_Attack</sprite>
     </sprites>
-    <sprite>sprites\sprite15</sprite>
     <sprites name="Pickups">
       <sprite>sprites\spr_Mana</sprite>
       <sprite>sprites\spr_Health</sprite>
@@ -30,16 +29,19 @@
     <sprites name="Misc">
       <sprite>sprites\spr_Collision</sprite>
       <sprite>sprites\spr_Teleport</sprite>
-      <sprite>sprites\sprite23</sprite>
       <sprite>sprites\spr_Invisible</sprite>
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\spr_Enemy</sprite>
     </sprites>
-    <sprites name="spells">
+    <sprites name="Spells">
       <sprite>sprites\spr_Fireball</sprite>
       <sprite>sprites\spr_Fireball_Flipped</sprite>
       <sprite>sprites\spr_pull_stone</sprite>
+    </sprites>
+    <sprites name="Level">
+      <sprite>sprites\spr_Barrier</sprite>
+      <sprite>sprites\spr_FreePlatform</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -79,8 +81,10 @@
       <object>objects\obj_Player</object>
       <object>objects\obj_Player_Attack</object>
     </objects>
-    <objects name="Misc">
+    <objects name="LevelObjects">
+      <object>objects\obj_Barrier</object>
       <object>objects\obj_RoomTeleport</object>
+      <object>objects\obj_FreePlatform</object>
     </objects>
   </objects>
   <rooms name="rooms">
