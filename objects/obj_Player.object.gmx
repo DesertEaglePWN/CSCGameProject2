@@ -39,7 +39,6 @@ global.max_Stamina = 100;
 global.max_Mana    = 100;
 
 playerGravity = 2;
-
 movementSpeed = 5;
 horizontalSpeed = 0;
 verticalSpeed = 0;
@@ -49,9 +48,10 @@ image_speed = .2;
 // -1 In Use
 // 0 Cannot Use
 // 1 Ready To Use 
+attacking = false;
+canAttack = true;
 canJump = 1;
 canTeleport = 1;
-canAttack = 1;
 
 //0 Left Facing
 //1 Right Facing
@@ -148,7 +148,7 @@ else
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="2">
+    <event eventtype="2" enumb="3">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -165,8 +165,61 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>invincible = false
+            <string>canAttack = true
+attacking = false
 </string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>invincible</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>false</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>canAttack</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
           </argument>
         </arguments>
       </action>
@@ -270,23 +323,18 @@ horizontalSpeed = (-keyMoveLeft + keyMoveRight) * movementSpeed;
 bbox_width = bbox_right - bbox_left;
 
 //Horizontal Collision
-if (place_meeting(x + horizontalSpeed, y, obj_Collision))
-{
-    while(!place_meeting(x,y,obj_Collision))
-    {
+if (place_meeting(x + horizontalSpeed, y, obj_Collision)){
+    while(!place_meeting(x,y,obj_Collision)){
         x += sign(horizontalSpeed);
     }
     horizontalSpeed = 0;
 }
 
-
 x += horizontalSpeed;
 
 //Vertical Collision
-if (place_meeting(x, y + verticalSpeed, obj_Collision))
-{
-    while(!place_meeting(x,y+sign(verticalSpeed),obj_Collision))
-    {
+if (place_meeting(x, y + verticalSpeed, obj_Collision)){
+    while(!place_meeting(x,y+sign(verticalSpeed),obj_Collision)){
         y += sign(verticalSpeed);
     }
     verticalSpeed = 0;
@@ -295,31 +343,25 @@ if (place_meeting(x, y + verticalSpeed, obj_Collision))
 
 y += verticalSpeed;
 
-
 //Platform Collision
-if (place_meeting(x, y+1, obj_Collision)) 
-{
+if (place_meeting(x, y+1, obj_Collision)) {
     //Standing on a Solid Surface
     canJump = 1;
     verticalSpeed = keyJump * -jumpSpeed;
     
-    if (pressedJump &amp;&amp; (canJump == 1))
-    {
+    if (pressedJump &amp;&amp; (canJump == 1)){
         //Start Jumping
         canJump = -1; 
         alarm[0] = .1 * room_speed;
     }
-}
-else
-{
+} else {
     //Falling
     //Limit Player Gravity
     canJump = 0;
     if (verticalSpeed &lt; 12) verticalSpeed += playerGravity;  
 }
 
-if(canJump = -1)
-{
+if(canJump = -1){
     //Jumping
     verticalSpeed -= jumpSpeed;
 }
@@ -348,6 +390,8 @@ if(canJump = -1)
             <kind>1</kind>
             <string>///UpdatePlayerSprite
 moving = (-keyMoveLeft + keyMoveRight);
+if( !attacking ){
+
 if (moving != 0){
     //Moving
     image_xscale = moving;
@@ -373,12 +417,7 @@ if (place_meeting(x, y+1, obj_Collision)){
         sprite_index = spr_PlayerIdle;
     }
 }
-
-if( keyAttack ){
-    sprite_index = spr_Player_Attack;
-    instance_create(x,y,obj_Player_Attack);
 }
-
 </string>
           </argument>
         </arguments>
@@ -401,6 +440,13 @@ if( keyAttack ){
             <kind>1</kind>
             <string>///Player Actions
 
+// If player hit attack &amp;&amp; canAttack right now
+/**
+if( keyAttack &amp;&amp; canAttack ){
+    sprite_index = spr_Player_Attack;
+    instance_create(x,y,obj_Player_Attack);
+    canAttack = false;
+}*/
 </string>
           </argument>
         </arguments>
@@ -435,25 +481,23 @@ if ( keyUseSpell )
       </action>
       <action>
         <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
-        <relative>-1</relative>
+        <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.Mana</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>.1</string>
+            <string>if( global.Mana &lt; global.max_Mana )
+    global.Mana += .1;
+</string>
           </argument>
         </arguments>
       </action>
@@ -558,6 +602,68 @@ if ( keyUseSpell )
         </arguments>
       </action>
     </event>
+    <event eventtype="6" enumb="61">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Change spell array
+
+if ( spellIndex == 0 ) {
+    spellIndex = 1;
+} else if ( spellIndex = 1 ) {
+    spellIndex = 2;
+} else {
+    spellIndex = 0;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="60">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Change spell array
+
+if ( spellIndex == 0 ) {
+    spellIndex = 2;
+} else if ( spellIndex = 2 ) {
+    spellIndex = 1;
+} else {
+    spellIndex = 0;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="6" enumb="54">
       <action>
         <libid>1</libid>
@@ -626,6 +732,36 @@ if ( spellIndex = 0 ) {
 
 if( global.Mana &lt;= -10 )
     global.Mana = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="53">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// If player hit attack &amp;&amp; canAttack right now
+if( canAttack ){
+    sprite_index = spr_Player_Attack;
+    instance_create(x,y,obj_Player_Attack);
+    canAttack = false;
+    attacking = true;
+    alarm[3] = room_speed/8;
+}
 </string>
           </argument>
         </arguments>
@@ -740,6 +876,37 @@ alarm[10] = 10;
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="9" enumb="76">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Change spell array
+
+if ( spellIndex == 0 ) {
+    spellIndex = 1;
+} else if ( spellIndex = 1 ) {
+    spellIndex = 2;
+} else {
+    spellIndex = 0;
+}
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
     <event eventtype="9" enumb="75">

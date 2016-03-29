@@ -51,8 +51,31 @@ depth = room_height * -1
           <argument>
             <kind>1</kind>
             <string>///Draw UI
-draw_healthbar(view_xview + 8, view_yview + 8, view_xview + 98, view_yview + 16, global.Stamina, c_black, c_red, c_red, 0, true, false )
-draw_healthbar(view_xview + 8, view_yview + 20, view_xview + 64, view_yview + 28, global.Mana, c_black, c_blue, c_blue, 0, true, false )
+if( (global.Stamina/global.max_Stamina) * 100 &gt; 75 ){
+    draw_healthbar(view_xview + 8, view_yview + 8 , view_xview + 8 + global.max_Stamina, view_yview + 16, (global.Stamina/global.max_Stamina) * 100, c_black, c_lime, c_lime  , 0, true, true )
+} else if( (global.Stamina/global.max_Stamina) * 100 &gt; 50){
+    draw_healthbar(view_xview + 8, view_yview + 8 , view_xview + 8 + global.max_Stamina, view_yview + 16, (global.Stamina/global.max_Stamina) * 100, c_black, c_orange, c_orange  , 0, true, true )
+} else if( (global.Stamina/global.max_Stamina) * 100 &gt; 25){
+    draw_healthbar(view_xview + 8, view_yview + 8 , view_xview + 8 + global.max_Stamina, view_yview + 16, (global.Stamina/global.max_Stamina) * 100, c_black, c_red, c_red  , 0, true, true )
+} else {
+    draw_healthbar(view_xview + 8, view_yview + 8 , view_xview + 8 + global.max_Stamina, view_yview + 16, (global.Stamina/global.max_Stamina) * 100, c_black, c_maroon, c_maroon  , 0, true, true )
+}
+
+draw_healthbar(view_xview + 8, view_yview + 20, view_xview + 8 + global.max_Mana, view_yview + 28, (global.Mana/global.max_Mana) * 100      , c_black, c_blue, c_blue, 0, true, true )
+
+draw_text_transformed(view_xview + 8, view_yview + 9, global.Stamina, .5, .5, 0);
+draw_text_transformed(view_xview + 8, view_yview + 21, global.Mana, .5, .5, 0);
+
+// life pull
+if( obj_Player.spellIndex == 0 ){
+    draw_sprite_ext( spr_Life_Pull_Icon, 0, view_xview + 16, view_yview + 40, .5, .5, 0, c_white, 1 )
+// death ball    
+} else if( obj_Player.spellIndex == 1 ){
+    draw_sprite_ext( spr_Fireball_Icon,  0, view_xview + 16, view_yview + 40, .5, .5, 0, c_white, 1 )
+// else = stone
+} else { 
+    draw_sprite_ext( spr_Stone_Icon,     0, view_xview + 16, view_yview + 40, .5, .5, 0, c_white, 1 )
+}
 
 </string>
           </argument>

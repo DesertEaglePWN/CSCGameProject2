@@ -44,6 +44,11 @@
       <sprite>sprites\spr_FreePlatform</sprite>
       <sprite>sprites\spr_Spike</sprite>
     </sprites>
+    <sprites name="Icon">
+      <sprite>sprites\spr_Stone_Icon</sprite>
+      <sprite>sprites\spr_Life_Pull_Icon</sprite>
+      <sprite>sprites\spr_Fireball_Icon</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_CastleTiles</background>
