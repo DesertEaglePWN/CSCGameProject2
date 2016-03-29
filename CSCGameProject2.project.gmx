@@ -28,8 +28,10 @@
       <sprite>sprites\spr_Mana_Star</sprite>
     </sprites>
     <sprites name="Misc">
-      <sprite>sprites\spr_Invisible</sprite>
+      <sprite>sprites\spr_Collision</sprite>
       <sprite>sprites\spr_Teleport</sprite>
+      <sprite>sprites\sprite23</sprite>
+      <sprite>sprites\spr_Invisible</sprite>
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\spr_Enemy</sprite>
@@ -59,7 +61,6 @@
       <object>objects\obj_Mana_Up</object>
     </objects>
     <objects name="Controllers">
-      <object>objects\obj_RoomTeleport</object>
       <object>objects\obj_Controller</object>
       <object>objects\obj_Controller_GUI</object>
     </objects>
@@ -69,7 +70,7 @@
       <object>objects\obj_Col_AngledRight</object>
       <object>objects\obj_Col_FlatBottom</object>
     </objects>
-    <objects name="spells">
+    <objects name="Spells">
       <object>objects\obj_deathball</object>
       <object>objects\obj_lifepull</object>
       <object>objects\obj_stoner</object>
@@ -77,6 +78,9 @@
     <objects name="Player">
       <object>objects\obj_Player</object>
       <object>objects\obj_Player_Attack</object>
+    </objects>
+    <objects name="Misc">
+      <object>objects\obj_RoomTeleport</object>
     </objects>
   </objects>
   <rooms name="rooms">
