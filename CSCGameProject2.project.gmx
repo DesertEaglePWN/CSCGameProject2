@@ -42,6 +42,7 @@
     <sprites name="Level">
       <sprite>sprites\spr_Barrier</sprite>
       <sprite>sprites\spr_FreePlatform</sprite>
+      <sprite>sprites\spr_Spike</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -85,6 +86,8 @@
       <object>objects\obj_Barrier</object>
       <object>objects\obj_RoomTeleport</object>
       <object>objects\obj_FreePlatform</object>
+      <object>objects\obj_Spike</object>
+      <object>objects\obj_FPWinTrigger</object>
     </objects>
   </objects>
   <rooms name="rooms">
