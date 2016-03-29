@@ -16,6 +16,7 @@
       <sprite>sprites\spr_PlayerFall</sprite>
       <sprite>sprites\spr_PlayerDuck</sprite>
       <sprite>sprites\spr_PlayerSpell_Low</sprite>
+      <sprite>sprites\spr_Player_Attack_Collision</sprite>
       <sprite>sprites\spr_Player_Attack</sprite>
     </sprites>
     <sprite>sprites\sprite15</sprite>
@@ -46,7 +47,6 @@
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\obj_Player</object>
     <objects name="Enemy">
       <object>objects\obj_bat</object>
       <object>objects\obj_bat_with_path</object>
@@ -73,6 +73,10 @@
       <object>objects\obj_deathball</object>
       <object>objects\obj_lifepull</object>
       <object>objects\obj_stoner</object>
+    </objects>
+    <objects name="Player">
+      <object>objects\obj_Player</object>
+      <object>objects\obj_Player_Attack</object>
     </objects>
   </objects>
   <rooms name="rooms">

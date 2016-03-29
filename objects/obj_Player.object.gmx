@@ -49,6 +49,7 @@ image_speed = .2;
 // 1 Ready To Use 
 canJump = 1;
 canTeleport = 1;
+canAttack = 1;
 
 //0 Left Facing
 //1 Right Facing
@@ -345,45 +346,36 @@ if(canJump = -1)
             <kind>1</kind>
             <string>///UpdatePlayerSprite
 moving = (-keyMoveLeft + keyMoveRight);
-if (moving != 0)
-{
+if (moving != 0){
     //Moving
     image_xscale = moving;
 }
 
-if (place_meeting(x, y+1, obj_Collision))
-{
+if (place_meeting(x, y+1, obj_Collision)){
     //Standing On Solid Ground
-    if (moving != 0) 
-    {
+    if (moving != 0) {
         sprite_index = spr_PlayerRun;
-    }
-    else
-    {
+    }else{
         sprite_index = spr_PlayerIdle;
     }
-}
-else
-{
+} else {
     //In The Air
-    if (canJump == -1)
-    {
+    if (canJump == -1){
         //Jumping
         sprite_index = spr_PlayerJump;
-    }
-    else if (canJump == 0)
-    {
+    } else if (canJump == 0){
         //Falling
         sprite_index = spr_PlayerFall;
-    } 
-    else
-    {
+    } else{
         //Unknown
         sprite_index = spr_PlayerIdle;
     }
 }
 
-
+if( keyAttack ){
+    sprite_index = spr_Player_Attack;
+    instance_create(x,y,obj_Player_Attack);
+}
 
 </string>
           </argument>
@@ -436,6 +428,30 @@ if ( keyUseSpell )
     
 }
 </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.Mana</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>.1</string>
           </argument>
         </arguments>
       </action>
@@ -540,7 +556,7 @@ if ( keyUseSpell )
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="53">
+    <event eventtype="6" enumb="54">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -557,12 +573,12 @@ if ( keyUseSpell )
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Spell Code
+            <string>/// Spell code
 var inst
 
 // if the current spell is the life pull, use it
 if ( spellIndex = 0 ) {
-    
+    global.Mana -= 10;
     // if the image is facing right, spawn a right facing life pull
     if ( image_xscale &gt; 0 ) {
         inst = instance_create( x + 20 , y - 20, obj_lifepull );
@@ -574,18 +590,18 @@ if ( spellIndex = 0 ) {
     
 // else if the current spell is the death ball, use it
 } else if ( spellIndex = 1 ) {
-    
+    global.Mana -= 10;
     // if the image is facing right, spawn a right facing death ball
      if ( image_xscale &gt; 0 ) {
-        inst = instance_create( x + 10 , y - 45, obj_deathball );
+        inst = instance_create( x - 10 , y - 40, obj_deathball );
         with ( inst ) {
-            speed = 10;
+            speed = 8;
             direction = 0;
         }
      
      // otherwise spawn a left facing death ball
     } else {
-        inst = instance_create( x + 10 , y - 45, obj_deathball );
+        inst = instance_create( x - 10 , y - 40, obj_deathball );
         with ( inst ) {
             speed = 10;
             direction = 180;
@@ -594,17 +610,20 @@ if ( spellIndex = 0 ) {
 
 // otherwise spawn a stone spell
 } else {
-    
+    global.Mana -= 10;
     // if the image is facing right, spawn a right facing life pull
     if ( image_xscale &gt; 0 ) {
-        inst = instance_create( x + 60 , y - 20, obj_stoner );
+        inst = instance_create( x + 20 , y - 20, obj_stoner );
     
     // otherwise spawn a left facing life pull
     } else {
-        inst = instance_create( x - 60 , y - 20, obj_stoner );
+        inst = instance_create( x - 20 , y - 20, obj_stoner );
     }
     
 } 
+
+if( global.Mana &lt;= -10 )
+    global.Mana = 0;
 </string>
           </argument>
         </arguments>
@@ -743,7 +762,7 @@ var inst
 
 // if the current spell is the life pull, use it
 if ( spellIndex = 0 ) {
-    
+    global.Mana -= 10;
     // if the image is facing right, spawn a right facing life pull
     if ( image_xscale &gt; 0 ) {
         inst = instance_create( x + 20 , y - 20, obj_lifepull );
@@ -755,12 +774,12 @@ if ( spellIndex = 0 ) {
     
 // else if the current spell is the death ball, use it
 } else if ( spellIndex = 1 ) {
-    
+    global.Mana -= 10;
     // if the image is facing right, spawn a right facing death ball
      if ( image_xscale &gt; 0 ) {
         inst = instance_create( x - 10 , y - 40, obj_deathball );
         with ( inst ) {
-            speed = 10;
+            speed = 8;
             direction = 0;
         }
      
@@ -775,7 +794,7 @@ if ( spellIndex = 0 ) {
 
 // otherwise spawn a stone spell
 } else {
-    
+    global.Mana -= 10;
     // if the image is facing right, spawn a right facing life pull
     if ( image_xscale &gt; 0 ) {
         inst = instance_create( x + 20 , y - 20, obj_stoner );
@@ -786,6 +805,9 @@ if ( spellIndex = 0 ) {
     }
     
 } 
+
+if( global.Mana &lt;= -10 )
+    global.Mana = 0;
 </string>
           </argument>
         </arguments>
