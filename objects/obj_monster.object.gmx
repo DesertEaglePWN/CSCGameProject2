@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>/// Initial stats
-health = 100;
+monster_health = 100;
 invincible = 0;
 
 image_speed = .2;
@@ -104,11 +104,11 @@ image_speed = .2;
             <kind>1</kind>
             <string>
 if( invincible == 0){
-    health -= 50
+    monster_health -= 50;
     invincible = 1;
 }
 
-if ( health &lt;= 0 )
+if ( monster_health &lt;= 0 )
     instance_destroy();
 
 </string>
@@ -131,7 +131,7 @@ if ( health &lt;= 0 )
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>room_speed*2</string>
+            <string>1</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -223,7 +223,7 @@ instance_destroy();
           <argument>
             <kind>1</kind>
             <string>/// Life-Pull effect
-health -= 10;
+monster_health -= 10;
 obj_Player.health += 10;
 </string>
           </argument>
@@ -248,11 +248,11 @@ obj_Player.health += 10;
           <argument>
             <kind>1</kind>
             <string>if( invincible == 0){
-    health -= 50
+    monster_health -= 50;
     invincible = 1;
 }
 
-if ( health &lt;= 0 )
+if ( monster_health &lt;= 0 )
     instance_destroy();
 
 </string>
@@ -275,7 +275,7 @@ if ( health &lt;= 0 )
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>room_speed*2</string>
+            <string>1</string>
           </argument>
           <argument>
             <kind>4</kind>

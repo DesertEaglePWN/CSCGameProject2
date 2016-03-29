@@ -17,6 +17,7 @@
       <sprite>sprites\spr_PlayerDuck</sprite>
       <sprite>sprites\spr_PlayerSpell_Low</sprite>
       <sprite>sprites\spr_Player_Attack_Collision</sprite>
+      <sprite>sprites\spr_Player_Attack_Collision_Flipped</sprite>
       <sprite>sprites\spr_Player_Attack</sprite>
     </sprites>
     <sprites name="Pickups">
