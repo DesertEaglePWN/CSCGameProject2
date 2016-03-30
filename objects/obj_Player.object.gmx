@@ -323,7 +323,7 @@ horizontalSpeed = (-keyMoveLeft + keyMoveRight) * movementSpeed;
 bbox_width = bbox_right - bbox_left;
 
 //Horizontal Collision
-if (place_meeting(x + horizontalSpeed, y, obj_Collision)){
+/**if (place_meeting(x + horizontalSpeed, y, obj_Collision)){
     while(!place_meeting(x,y,obj_Collision)){
         x += sign(horizontalSpeed);
     }
@@ -331,9 +331,19 @@ if (place_meeting(x + horizontalSpeed, y, obj_Collision)){
 }
 
 x += horizontalSpeed;
+*/
+var move = sign(horizontalSpeed);
+repeat(abs(ceil(horizontalSpeed))){
+    if (place_free(x+move,y)){
+        x += move;
+    } else {
+        horizontalSpeed = 0;
+        break;
+    }
+}
 
 //Vertical Collision
-if (place_meeting(x, y + verticalSpeed, obj_Collision)){
+/**if (place_meeting(x, y + verticalSpeed, obj_Collision)){
     while(!place_meeting(x,y+sign(verticalSpeed),obj_Collision)){
         y += sign(verticalSpeed);
     }
@@ -341,7 +351,16 @@ if (place_meeting(x, y + verticalSpeed, obj_Collision)){
     canJump = 1;
 }
 
-y += verticalSpeed;
+y += verticalSpeed;*/
+var move = sign(verticalSpeed);
+repeat(abs(ceil(verticalSpeed))){
+    if (place_free(x,y+move)){
+        y += move;
+    } else {
+        verticalSpeed = 0;
+        break;
+    }
+}
 
 //Platform Collision
 if (place_meeting(x, y+1, obj_Collision)) {
