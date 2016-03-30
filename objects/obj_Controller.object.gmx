@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Switch Views (Camera Control)
+            <string>/// Switch Views (Camera Control)
 view_visible[0] = false;
 view_visible[1] = true;
 
@@ -51,7 +51,7 @@ view_visible[1] = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Ends the game
+            <string>/// Ends the game
 game_end();
 </string>
           </argument>
@@ -75,7 +75,7 @@ game_end();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Toggles window size between Full and Window
+            <string>/// Toggles window size between Full and Window
 if window_get_fullscreen(){
     window_set_fullscreen(false);
 } else {
@@ -139,7 +139,9 @@ if window_get_fullscreen(){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>cheat_code = get_string("Enter code", "");
+            <string>/// Cheat Codes
+
+cheat_code = get_string("Enter code", "");
 
 if( cheat_code = "god"){
     if(obj_PlayerCharacter.god_mode == 0){
