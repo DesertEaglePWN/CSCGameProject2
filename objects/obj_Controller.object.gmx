@@ -149,8 +149,10 @@ if( cheat_code = "god"){
         obj_PlayerCharacter.god_mode = 0; 
         show_message("Normal!");
     }
+} else if( cheat_code == "r" ){
+    game_restart();
 } else if( cheat_code == "die") {
-    obj_PlayerCharacter.health = 0;
+    global.Stamina = 0;
     show_message("You chose death");
 } else {
     show_message("Invalid code!");

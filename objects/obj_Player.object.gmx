@@ -323,40 +323,24 @@ horizontalSpeed = (-keyMoveLeft + keyMoveRight) * movementSpeed;
 bbox_width = bbox_right - bbox_left;
 
 //Horizontal Collision
-/**if (place_meeting(x + horizontalSpeed, y, obj_Collision)){
-    while(!place_meeting(x,y,obj_Collision)){
-        x += sign(horizontalSpeed);
-    }
-    horizontalSpeed = 0;
-}
-
-x += horizontalSpeed;
-*/
-var move = sign(horizontalSpeed);
-repeat(abs(ceil(horizontalSpeed))){
+var move = sign(horizontalSpeed); // how far we move in the horizontal direction
+repeat(abs(ceil(horizontalSpeed))){ 
+    // if the next position is free, move there
     if (place_free(x+move,y)){
         x += move;
-    } else {
+    } else { // If the next position isn't free, stop.
         horizontalSpeed = 0;
         break;
     }
 }
 
 //Vertical Collision
-/**if (place_meeting(x, y + verticalSpeed, obj_Collision)){
-    while(!place_meeting(x,y+sign(verticalSpeed),obj_Collision)){
-        y += sign(verticalSpeed);
-    }
-    verticalSpeed = 0;
-    canJump = 1;
-}
-
-y += verticalSpeed;*/
-var move = sign(verticalSpeed);
+var move = sign(verticalSpeed); // how far we move in the vertical direction
 repeat(abs(ceil(verticalSpeed))){
+    // if the next position is free, move there
     if (place_free(x,y+move)){
         y += move;
-    } else {
+    } else { // If the next position isn't free, stop.
         verticalSpeed = 0;
         break;
     }
