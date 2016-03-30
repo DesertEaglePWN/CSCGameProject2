@@ -270,7 +270,9 @@ if (canJump == -1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( global.Stamina &lt;= 0 ){
+            <string>/// Health check and mana regen
+
+if( global.Stamina &lt;= 0 ){
     show_message("You are dead");
     game_restart();
 }   
@@ -492,7 +494,8 @@ if( !attacking ){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( !invincible ){
+            <string>/// Damage Player
+if( !invincible ){
     global.Stamina -= 10;
     invincible = true;
 }
@@ -542,7 +545,8 @@ if( !attacking ){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( !invincible ){
+            <string>/// Damage Player
+if( !invincible ){
     global.Stamina -= 5;
     invincible = true;
 }
@@ -659,7 +663,7 @@ var inst
 
 // if the current spell is the life pull, use it
 if ( spellIndex = 0 ) {
-    global.Mana -= 10;
+    global.Mana -= 35;
     // if the image is facing right, spawn a right facing life pull
     if ( image_xscale &gt; 0 ) {
         inst = instance_create( x + 20 , y - 20, obj_lifepull );
@@ -671,7 +675,7 @@ if ( spellIndex = 0 ) {
     
 // else if the current spell is the death ball, use it
 } else if ( spellIndex = 1 ) {
-    global.Mana -= 10;
+    global.Mana -= 25;
     // if the image is facing right, spawn a right facing death ball
      if ( image_xscale &gt; 0 ) {
         inst = instance_create( x - 10 , y - 40, obj_deathball );
@@ -691,7 +695,7 @@ if ( spellIndex = 0 ) {
 
 // otherwise spawn a stone spell
 } else {
-    global.Mana -= 10;
+    global.Mana -= 15;
     // if the image is facing right, spawn a right facing life pull
     if ( image_xscale &gt; 0 ) {
         inst = instance_create( x + 20 , y - 20, obj_stoner );
@@ -904,7 +908,7 @@ var inst
 
 // if the current spell is the life pull, use it
 if ( spellIndex = 0 ) {
-    global.Mana -= 10;
+    global.Mana -= 35;
     // if the image is facing right, spawn a right facing life pull
     if ( image_xscale &gt; 0 ) {
         inst = instance_create( x + 20 , y - 20, obj_lifepull );
@@ -916,7 +920,7 @@ if ( spellIndex = 0 ) {
     
 // else if the current spell is the death ball, use it
 } else if ( spellIndex = 1 ) {
-    global.Mana -= 10;
+    global.Mana -= 25;
     // if the image is facing right, spawn a right facing death ball
      if ( image_xscale &gt; 0 ) {
         inst = instance_create( x - 10 , y - 40, obj_deathball );
@@ -936,7 +940,7 @@ if ( spellIndex = 0 ) {
 
 // otherwise spawn a stone spell
 } else {
-    global.Mana -= 10;
+    global.Mana -= 15;
     // if the image is facing right, spawn a right facing life pull
     if ( image_xscale &gt; 0 ) {
         inst = instance_create( x + 20 , y - 20, obj_stoner );
@@ -972,7 +976,8 @@ if( global.Mana &lt;= -10 )
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// If player hit attack &amp;&amp; canAttack right now
+            <string>/// Melee Attack
+// If player hit attack &amp;&amp; canAttack right now
 if( canAttack ){
     sprite_index = spr_Player_Attack;
     instance_create(x,y,obj_Player_Attack);
