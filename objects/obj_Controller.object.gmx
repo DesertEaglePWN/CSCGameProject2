@@ -143,12 +143,15 @@ if window_get_fullscreen(){
 
 cheat_code = get_string("Enter code", "");
 
-if( cheat_code = "god"){
-    if(obj_PlayerCharacter.god_mode == 0){
-        obj_PlayerCharacter.god_mode = 1; 
+if(cheat_code = "god"){
+    if(obj_Player.godMode == false)
+    {
+        obj_Player.godMode = true; 
         show_message("God Mode!");
-    } else {
-        obj_PlayerCharacter.god_mode = 0; 
+    }
+    else 
+    {
+        obj_PlayerCharacter.god_mode = false; 
         show_message("Normal!");
     }
 } else if( cheat_code == "r" ){

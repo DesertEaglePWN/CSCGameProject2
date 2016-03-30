@@ -34,6 +34,7 @@
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\spr_Enemy</sprite>
+      <sprite>sprites\spr_StoneEnemy</sprite>
       <sprite>sprites\spr_Enemy_Run</sprite>
       <sprite>sprites\spr_bat_Flying</sprite>
     </sprites>
@@ -95,7 +96,7 @@
       <object>objects\obj_RoomTeleport</object>
       <object>objects\obj_FreePlatform</object>
       <object>objects\obj_Spike</object>
-      <object>objects\obj_FPWinTrigger</object>
+      <object>objects\obj_MessageTrigger</object>
     </objects>
   </objects>
   <rooms name="rooms">

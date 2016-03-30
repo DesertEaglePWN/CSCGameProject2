@@ -26,8 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>///Initialize Player
+
+godMode = false;
+
 isCrouched = false;
 depth = 0;
+
+
 
 // Current Health/mana
 global.Stamina = 100;
@@ -272,6 +277,13 @@ if (canJump == -1)
             <kind>1</kind>
             <string>/// Health check and mana regen
 
+if (godMode)
+{
+    global.Stamina = global.max_Stamina;
+    global.Mana = global.max_Mana;
+
+}
+
 if( global.Stamina &lt;= 0 ){
     show_message("You are dead");
     game_restart();
@@ -472,6 +484,38 @@ if( !attacking ){
             <kind>1</kind>
             <string>///Player Actions
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_MessageTrigger">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (playerDirection == 0)
+{
+    //Going Left
+    x += 64;
+}
+else
+{
+    //Going Right;
+    x -= 64;
+}
 </string>
           </argument>
         </arguments>
