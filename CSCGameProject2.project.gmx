@@ -35,7 +35,7 @@
     <sprites name="Enemy">
       <sprite>sprites\spr_Enemy</sprite>
       <sprite>sprites\spr_Enemy_Run</sprite>
-      <sprite>sprites\spr_bat</sprite>
+      <sprite>sprites\spr_bat_Flying</sprite>
     </sprites>
     <sprites name="Spells">
       <sprite>sprites\spr_Fireball</sprite>
