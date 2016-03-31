@@ -31,7 +31,6 @@ global.pause = false;
 
 // Global pick up helpers
 global.i = 0;
-global.pickups[global.i] = false;
 
 for(j = 0; j &lt; 50; j++)
     global.pickups[j] = false;
