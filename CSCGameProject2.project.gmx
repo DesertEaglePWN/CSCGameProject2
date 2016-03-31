@@ -57,6 +57,7 @@
       <sprite>sprites\spr_Fireball_Icon</sprite>
       <sprite>sprites\spr_Fireball_Icon_CD</sprite>
       <sprite>sprites\spr_Quit_Button</sprite>
+      <sprite>sprites\spr_Resume_Button</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -80,6 +81,7 @@
       <object>objects\obj_Controller_GUI</object>
       <object>objects\obj_Pause_Menu</object>
       <object>objects\obj_Quit_Button</object>
+      <object>objects\obj_Resume_Button</object>
     </objects>
     <objects name="Collision">
       <object>objects\obj_Collision</object>
