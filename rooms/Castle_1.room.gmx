@@ -181,7 +181,6 @@
     <instance objName="obj_Collision" x="1024" y="768" name="inst_94484026" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="416" y="736" name="inst_8DEA0C3E" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="928" y="736" name="inst_A8D16208" locked="0" code="" scaleX="8" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="obj_MessageTrigger" x="1984" y="96" name="inst_98332AA5" locked="0" code="message = &quot;You've gotten through the first stage of the game! More to come for the final release.&quot;;" scaleX="4" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="obj_bat" x="960" y="96" name="inst_3228AA37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_monster" x="960" y="384" name="inst_340E7739" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bat" x="1152" y="96" name="inst_24C45CB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
