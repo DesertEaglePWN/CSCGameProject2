@@ -68,14 +68,32 @@ draw_text_transformed(view_xview + 8, view_yview + 21, global.Mana, .5, .5, 0);
 
 // life pull
 if( obj_Player.spellIndex == 0 ){
-    draw_sprite_ext( spr_Life_Pull_Icon, 0, view_xview + 16, view_yview + 40, .5, .5, 0, c_white, 1 )
-// death ball    
+    if( global.Mana &gt; obj_Player.cost[0] ){
+        draw_sprite_ext( spr_Life_Pull_Icon, 0, view_xview + 16, view_yview + 40, .5, .5, 0, c_white, 1 )
+    } else { 
+        draw_sprite_ext( spr_Life_Pull_Icon_CD, 0, view_xview + 16, view_yview + 40, .5, .5, 0, c_white, 1 )
+    }
+// fire ball    
 } else if( obj_Player.spellIndex == 1 ){
-    draw_sprite_ext( spr_Fireball_Icon,  0, view_xview + 16, view_yview + 40, .5, .5, 0, c_white, 1 )
+    if( global.Mana &gt; obj_Player.cost[1] ){
+        draw_sprite_ext( spr_Fireball_Icon,  0, view_xview + 16, view_yview + 40, .5, .5, 0, c_white, 1 )
+    } else { 
+        draw_sprite_ext( spr_Fireball_Icon_CD, 0, view_xview + 16, view_yview + 40, .5, .5, 0, c_white, 1 )
+    }
 // else = stone
 } else { 
-    draw_sprite_ext( spr_Stone_Icon,     0, view_xview + 16, view_yview + 40, .5, .5, 0, c_white, 1 )
+    if( global.Mana &gt; obj_Player.cost[2] ){
+        draw_sprite_ext( spr_Stone_Icon,     0, view_xview + 16, view_yview + 40, .5, .5, 0, c_white, 1 )
+    } else { 
+        draw_sprite_ext( spr_Stone_Icon_CD, 0, view_xview + 16, view_yview + 40, .5, .5, 0, c_white, 1 )
+    }
 }
+
+/**
+cost[0] = life_pull_cost
+cost[1] = fireball_cost;
+cost[2] = stone_cost;
+*/
 
 </string>
           </argument>

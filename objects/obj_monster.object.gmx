@@ -102,7 +102,8 @@ image_speed = .2;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( monster_health &lt;= 0) 
+            <string>/// Check if dead
+if( monster_health &lt;= 0) 
     instance_destroy();
 </string>
           </argument>
@@ -143,7 +144,7 @@ image_speed = .2;
           <argument>
             <kind>1</kind>
             <string>/// Damage Enemy
-if( invincible == false){
+if( invincible == false &amp;&amp; alarm[0] == -1){
     monster_health -= 50;
     invincible = true;
     alarm[0] = 1;
@@ -163,20 +164,6 @@ if( invincible == false){
         <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
         <functionname>action_reverse_xdir</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>114</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_reverse_ydir</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
@@ -255,7 +242,8 @@ if( global.Stamina + 10 &gt; global.max_Stamina ){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( invincible == false &amp;&amp; alarm[0] == 0){
+            <string>/// Enemy Take DMG
+if( invincible == false &amp;&amp; alarm[0] == -1){
     monster_health -= 50;
     invincible = true;
     alarm[0] = 1;

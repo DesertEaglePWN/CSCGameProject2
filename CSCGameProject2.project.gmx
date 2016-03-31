@@ -50,8 +50,11 @@
     </sprites>
     <sprites name="Icon">
       <sprite>sprites\spr_Stone_Icon</sprite>
+      <sprite>sprites\spr_Stone_Icon_CD</sprite>
       <sprite>sprites\spr_Life_Pull_Icon</sprite>
+      <sprite>sprites\spr_Life_Pull_Icon_CD</sprite>
       <sprite>sprites\spr_Fireball_Icon</sprite>
+      <sprite>sprites\spr_Fireball_Icon_CD</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -78,6 +81,7 @@
     </objects>
     <objects name="Collision">
       <object>objects\obj_Collision</object>
+      <object>objects\obj_Collision_Enemy</object>
       <object>objects\obj_Col_AngledLeft</object>
       <object>objects\obj_Col_AngledRight</object>
       <object>objects\obj_Col_FlatBottom</object>

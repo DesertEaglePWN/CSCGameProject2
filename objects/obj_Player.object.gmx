@@ -28,7 +28,6 @@
             <string>///Initialize Player
 
 godMode = false;
-
 isCrouched = false;
 depth = 0;
 
@@ -67,6 +66,13 @@ playerDirection = 0;
 // pull = 1
 // stone = 3
 spellIndex = 0;
+life_pull_cost = 35;
+fireball_cost = 25;
+stone_cost = 15;
+
+cost[0] = life_pull_cost
+cost[1] = fireball_cost;
+cost[2] = stone_cost;
 
 </string>
           </argument>
@@ -705,53 +711,56 @@ if ( spellIndex == 0 ) {
             <string>/// Spell code
 var inst
 
-// if the current spell is the life pull, use it
-if ( spellIndex = 0 ) {
-    global.Mana -= 35;
-    // if the image is facing right, spawn a right facing life pull
-    if ( image_xscale &gt; 0 ) {
-        inst = instance_create( x + 20 , y - 20, obj_lifepull );
-    
-    // otherwise spawn a left facing life pull
-    } else {
-        inst = instance_create( x - 20 , y - 20, obj_lifepull );
-    }
-    
-// else if the current spell is the death ball, use it
-} else if ( spellIndex = 1 ) {
-    global.Mana -= 25;
-    // if the image is facing right, spawn a right facing death ball
-     if ( image_xscale &gt; 0 ) {
-        inst = instance_create( x - 10 , y - 40, obj_deathball );
-        with ( inst ) {
-            speed = 8;
-            direction = 0;
+if ( global.Mana &gt;= cost[spellIndex] ){
+
+    // if the current spell is the life pull, use it
+    if ( spellIndex = 0 ) {
+        global.Mana -= life_pull_cost;
+        // if the image is facing right, spawn a right facing life pull
+        if ( image_xscale &gt; 0 ) {
+            inst = instance_create( x + 20 , y - 20, obj_lifepull );
+        
+        // otherwise spawn a left facing life pull
+        } else {
+            inst = instance_create( x - 20 , y - 20, obj_lifepull );
         }
-     
-     // otherwise spawn a left facing death ball
-    } else {
-        inst = instance_create( x - 10 , y - 40, obj_deathball );
-        with ( inst ) {
-            speed = 10;
-            direction = 180;
-        } 
-    }
-
-// otherwise spawn a stone spell
-} else {
-    global.Mana -= 15;
-    // if the image is facing right, spawn a right facing life pull
-    if ( image_xscale &gt; 0 ) {
-        inst = instance_create( x + 20 , y - 20, obj_stoner );
+        
+    // else if the current spell is the death ball, use it
+    } else if ( spellIndex = 1 ) {
+        global.Mana -= fireball_cost;
+        // if the image is facing right, spawn a right facing death ball
+         if ( image_xscale &gt; 0 ) {
+            inst = instance_create( x - 10 , y - 40, obj_deathball );
+            with ( inst ) {
+                speed = 8;
+                direction = 0;
+            }
+         
+         // otherwise spawn a left facing death ball
+        } else {
+            inst = instance_create( x - 10 , y - 40, obj_deathball );
+            with ( inst ) {
+                speed = 10;
+                direction = 180;
+            } 
+        }
     
-    // otherwise spawn a left facing life pull
+    // otherwise spawn a stone spell
     } else {
-        inst = instance_create( x - 20 , y - 20, obj_stoner );
-    }
-    
-} 
+        global.Mana -= stone_cost;
+        // if the image is facing right, spawn a right facing life pull
+        if ( image_xscale &gt; 0 ) {
+            inst = instance_create( x + 20 , y - 20, obj_stoner );
+        
+        // otherwise spawn a left facing life pull
+        } else {
+            inst = instance_create( x - 20 , y - 20, obj_stoner );
+        }
+        
+    } 
+}
 
-if( global.Mana &lt;= -10 )
+if( global.Mana &lt;= 0 )
     global.Mana = 0;
 </string>
           </argument>
@@ -950,53 +959,56 @@ if ( spellIndex == 0 ) {
             <string>/// Spell code
 var inst
 
-// if the current spell is the life pull, use it
-if ( spellIndex = 0 ) {
-    global.Mana -= 35;
-    // if the image is facing right, spawn a right facing life pull
-    if ( image_xscale &gt; 0 ) {
-        inst = instance_create( x + 20 , y - 20, obj_lifepull );
-    
-    // otherwise spawn a left facing life pull
-    } else {
-        inst = instance_create( x - 20 , y - 20, obj_lifepull );
-    }
-    
-// else if the current spell is the death ball, use it
-} else if ( spellIndex = 1 ) {
-    global.Mana -= 25;
-    // if the image is facing right, spawn a right facing death ball
-     if ( image_xscale &gt; 0 ) {
-        inst = instance_create( x - 10 , y - 40, obj_deathball );
-        with ( inst ) {
-            speed = 8;
-            direction = 0;
+if ( global.Mana &gt;= cost[spellIndex] ){
+
+    // if the current spell is the life pull, use it
+    if ( spellIndex = 0 ) {
+        global.Mana -= life_pull_cost;
+        // if the image is facing right, spawn a right facing life pull
+        if ( image_xscale &gt; 0 ) {
+            inst = instance_create( x + 20 , y - 20, obj_lifepull );
+        
+        // otherwise spawn a left facing life pull
+        } else {
+            inst = instance_create( x - 20 , y - 20, obj_lifepull );
         }
-     
-     // otherwise spawn a left facing death ball
-    } else {
-        inst = instance_create( x - 10 , y - 40, obj_deathball );
-        with ( inst ) {
-            speed = 10;
-            direction = 180;
-        } 
-    }
-
-// otherwise spawn a stone spell
-} else {
-    global.Mana -= 15;
-    // if the image is facing right, spawn a right facing life pull
-    if ( image_xscale &gt; 0 ) {
-        inst = instance_create( x + 20 , y - 20, obj_stoner );
+        
+    // else if the current spell is the death ball, use it
+    } else if ( spellIndex = 1 ) {
+        global.Mana -= fireball_cost;
+        // if the image is facing right, spawn a right facing death ball
+         if ( image_xscale &gt; 0 ) {
+            inst = instance_create( x - 10 , y - 40, obj_deathball );
+            with ( inst ) {
+                speed = 8;
+                direction = 0;
+            }
+         
+         // otherwise spawn a left facing death ball
+        } else {
+            inst = instance_create( x - 10 , y - 40, obj_deathball );
+            with ( inst ) {
+                speed = 10;
+                direction = 180;
+            } 
+        }
     
-    // otherwise spawn a left facing life pull
+    // otherwise spawn a stone spell
     } else {
-        inst = instance_create( x - 20 , y - 20, obj_stoner );
-    }
-    
-} 
+        global.Mana -= stone_cost;
+        // if the image is facing right, spawn a right facing life pull
+        if ( image_xscale &gt; 0 ) {
+            inst = instance_create( x + 20 , y - 20, obj_stoner );
+        
+        // otherwise spawn a left facing life pull
+        } else {
+            inst = instance_create( x - 20 , y - 20, obj_stoner );
+        }
+        
+    } 
+}
 
-if( global.Mana &lt;= -10 )
+if( global.Mana &lt;= 0 )
     global.Mana = 0;
 </string>
           </argument>
