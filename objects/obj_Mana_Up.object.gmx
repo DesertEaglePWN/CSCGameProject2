@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>index = global.i;
+            <string>/// set globals to know when to "delete" object
+
+index = global.i;
 global.i++;
 </string>
           </argument>
@@ -49,7 +51,9 @@ global.i++;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( global.pickups[index] == true ){
+            <string>/// Check if the object has been picked up
+
+if( global.pickups[index] == true ){
     visible = 0;
 } 
 </string>
