@@ -28,7 +28,7 @@
             <string>/// Draw the pause menu 
 
 //Draw's the text in the centre of the room
-draw_text_transformed(view_xview[view_current] + 400 ,view_yview[view_current], "Game Paused", 10, 10, 0); 
+draw_text_transformed(view_xview[view_current] + view_wview[view_current]/2 ,view_yview[view_current], "Game Paused", 5, 5, 0); 
 
 </string>
           </argument>
