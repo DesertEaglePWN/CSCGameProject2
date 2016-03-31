@@ -36,6 +36,7 @@
       <sprite>sprites\spr_Enemy</sprite>
       <sprite>sprites\spr_StoneEnemy</sprite>
       <sprite>sprites\spr_Enemy_Run</sprite>
+      <sprite>sprites\spr_Enemy_Run_Flipped</sprite>
       <sprite>sprites\spr_bat_Flying</sprite>
     </sprites>
     <sprites name="Spells">
@@ -55,8 +56,8 @@
       <sprite>sprites\spr_Life_Pull_Icon_CD</sprite>
       <sprite>sprites\spr_Fireball_Icon</sprite>
       <sprite>sprites\spr_Fireball_Icon_CD</sprite>
+      <sprite>sprites\spr_Quit_Button</sprite>
     </sprites>
-    <sprite>sprites\spr_Quit_Button</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_CastleTiles</background>
@@ -67,8 +68,6 @@
   <objects name="objects">
     <objects name="Enemy">
       <object>objects\obj_bat</object>
-      <object>objects\obj_bat_with_path</object>
-      <object>objects\obj_monster_with_path</object>
       <object>objects\obj_monster</object>
       <object>objects\obj_stone_monster</object>
     </objects>

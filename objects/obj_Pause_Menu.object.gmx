@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text_transformed(obj_Player+400 ,obj_Player+15, "Game Paused", 10, 10, 0); //Draw's the text in the centre of the room
+            <string>/// Draw the pause menu 
+
+//Draw's the text in the centre of the room
+draw_text_transformed(view_xview[view_current] + 400 ,view_yview[view_current], "Game Paused", 10, 10, 0); 
 
 </string>
           </argument>

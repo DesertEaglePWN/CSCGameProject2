@@ -25,9 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.Stamina = 100
-global.Mana = 100
-depth = room_height * -1
+            <string>depth = room_height * -1
 </string>
           </argument>
         </arguments>

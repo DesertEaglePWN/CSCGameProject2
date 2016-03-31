@@ -4,33 +4,10 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>global.pause = false;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
@@ -182,6 +159,7 @@ if(cheat_code = "god"){
             <kind>1</kind>
             <string>///Initilize Globals
 global.dest_id = 0;
+global.pause = false;
 </string>
           </argument>
         </arguments>
@@ -212,8 +190,8 @@ if( global.pause == false) {
     global.pause = true;
     instance_deactivate_all( false ); //Do deactivate the controller as well
     //Now everything is inactive
-    instance_create(p_x, p_y+100, obj_Quit_Button);
     //Something needs to be active or the game is effectively frozen
+    instance_create(view_xview[view_current]+view_wview[view_current]/2, view_yview[view_current]+250, obj_Quit_Button);
     instance_create( x, y, obj_Pause_Menu ); //This will be active
     //It was created after everything was deactivated
 }
