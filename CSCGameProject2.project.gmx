@@ -7,7 +7,6 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_ArmorGold</sprite>
-    <sprite>sprites\spr_Walls</sprite>
     <sprites name="Player">
       <sprite>sprites\spr_PlayerIdle</sprite>
       <sprite>sprites\spr_PlayerSpell</sprite>
@@ -26,6 +25,8 @@
       <sprite>sprites\spr_Health_2</sprite>
       <sprite>sprites\spr_Empty</sprite>
       <sprite>sprites\spr_Mana_Star</sprite>
+      <sprite>sprites\spr_pull_stone_Pickup</sprite>
+      <sprite>sprites\spr_Fireball_Pickup</sprite>
     </sprites>
     <sprites name="Misc">
       <sprite>sprites\spr_Collision</sprite>
@@ -48,10 +49,12 @@
       <sprite>sprites\spr_Barrier</sprite>
       <sprite>sprites\spr_FreePlatform</sprite>
       <sprite>sprites\spr_Spike</sprite>
+      <sprite>sprites\spr_Walls</sprite>
     </sprites>
     <sprites name="Icon">
       <sprite>sprites\spr_Stone_Icon</sprite>
       <sprite>sprites\spr_Stone_Icon_CD</sprite>
+      <sprite>sprites\spr_Spell_Unavailable</sprite>
       <sprite>sprites\spr_Life_Pull_Icon</sprite>
       <sprite>sprites\spr_Life_Pull_Icon_CD</sprite>
       <sprite>sprites\spr_Fireball_Icon</sprite>
@@ -94,6 +97,7 @@
       <object>objects\obj_deathball</object>
       <object>objects\obj_lifepull</object>
       <object>objects\obj_stoner</object>
+      <object>objects\obj_Spell_Pickup</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_Player</object>
