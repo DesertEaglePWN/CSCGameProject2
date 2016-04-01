@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>/// set globals to know when to "delete" object
-
+orgin_room = room;
 index = global.i;
 global.i++;
 </string>
@@ -53,9 +53,9 @@ global.i++;
             <kind>1</kind>
             <string>/// Check if the object has been picked up
 
-if( global.pickups[index] == true ){
-    visible = 0;
-} 
+if( global.pickups[index] == true || orgin_room != room ){
+   // visible = 0;
+}
 </string>
           </argument>
         </arguments>
@@ -80,9 +80,10 @@ if( global.pickups[index] == true ){
             <kind>1</kind>
             <string>///Increase Max Health
 if( global.pickups[index] == false ){
+    global.pickups[index] = true;
     global.max_Stamina += 25;
     global.Stamina = global.max_Stamina;
-    global.pickups[index] = true;
+    visible = 0;
 }
 </string>
           </argument>
