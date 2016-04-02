@@ -26,11 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>/// set globals to know when to "delete" object
-orgin_room = room;
-index = global.i;
-global.i++;
-
-canBePickedUp = true;
+orgin_room = room; // original room it was created in
+index = global.i;  // index into global array
+global.i++;       
+canBePickedUp = true; // can we pick that up in the current room?
 </string>
           </argument>
         </arguments>
@@ -54,9 +53,6 @@ canBePickedUp = true;
           <argument>
             <kind>1</kind>
             <string>/// Check if the object has been picked up
-
-
-
 if( global.pickups[index] == true || orgin_room != room ){
     canBePickedUp = false;
     visible = 0;
@@ -85,9 +81,9 @@ if( global.pickups[index] == true || orgin_room != room ){
             <kind>1</kind>
             <string>///Increase Max Mana
 if( global.pickups[index] == false &amp;&amp; canBePickedUp == true ){
+    global.pickups[index] = true; // it has been picked up by player
     global.max_Mana += 25
     global.Mana = global.max_Mana
-    global.pickups[index] = true;
     visible = 0;
 }
 </string>
