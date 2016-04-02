@@ -29,6 +29,7 @@
 orgin_room = room;
 index = global.i;
 global.i++;
+canBePickedUp = true;
 </string>
           </argument>
         </arguments>
@@ -53,8 +54,9 @@ global.i++;
             <kind>1</kind>
             <string>/// Check if the object has been picked up
 
+
 if( global.pickups[index] == true || orgin_room != room ){
-   // visible = 0;
+    visible = 0;
 }
 </string>
           </argument>
@@ -79,7 +81,7 @@ if( global.pickups[index] == true || orgin_room != room ){
           <argument>
             <kind>1</kind>
             <string>///Increase Max Health
-if( global.pickups[index] == false ){
+if( global.pickups[index] == false &amp;&amp; canBePickedUp == true ){
     global.pickups[index] = true;
     global.max_Stamina += 25;
     global.Stamina = global.max_Stamina;

@@ -29,6 +29,8 @@
 orgin_room = room;
 index = global.i;
 global.i++;
+
+canBePickedUp = true;
 </string>
           </argument>
         </arguments>
@@ -53,8 +55,11 @@ global.i++;
             <kind>1</kind>
             <string>/// Check if the object has been picked up
 
+
+
 if( global.pickups[index] == true || orgin_room != room ){
-   // visible = 0;
+    canBePickedUp = false;
+    visible = 0;
 }
 </string>
           </argument>
@@ -79,7 +84,7 @@ if( global.pickups[index] == true || orgin_room != room ){
           <argument>
             <kind>1</kind>
             <string>///Increase Max Mana
-if( global.pickups[index] == false ){
+if( global.pickups[index] == false &amp;&amp; canBePickedUp == true ){
     global.max_Mana += 25
     global.Mana = global.max_Mana
     global.pickups[index] = true;
