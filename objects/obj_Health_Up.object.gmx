@@ -53,10 +53,15 @@ canBePickedUp = true; // can we pick that up in the current room?
           <argument>
             <kind>1</kind>
             <string>/// Check if the object has been picked up
+if( orgin_room == room &amp;&amp; global.pickups[index] == false ){
+    canBePickedUp = true;
+    visible = 1;
+}
+
 if( global.pickups[index] == true || orgin_room != room ){
     canBePickedUp = false;
     visible = 0;
-} 
+}
 </string>
           </argument>
         </arguments>
