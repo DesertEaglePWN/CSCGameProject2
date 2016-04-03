@@ -35,6 +35,7 @@
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\spr_Enemy</sprite>
+      <sprite>sprites\spr_Mage</sprite>
       <sprite>sprites\spr_StoneEnemy</sprite>
       <sprite>sprites\spr_Enemy_Run</sprite>
       <sprite>sprites\spr_Enemy_Run_Flipped</sprite>
@@ -73,6 +74,7 @@
     <objects name="Enemy">
       <object>objects\obj_bat</object>
       <object>objects\obj_monster</object>
+      <object>objects\obj_Mage</object>
       <object>objects\obj_stone_monster</object>
     </objects>
     <objects name="Pickups">
@@ -95,6 +97,7 @@
     </objects>
     <objects name="Spells">
       <object>objects\obj_deathball</object>
+      <object>objects\obj_Mage_Fireball</object>
       <object>objects\obj_lifepull</object>
       <object>objects\obj_stoner</object>
       <object>objects\obj_Spell_Pickup</object>
