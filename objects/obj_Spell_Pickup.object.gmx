@@ -79,6 +79,7 @@ else if (spellIndex == 2)
     image_speed = .1;
 }
 else 
+{
     //Invalid option, go ahead and destroy the pickup
     instance_destroy();
 }
