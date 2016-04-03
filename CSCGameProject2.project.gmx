@@ -10,6 +10,7 @@
     <sprites name="Player">
       <sprite>sprites\spr_PlayerIdle</sprite>
       <sprite>sprites\spr_PlayerSpell</sprite>
+      <sprite>sprites\spr_PlayerGorgonEye</sprite>
       <sprite>sprites\spr_PlayerRun</sprite>
       <sprite>sprites\spr_PlayerJump</sprite>
       <sprite>sprites\spr_PlayerFall</sprite>
@@ -18,6 +19,7 @@
       <sprite>sprites\spr_Player_Attack_Collision</sprite>
       <sprite>sprites\spr_Player_Attack_Collision_Flipped</sprite>
       <sprite>sprites\spr_Player_Attack</sprite>
+      <sprite>sprites\sprite49</sprite>
     </sprites>
     <sprites name="Pickups">
       <sprite>sprites\spr_Health_Ext</sprite>
@@ -33,12 +35,14 @@
       <sprite>sprites\spr_Invisible</sprite>
     </sprites>
     <sprites name="Enemy">
-      <sprite>sprites\spr_Enemy</sprite>
+      <sprite>sprites\spr_Skeleton</sprite>
+      <sprite>sprites\spr_SkeletonRun</sprite>
+      <sprite>sprites\spr_SkeletonRun_Flipped</sprite>
       <sprite>sprites\spr_Mage</sprite>
+      <sprite>sprites\spr_MageCast</sprite>
       <sprite>sprites\spr_StoneEnemy</sprite>
-      <sprite>sprites\spr_Enemy_Run</sprite>
-      <sprite>sprites\spr_Enemy_Run_Flipped</sprite>
-      <sprite>sprites\spr_bat_Flying</sprite>
+      <sprite>sprites\spr_BatFlying</sprite>
+      <sprite>sprites\spr_Boss</sprite>
     </sprites>
     <sprites name="Spells">
       <sprite>sprites\spr_Fireball</sprite>
@@ -74,7 +78,7 @@
   <objects name="objects">
     <objects name="Enemy">
       <object>objects\obj_bat</object>
-      <object>objects\obj_monster</object>
+      <object>objects\obj_Skeleton</object>
       <object>objects\obj_Mage</object>
       <object>objects\obj_stone_monster</object>
     </objects>

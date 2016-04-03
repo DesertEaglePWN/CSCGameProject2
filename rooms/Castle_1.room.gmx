@@ -57,8 +57,8 @@
     <instance objName="obj_Health_Up" x="256" y="128" name="inst_6A4C917C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Mana_Up" x="768" y="320" name="inst_F37B5281" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Controller_GUI" x="64" y="64" name="inst_FB7FB630" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_monster" x="192" y="320" name="inst_98AF6A00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_monster" x="1248" y="960" name="inst_38F36DC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Skeleton" x="192" y="320" name="inst_98AF6A00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Skeleton" x="1248" y="960" name="inst_38F36DC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="672" y="192" name="inst_BC955868" locked="0" code="" scaleX="8" scaleY="24" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="0" y="0" name="inst_D874FB61" locked="0" code="" scaleX="8" scaleY="56" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="224" y="160" name="inst_4FD8BC6F" locked="0" code="" scaleX="12" scaleY="20" colour="4294967295" rotation="0"/>
@@ -102,7 +102,7 @@
     <instance objName="obj_Collision" x="736" y="192" name="inst_4447FBA6" locked="0" code="" scaleX="68" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="736" y="256" name="inst_D14D0CE7" locked="0" code="" scaleX="12" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="1120" y="256" name="inst_44FE1712" locked="0" code="" scaleX="20" scaleY="8" colour="4294967295" rotation="0"/>
-    <instance objName="obj_monster" x="960" y="384" name="inst_A1CF688D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Skeleton" x="1120" y="384" name="inst_A1CF688D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Barrier" x="800" y="288" name="inst_8607E382" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_Barrier" x="576" y="256" name="inst_BA33D6B8" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="1312" y="704" name="inst_D3230459" locked="0" code="" scaleX="16" scaleY="20" colour="4294967295" rotation="0"/>
@@ -144,7 +144,7 @@
     <instance objName="obj_Collision" x="1600" y="352" name="inst_1DF420F6" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="1728" y="320" name="inst_261A14CE" locked="0" code="" scaleX="12" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="1952" y="384" name="inst_E53DE007" locked="0" code="" scaleX="4" scaleY="8" colour="4294967295" rotation="0"/>
-    <instance objName="obj_monster" x="1600" y="672" name="inst_B139EFFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Skeleton" x="1600" y="672" name="inst_B139EFFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="1376" y="576" name="inst_D5CF5062" locked="0" code="" scaleX="8" scaleY="16" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="1344" y="192" name="inst_509FF174" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="1952" y="768" name="inst_D96EBC3F" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
@@ -162,7 +162,6 @@
     <instance objName="obj_Collision" x="1728" y="192" name="inst_1A47E544" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bat" x="1824" y="352" name="inst_C2A4A724" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="1440" y="224" name="inst_CC1720EA" locked="0" code="" scaleX="20" scaleY="8" colour="4294967295" rotation="0"/>
-    <instance objName="obj_MessageTrigger" x="800" y="96" name="inst_3BBD26E2" locked="0" code="message = &quot;This area is inacessible in the first playable.&quot;&#xA;" scaleX="4" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="1312" y="512" name="inst_D4180FAD" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="1344" y="448" name="inst_D6AB95FC" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="1344" y="640" name="inst_F658CCD2" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
@@ -180,28 +179,24 @@
     <instance objName="obj_Collision" x="416" y="736" name="inst_8DEA0C3E" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="928" y="736" name="inst_A8D16208" locked="0" code="" scaleX="8" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_bat" x="960" y="96" name="inst_3228AA37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_monster" x="960" y="384" name="inst_340E7739" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bat" x="1152" y="96" name="inst_24C45CB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bat" x="1056" y="96" name="inst_B060C8FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_monster" x="1024" y="192" name="inst_0BBF45C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_MessageTrigger" x="32" y="864" name="inst_A23A6C8D" locked="0" code="message = &quot;This area is inacessible in the first playable.&quot;&#xA;" scaleX="4" scaleY="12" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Skeleton" x="1024" y="192" name="inst_0BBF45C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision_Enemy" x="64" y="288" name="inst_62FD9710" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision_Enemy" x="1280" y="160" name="inst_19064C7D" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision_Enemy" x="1912" y="640" name="inst_AD39C88C" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_bat" x="128" y="736" name="inst_C03C6DAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bat" x="512" y="800" name="inst_A90D58AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bat" x="832" y="800" name="inst_60A9B665" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bat" x="1824" y="768" name="inst_F0603066" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bat" x="1792" y="800" name="inst_F0603066" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bat" x="1536" y="320" name="inst_D6D8CD49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Spell_Pickup" x="1024" y="544" name="inst_229E945E" locked="0" code="spellIndex = 1; //Soul Blast Tome&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Spell_Pickup" x="1152" y="544" name="inst_52C58A2D" locked="0" code="spellIndex = 2; //Gorgon's Eye Ring&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Health_Up" x="1720" y="168" name="inst_3D14F204" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Mana_Up" x="1464" y="400" name="inst_EDBB0758" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Health_Up" x="1952" y="360" name="inst_148D3547" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Mana_Up" x="808" y="832" name="inst_435C3B4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Mana_Up" x="800" y="832" name="inst_435C3B4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Mage" x="544" y="896" name="inst_F84A16BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Mage" x="192" y="640" name="inst_7E79D2F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Mage" x="1056" y="384" name="inst_F618B5B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Mage" x="928" y="384" name="inst_F618B5B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision_Enemy" x="1312" y="352" name="inst_F89EB2AF" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>

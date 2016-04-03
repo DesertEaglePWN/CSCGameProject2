@@ -582,7 +582,7 @@ if( !invincible ){
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_monster">
+    <event eventtype="4" ename="obj_Skeleton">
       <action>
         <libid>1</libid>
         <id>603</id>

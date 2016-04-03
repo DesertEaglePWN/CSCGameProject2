@@ -32,7 +32,7 @@ sprite_index = spr_Invisible;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_monster">
+    <event eventtype="4" ename="obj_Skeleton">
       <action>
         <libid>1</libid>
         <id>113</id>
