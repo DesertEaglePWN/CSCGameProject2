@@ -141,9 +141,15 @@ cheat_code = get_string("Enter code", "");
 if(cheat_code = "god"){
     if(obj_Player.godMode == false){
         obj_Player.godMode = true; 
+        obj_Player.haveSpell[0] = true; // life pull
+        obj_Player.haveSpell[1] = true; // fireball
+        obj_Player.haveSpell[2] = true; // stoned
         show_message("God Mode!");
     } else {
-        obj_Player.godMode = false; 
+        obj_Player.godMode = false;
+        obj_Player.haveSpell[0] = true; // life pull
+        obj_Player.haveSpell[1] = false; // fireball
+        obj_Player.haveSpell[2] = false; // stoned
         show_message("Normal!");
     }
 } else if( cheat_code == "r" ){

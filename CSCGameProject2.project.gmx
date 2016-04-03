@@ -45,6 +45,8 @@
       <sprite>sprites\spr_Fireball</sprite>
       <sprite>sprites\spr_Fireball_Flipped</sprite>
       <sprite>sprites\spr_pull_stone</sprite>
+      <sprite>sprites\spr_Life_Pull</sprite>
+      <sprite>sprites\spr_Life_Pull_Flipped</sprite>
     </sprites>
     <sprites name="Level">
       <sprite>sprites\spr_Barrier</sprite>
