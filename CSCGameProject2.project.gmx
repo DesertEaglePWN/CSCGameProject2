@@ -20,16 +20,15 @@
       <sprite>sprites\spr_Player_Attack</sprite>
     </sprites>
     <sprites name="Pickups">
-      <sprite>sprites\spr_Mana</sprite>
-      <sprite>sprites\spr_Health</sprite>
-      <sprite>sprites\spr_Health_2</sprite>
+      <sprite>sprites\spr_Health_Ext</sprite>
       <sprite>sprites\spr_Empty</sprite>
-      <sprite>sprites\spr_Mana_Star</sprite>
-      <sprite>sprites\spr_pull_stone_Pickup</sprite>
-      <sprite>sprites\spr_Fireball_Pickup</sprite>
+      <sprite>sprites\spr_Mana_Ext</sprite>
+      <sprite>sprites\spr_GorgonEyePickup</sprite>
+      <sprite>sprites\spr_SoulBlastPickup</sprite>
     </sprites>
     <sprites name="Misc">
       <sprite>sprites\spr_Collision</sprite>
+      <sprite>sprites\spr_Collision_Enemy</sprite>
       <sprite>sprites\spr_Teleport</sprite>
       <sprite>sprites\spr_Invisible</sprite>
     </sprites>
@@ -82,6 +81,7 @@
     <objects name="Pickups">
       <object>objects\obj_Health_Up</object>
       <object>objects\obj_Mana_Up</object>
+      <object>objects\obj_Spell_Pickup</object>
     </objects>
     <objects name="Controllers">
       <object>objects\obj_Controller</object>
@@ -93,16 +93,12 @@
     <objects name="Collision">
       <object>objects\obj_Collision</object>
       <object>objects\obj_Collision_Enemy</object>
-      <object>objects\obj_Col_AngledLeft</object>
-      <object>objects\obj_Col_AngledRight</object>
-      <object>objects\obj_Col_FlatBottom</object>
     </objects>
     <objects name="Spells">
       <object>objects\obj_deathball</object>
       <object>objects\obj_Mage_Fireball</object>
       <object>objects\obj_lifepull</object>
       <object>objects\obj_stoner</object>
-      <object>objects\obj_Spell_Pickup</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_Player</object>

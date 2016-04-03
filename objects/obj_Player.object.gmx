@@ -499,6 +499,38 @@ if( !attacking ){
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_MessageTrigger">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (playerDirection == 0)
+{
+    //Going Left
+    x += 64;
+}
+else
+{
+    //Going Right;
+    x -= 64;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_Mage_Fireball">
       <action>
         <libid>1</libid>
@@ -546,38 +578,6 @@ if( !invincible ){
           <argument>
             <kind>4</kind>
             <string>2</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_MessageTrigger">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if (playerDirection == 0)
-{
-    //Going Left
-    x += 64;
-}
-else
-{
-    //Going Right;
-    x -= 64;
-}
-</string>
           </argument>
         </arguments>
       </action>
