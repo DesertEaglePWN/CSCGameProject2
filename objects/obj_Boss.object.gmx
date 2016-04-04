@@ -30,7 +30,7 @@ max_health = 1500;
 monster_health = max_health;
 invincible = false;
 
-instance_create(x,y, obj_Boss_Health);
+inst = instance_create(x,y, obj_Boss_Health);
 image_speed = .2;
 </string>
           </argument>
@@ -63,7 +63,7 @@ image_speed = .2;
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="3" enumb="1">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -82,15 +82,17 @@ image_speed = .2;
             <kind>1</kind>
             <string>/// Check if dead
 if( monster_health &lt;= 0){
-    instance_destroy();
-    with(obj_Boss_Health){
+    with(inst){
         instance_destroy();
-    }     
+    } 
+    instance_destroy();    
 }    
 </string>
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
