@@ -31,7 +31,6 @@ monster_health = max_health;
 invincible = false;
 
 instance_create(x,y, obj_Boss_Health);
-
 image_speed = .2;
 </string>
           </argument>
@@ -116,6 +115,38 @@ if( direction &gt;=  180 ){
     image_xscale = -1;
 } else {
     image_xscale = 1;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// FSM for Behaviour
+hp = obj_Boss.monster_health;
+
+if( (hp/max_health) * 100 &gt; 75 ){ // boss health (75, 100]
+
+} else if( (hp/max_health) * 100 &gt; 50){ // boss health (50, 75]
+   
+} else if( (hp/max_health) * 100 &gt; 25){ // boss health (25, 50]
+
+} else { // boss health (0, 25]
+
 }
 </string>
           </argument>
