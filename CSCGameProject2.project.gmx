@@ -19,7 +19,6 @@
       <sprite>sprites\spr_Player_Attack_Collision</sprite>
       <sprite>sprites\spr_Player_Attack_Collision_Flipped</sprite>
       <sprite>sprites\spr_Player_Attack</sprite>
-      <sprite>sprites\sprite49</sprite>
     </sprites>
     <sprites name="Pickups">
       <sprite>sprites\spr_Health_Ext</sprite>
@@ -36,18 +35,20 @@
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\spr_Skeleton</sprite>
+      <sprite>sprites\spr_Stoned_Skeleton</sprite>
       <sprite>sprites\spr_SkeletonRun</sprite>
       <sprite>sprites\spr_SkeletonRun_Flipped</sprite>
       <sprite>sprites\spr_Mage</sprite>
       <sprite>sprites\spr_MageCast</sprite>
       <sprite>sprites\spr_StoneEnemy</sprite>
-      <sprite>sprites\spr_BatFlying</sprite>
+      <sprite>sprites\spr_Bat</sprite>
+      <sprite>sprites\spr_Stoned_Bat</sprite>
       <sprite>sprites\spr_Boss</sprite>
     </sprites>
     <sprites name="Spells">
       <sprite>sprites\spr_Fireball</sprite>
       <sprite>sprites\spr_Fireball_Flipped</sprite>
-      <sprite>sprites\spr_pull_stone</sprite>
+      <sprite>sprites\spr_Stone</sprite>
       <sprite>sprites\spr_Life_Pull</sprite>
       <sprite>sprites\spr_Life_Pull_Flipped</sprite>
     </sprites>
@@ -81,6 +82,7 @@
       <object>objects\obj_Skeleton</object>
       <object>objects\obj_Mage</object>
       <object>objects\obj_Stone_Monster</object>
+      <object>objects\obj_Boss</object>
     </objects>
     <objects name="Pickups">
       <object>objects\obj_Health_Up</object>
@@ -99,10 +101,10 @@
       <object>objects\obj_Collision_Enemy</object>
     </objects>
     <objects name="Spells">
-      <object>objects\obj_deathball</object>
+      <object>objects\obj_Deathball</object>
       <object>objects\obj_Mage_Fireball</object>
-      <object>objects\obj_lifepull</object>
-      <object>objects\obj_stoner</object>
+      <object>objects\obj_Lifepull</object>
+      <object>objects\obj_Stoner</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_Player</object>
