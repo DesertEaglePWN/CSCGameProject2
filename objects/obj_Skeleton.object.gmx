@@ -217,7 +217,7 @@ if( invincible == false &amp;&amp; alarm[0] == -1){
           <argument>
             <kind>1</kind>
             <string>/// Stone effect
-instance_create( x, y, obj_stone_monster );
+instance_create( x, y, obj_Stone_Monster );
 instance_destroy();
 </string>
           </argument>

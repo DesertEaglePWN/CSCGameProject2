@@ -633,7 +633,7 @@ if( !invincible ){
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_bat">
+    <event eventtype="4" ename="obj_Bat">
       <action>
         <libid>1</libid>
         <id>603</id>
