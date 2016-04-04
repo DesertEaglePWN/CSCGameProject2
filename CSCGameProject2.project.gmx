@@ -95,6 +95,8 @@
       <object>objects\obj_Pause_Menu</object>
       <object>objects\obj_Quit_Button</object>
       <object>objects\obj_Resume_Button</object>
+      <object>objects\obj_OneSkeletonSpawner</object>
+      <object>objects\obj_spellSpawner</object>
     </objects>
     <objects name="Collision">
       <object>objects\obj_Collision</object>
@@ -112,6 +114,7 @@
     </objects>
     <objects name="LevelObjects">
       <object>objects\obj_Barrier</object>
+      <object>objects\obj_TrapBarrierOne</object>
       <object>objects\obj_RoomTeleport</object>
       <object>objects\obj_FreePlatform</object>
       <object>objects\obj_Spike</object>
