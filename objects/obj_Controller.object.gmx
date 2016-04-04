@@ -144,19 +144,16 @@ if(cheat_code = "god"){
         obj_Player.haveSpell[0] = true; // life pull
         obj_Player.haveSpell[1] = true; // fireball
         obj_Player.haveSpell[2] = true; // stoned
-        show_message("God Mode!");
     } else {
         obj_Player.godMode = false;
         obj_Player.haveSpell[0] = true; // life pull
         obj_Player.haveSpell[1] = false; // fireball
         obj_Player.haveSpell[2] = false; // stoned
-        show_message("Normal!");
     }
 } else if( cheat_code == "r" ){
     game_restart();
 } else if( cheat_code == "die") {
     global.Stamina = 0;
-    show_message("You chose death");
 } else if( cheat_code == "0" ){
     room_goto(0);
 } else if( cheat_code == "1" ){

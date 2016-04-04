@@ -26,8 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>/// Initial stats
-monster_health = 500;
+max_health = 500;
+monster_health = max_health;
 invincible = false;
+
+instance_create(x,y, obj_Boss_Health);
 
 image_speed = .2;
 </string>
@@ -79,8 +82,12 @@ image_speed = .2;
           <argument>
             <kind>1</kind>
             <string>/// Check if dead
-if( monster_health &lt;= 0) 
+if( monster_health &lt;= 0){
     instance_destroy();
+    with(obj_Boss_Health){
+        instance_destroy();
+    }     
+}    
 </string>
           </argument>
         </arguments>
@@ -103,7 +110,7 @@ if( monster_health &lt;= 0)
             <kind>1</kind>
             <string>/// Update Sprite
 
-if (speed &gt; 0) sprite_index = spr_SkeletonRun;
+if (speed &gt; 0) sprite_index = spr_Boss;
 
 if( direction &gt;=  180 ){
     image_xscale = -1;
