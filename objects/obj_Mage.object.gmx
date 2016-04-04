@@ -324,12 +324,16 @@ instance_destroy();
           <argument>
             <kind>1</kind>
             <string>/// Life-Pull effect
-monster_health -= 10;
-
-if( global.Stamina + 10 &gt; global.max_Stamina ){
-    global.Stamina = global.max_Stamina;
-} else {
-    global.Stamina += 10;
+if( invincible == false &amp;&amp; alarm[0] == -1){
+    monster_health -= 10;
+    invincible = true;
+    alarm[0] = room_speed;
+    
+    if( global.Stamina + 10 &gt; global.max_Stamina ){
+        global.Stamina = global.max_Stamina;
+    } else {
+        global.Stamina += 10;
+    }
 }
 </string>
           </argument>

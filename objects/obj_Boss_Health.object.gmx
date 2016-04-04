@@ -38,6 +38,8 @@ if( (hp/max_hp) * 100 &gt; 75 ){
 } else {
     draw_healthbar(view_xview + 8, view_yview + view_hview - 8 , view_xview + view_wview - 8, view_yview + view_hview, (hp/max_hp) * 100, c_black, c_maroon, c_maroon  , 0, true, true )
 }
+
+draw_text_transformed(view_xview + 8, view_yview + view_hview - 8, hp, .5, .5, 0);
 </string>
           </argument>
         </arguments>
