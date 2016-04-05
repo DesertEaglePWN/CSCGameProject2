@@ -33,6 +33,16 @@
       <sprite>sprites\spr_Teleport</sprite>
       <sprite>sprites\spr_Invisible</sprite>
     </sprites>
+    <sprites name="Boss">
+      <sprite>sprites\spr_Boss_Base</sprite>
+      <sprite>sprites\spr_Boss_Attack</sprite>
+      <sprite>sprites\spr_Boss_Attack_Base</sprite>
+      <sprite>sprites\spr_Boss_Dead</sprite>
+      <sprite>sprites\spr_Boss_Dead_2</sprite>
+      <sprite>sprites\spr_Boss_Attack_Whirlwind</sprite>
+      <sprite>sprites\spr_Boss_Run</sprite>
+      <sprite>sprites\spr_Boss</sprite>
+    </sprites>
     <sprites name="Enemy">
       <sprite>sprites\spr_Skeleton</sprite>
       <sprite>sprites\spr_Stoned_Skeleton</sprite>
@@ -43,9 +53,6 @@
       <sprite>sprites\spr_StoneEnemy</sprite>
       <sprite>sprites\spr_Bat</sprite>
       <sprite>sprites\spr_Stoned_Bat</sprite>
-      <sprite>sprites\spr_Boss_Base</sprite>
-      <sprite>sprites\spr_Boss_Run</sprite>
-      <sprite>sprites\spr_Boss</sprite>
     </sprites>
     <sprites name="Spells">
       <sprite>sprites\spr_Fireball</sprite>
@@ -85,6 +92,7 @@
       <object>objects\obj_Mage</object>
       <object>objects\obj_Stone_Monster</object>
       <object>objects\obj_Boss</object>
+      <object>objects\obj_Boss_Attack</object>
     </objects>
     <objects name="Pickups">
       <object>objects\obj_Health_Up</object>

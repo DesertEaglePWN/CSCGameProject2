@@ -188,7 +188,7 @@ if( monster_health &gt; 0 ){
           <argument>
             <kind>1</kind>
             <string>/// Check if dead
-if( monster_health &lt;= 0) 
+if( monster_health &lt;= 0)
     instance_destroy();
 </string>
           </argument>

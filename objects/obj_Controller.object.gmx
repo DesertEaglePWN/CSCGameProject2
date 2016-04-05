@@ -150,6 +150,12 @@ if(cheat_code = "god"){
         obj_Player.haveSpell[1] = false; // fireball
         obj_Player.haveSpell[2] = false; // stoned
     }
+} else if( cheat_code == "hp+" ){
+    global.max_Stamina += 25;
+    global.Stamina = global.max_Stamina;
+} else if( cheat_code == "mana+" ){
+    global.max_Mana    += 25;
+    global.Mana = global.max_Mana;
 } else if( cheat_code == "r" ){
     game_restart();
 } else if( cheat_code == "die") {
@@ -230,7 +236,7 @@ if( global.pause == false) {
     instance_deactivate_all( false ); //Do deactivate the controller as well
     //Now everything is inactive
     //Something needs to be active or the game is effectively frozen
-    instance_create(view_xview[view_current]+view_wview[view_current]/2, view_yview[view_current]+250, obj_Quit_Button);
+    instance_create(view_xview[view_current]+view_wview[view_current]/2, view_yview[view_current]+225, obj_Quit_Button);
     instance_create(view_xview[view_current]+view_wview[view_current]/2, view_yview[view_current]+150, obj_Resume_Button);
     instance_create( x, y, obj_Pause_Menu ); //This will be active
     //It was created after everything was deactivated

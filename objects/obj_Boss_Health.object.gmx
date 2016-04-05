@@ -26,20 +26,22 @@
           <argument>
             <kind>1</kind>
             <string>/// Boss' Health 
-hp = obj_Boss.monster_health;
-max_hp = obj_Boss.max_health; 
-
-if( (hp/max_hp) * 100 &gt; 75 ){
-    draw_healthbar(view_xview + 8, view_yview + view_hview - 8 , view_xview + view_wview - 8, view_yview + view_hview, (hp/max_hp) * 100, c_black, c_lime, c_lime  , 0, true, true )
-} else if( (hp/max_hp) * 100 &gt; 50){
-    draw_healthbar(view_xview + 8, view_yview + view_hview - 8 , view_xview + view_wview - 8, view_yview + view_hview, (hp/max_hp) * 100, c_black, c_orange, c_orange  , 0, true, true )
-} else if( (hp/max_hp) * 100 &gt; 25){
-    draw_healthbar(view_xview + 8, view_yview + view_hview - 8 , view_xview + view_wview - 8, view_yview + view_hview, (hp/max_hp) * 100, c_black, c_red, c_red  , 0, true, true )
-} else {
-    draw_healthbar(view_xview + 8, view_yview + view_hview - 8 , view_xview + view_wview - 8, view_yview + view_hview, (hp/max_hp) * 100, c_black, c_maroon, c_maroon  , 0, true, true )
+if( instance_exists(obj_Boss) ) {
+    hp = obj_Boss.monster_health;
+    max_hp = obj_Boss.max_health; 
+    
+    if( (hp/max_hp) * 100 &gt; 75 ){
+        draw_healthbar(view_xview + 8, view_yview + view_hview - 8 , view_xview + view_wview - 8, view_yview + view_hview, (hp/max_hp) * 100, c_black, c_lime, c_lime  , 0, true, true )
+    } else if( (hp/max_hp) * 100 &gt; 50){
+        draw_healthbar(view_xview + 8, view_yview + view_hview - 8 , view_xview + view_wview - 8, view_yview + view_hview, (hp/max_hp) * 100, c_black, c_orange, c_orange  , 0, true, true )
+    } else if( (hp/max_hp) * 100 &gt; 25){
+        draw_healthbar(view_xview + 8, view_yview + view_hview - 8 , view_xview + view_wview - 8, view_yview + view_hview, (hp/max_hp) * 100, c_black, c_red, c_red  , 0, true, true )
+    } else {
+        draw_healthbar(view_xview + 8, view_yview + view_hview - 8 , view_xview + view_wview - 8, view_yview + view_hview, (hp/max_hp) * 100, c_black, c_maroon, c_maroon  , 0, true, true )
+    }
+    
+    draw_text_transformed(view_xview + 8, view_yview + view_hview - 8, hp, .5, .5, 0);
 }
-
-draw_text_transformed(view_xview + 8, view_yview + view_hview - 8, hp, .5, .5, 0);
 </string>
           </argument>
         </arguments>
