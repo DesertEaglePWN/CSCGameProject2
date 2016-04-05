@@ -835,7 +835,7 @@ if( global.Mana &lt;= 0 )
             <kind>1</kind>
             <string>/// Melee
 // If player hit attack &amp;&amp; canAttack right now
-if( canAttack ){
+if( canAttack &amp;&amp; alarm[3] == -1 ){
     sprite_index = spr_Player_Attack;
     instance_create(x,y,obj_Player_Attack);
     canAttack = false;

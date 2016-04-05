@@ -274,7 +274,7 @@ if( distance_to_object(obj_Player) &lt; 250 &amp;&amp; can_Attack == true ){
 if( invincible == false &amp;&amp; alarm[0] == -1){
     monster_health -= 50;
     invincible = true;
-    alarm[0] = 1;
+    alarm[0] = room_speed/8;
 }
 </string>
           </argument>
@@ -327,7 +327,7 @@ instance_destroy();
 if( invincible == false &amp;&amp; alarm[0] == -1){
     monster_health -= 10;
     invincible = true;
-    alarm[0] = room_speed;
+    alarm[0] = room_speed/8;
     
     if( global.Stamina + 10 &gt; global.max_Stamina ){
         global.Stamina = global.max_Stamina;
@@ -361,7 +361,7 @@ if( invincible == false &amp;&amp; alarm[0] == -1){
 if( invincible == false &amp;&amp; alarm[0] == -1){
     monster_health -= 50;
     invincible = true;
-    alarm[0] = 1;
+    alarm[0] = room_speed/8;
 }
 
 </string>
