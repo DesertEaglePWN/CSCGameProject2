@@ -60,9 +60,9 @@ canTeleport = 1;
 playerDirection = 0;
 
 // Spell Select
-// fireball = 0
-// pull = 1
-// stone = 3
+// pull = 0
+// fireball = 1
+// stone = 2
 spellIndex = 0;
 life_pull_cost = 35;
 fireball_cost = 25;
@@ -317,11 +317,9 @@ if (canJump == -1)
             <kind>1</kind>
             <string>/// Health check and mana regen
 
-if (godMode)
-{
+if (godMode){
     global.Stamina = global.max_Stamina;
     global.Mana = global.max_Mana;
-
 }
 
 if( global.Stamina &lt;= 0 ){
@@ -404,7 +402,8 @@ bbox_width = bbox_right - bbox_left;
 
 if( !crouched ){
     //Horizontal Collision
-    var move = sign(horizontalSpeed); // how far we move in the horizontal direction
+    if( !attacking ){
+    var move = sign(horizontalSpeed); // hoaaaaaaw far we move in the horizontal direction
     repeat(abs(ceil(horizontalSpeed))){ 
         // if the next position is free, move there
         if (place_free(x+move,y)){
@@ -413,6 +412,7 @@ if( !crouched ){
             horizontalSpeed = 0;
             break;
         }
+    }
     }
     
     //Vertical Collision
@@ -934,9 +934,16 @@ if( global.Mana &lt;= 0 )
             <string>/// Melee
 // If player hit attack &amp;&amp; canAttack right now
 if( canAttack &amp;&amp; alarm[3] == -1 ){
+    horizontalSpeed = 0;
     crouched = false; // change if you want to have a sweep attack
     sprite_index = spr_Player_Attack;
-    instance_create(x,y,obj_Player_Attack);
+    
+    if( image_xscale &gt; 0 ){
+        instance_create(x + 15,y,obj_Player_Attack);
+    } else { 
+        instance_create(x - 15,y,obj_Player_Attack);
+    }   
+       
     canAttack = false;
     attacking = true;
     alarm[3] = room_speed/8;
