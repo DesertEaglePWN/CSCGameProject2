@@ -37,7 +37,7 @@ phase = 1;
 
 attacking = false;
 num_Summons = 0;
-alarm[3] = room_speed * 5;
+alarm[3] = room_speed * 10;
 </string>
           </argument>
         </arguments>
