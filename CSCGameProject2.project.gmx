@@ -43,6 +43,8 @@
       <sprite>sprites\spr_StoneEnemy</sprite>
       <sprite>sprites\spr_Bat</sprite>
       <sprite>sprites\spr_Stoned_Bat</sprite>
+      <sprite>sprites\spr_Boss_Base</sprite>
+      <sprite>sprites\spr_Boss_Run</sprite>
       <sprite>sprites\spr_Boss</sprite>
     </sprites>
     <sprites name="Spells">

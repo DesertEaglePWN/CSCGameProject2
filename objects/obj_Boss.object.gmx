@@ -26,12 +26,165 @@
           <argument>
             <kind>1</kind>
             <string>/// Initial stats
-max_health = 1500;
+max_health = 3000;
 monster_health = max_health;
 invincible = false;
 
 inst = instance_create(x,y, obj_Boss_Health);
-image_speed = .2;
+image_speed = .1;
+
+phase = 1;
+
+attacking = false;
+canAttack = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Reset the attacking variable
+attacking = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Cast the spell
+
+if( image_xscale &gt; 0 ){
+   inst = instance_create( x - 10 , y - 40, obj_Mage_Fireball );
+   with ( inst ) {
+       speed = 7;
+       direction = 0;
+   }
+// otherwise spawn a left facing death ball
+} else {
+    inst = instance_create( x - 20 , y - 40, obj_Mage_Fireball );
+    with ( inst ) {
+        speed = 7;
+        direction = 180;
+    } 
+}
+
+attacking = false;
+sprite_index = spr_Boss;
+
+    
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// _____ Attack
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Boss Spell Attack
+if( monster_health &gt; 0 ){
+    attacking = true;
+    sprite_index = spr_MageCast;
+    image_index = 0;
+    image_speed = .1;
+    alarm[4] = .4 * room_speed;
+}    
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Melee 
+attacking = true;
+sprite_index = spr_Player_Attack;
+alarm[5] = room_speed/8;
+
+
 </string>
           </argument>
         </arguments>
@@ -109,15 +262,105 @@ if( monster_health &lt;= 0){
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>/// Movement
+if( distance_to_object(obj_Player) &gt; 25 &amp;&amp; phase == 1 ){ // melee phase
+    move_towards_point( obj_Player.x, y, 2);
+
+} else if( phase == 2 ){ // mage phase
+    if( distance_to_point( 736, y) &lt;= 5 ){ // if distance to center boss room
+        speed = 0; 
+        sprite_index = spr_Boss;
+    } else {     
+        move_towards_point( 736, y, 5); // moves toward cent of room to begin casting
+    }
+        
+} else if( distance_to_object(obj_Player) &gt; 25 &amp;&amp; phase == 3){
+    move_towards_point( obj_Player.x, y, 3.25);
+}    
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Attacks
+// p1 = melee?
+// p2 = mage
+// p3 = mix
+d3 = floor(random(3)) + 1 // 3 sided dice
+d2 = floor(random(2)) + 1 // 2 sided dice
+
+if( distance_to_object(obj_Player) &lt; 25 &amp;&amp; phase == 1 &amp;&amp; alarm[1] == -1 &amp;&amp; alarm[2] == -1 &amp;&amp; alarm[3] == -1 ){
+    if( d3 == 1 ){
+        alarm[1] = 30;
+    } else if( d2 == 1){ 
+        alarm[2] = 40;
+    } else {
+        alarm[3] = 30;
+    } 
+} else if( distance_to_object(obj_Player) &lt; 25 &amp;&amp; phase == 2 &amp;&amp; alarm[1] == -1 &amp;&amp; alarm[2] == -1 &amp;&amp; alarm[3] == -1 ){
+    if( d3 == 1 ){
+        alarm[1] = 15;
+    } else if( d2 == 1){ 
+        alarm[2] = 20;
+    } else {
+        alarm[3] = 15;
+    } 
+} else if( distance_to_object(obj_Player) &lt; 25 &amp;&amp; phase == 3 &amp;&amp; alarm[1] == -1 &amp;&amp; alarm[2] == -1 &amp;&amp; alarm[3] == -1 ){
+    if( d3 == 1 ){
+        alarm[1] = 7.5;
+    } else if( d2 == 1){ 
+        alarm[2] = 10;
+    } else {
+        alarm[3] = 7.5;
+    }  
+} else {}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>/// Update Sprite
+if( !attacking ){ 
+    if(speed &gt; 0) sprite_index = spr_Boss_Run;
+    if(speed &lt;= 0) sprite_index = spr_Boss;    
+}    
 
-if (speed &gt; 0) sprite_index = spr_Boss;
-
+// Figures out the direction the sprite should be facing
 if( direction &gt;=  180 ){
     image_xscale = -1;
 } else {
     image_xscale = 1;
-}
+}    
 </string>
           </argument>
         </arguments>
@@ -141,15 +384,17 @@ if( direction &gt;=  180 ){
             <string>/// FSM for Behaviour
 hp = obj_Boss.monster_health;
 
-if( (hp/max_health) * 100 &gt; 75 ){ // boss health (75, 100]
+if( (hp/max_health) * 100 &gt; 66 ){ // boss health (75, 100]
+    phase = 1;
+    
+} else if( (hp/max_health) * 100 &gt; 33){ // boss health (50, 75]
+    phase = 2;
 
-} else if( (hp/max_health) * 100 &gt; 50){ // boss health (50, 75]
-   
-} else if( (hp/max_health) * 100 &gt; 25){ // boss health (25, 50]
-
-} else { // boss health (0, 25]
+} else { // boss health (25, 50]
+    phase = 3;
 
 }
+
 </string>
           </argument>
         </arguments>
