@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>/// Initial stats
-max_health = 1000;
+max_health = 1500;
 monster_health = max_health;
 invincible = false;
 
@@ -36,9 +36,8 @@ image_speed = .1;
 phase = 1;
 
 attacking = false;
-canAttack = true;
 num_Summons = 0;
-alarm[3] = room_speed * 3;
+alarm[3] = room_speed * 5;
 </string>
           </argument>
         </arguments>
@@ -227,6 +226,7 @@ attacking = true;
 if( phase == 1){
     image_speed = .5;
     sprite_index = spr_Boss_Attack_Whirlwind;
+    instance_create(x,y,obj_Boss_Whirlwind);
     alarm[5] = room_speed/4;
 
 } else if( phase == 2){
@@ -245,6 +245,7 @@ if( phase == 1){
     } else { // Whirlwind
         image_speed = .5;
         sprite_index = spr_Boss_Attack_Whirlwind;
+        instance_create(x,y,obj_Boss_Whirlwind);
         alarm[5] = room_speed/4;
     }
 }    
@@ -273,6 +274,7 @@ if( phase == 1){
             <string>/// Melee 
 attacking = true;
 image_speed = .15;
+instance_create(x,y,obj_Boss_Attack);
 sprite_index = spr_Boss_Attack;
 alarm[5] = room_speed/2;
 

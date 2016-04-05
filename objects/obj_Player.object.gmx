@@ -499,6 +499,62 @@ if( !attacking ){
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_Boss_Whirlwind">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Damage Player by Boss Melee
+if( !invincible ){
+    global.Stamina -= 25;
+    invincible = true;
+    alarm[2] = room_speed * .25;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_Boss_Attack">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Damage Player by Boss Melee
+if( !invincible ){
+    global.Stamina -= 15;
+    invincible = true;
+    alarm[2] = room_speed * .25;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_MessageTrigger">
       <action>
         <libid>1</libid>
@@ -552,32 +608,9 @@ else
 if( !invincible ){
     global.Stamina -= 15;
     invincible = true;
+    alarm[2] = room_speed*.25;
 }
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>room_speed * .25</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>2</string>
           </argument>
         </arguments>
       </action>
@@ -603,32 +636,9 @@ if( !invincible ){
 if( !invincible ){
     global.Stamina -= 10;
     invincible = true;
+    alarm[2] = room_speed*.25;
 }
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>room_speed * .25</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>2</string>
           </argument>
         </arguments>
       </action>
@@ -654,32 +664,9 @@ if( !invincible ){
 if( !invincible ){
     global.Stamina -= 5;
     invincible = true;
+    alarm[2] = room_speed*.25;
 }
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>room_speed * .25</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>2</string>
           </argument>
         </arguments>
       </action>
