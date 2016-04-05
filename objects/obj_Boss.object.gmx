@@ -88,14 +88,14 @@ image_speed = .1;
             <string>/// Cast the spell
 
 if( image_xscale &gt; 0 ){
-   inst = instance_create( x - 10 , y - 40, obj_Mage_Fireball );
+   inst = instance_create( x - 10 , y - 52, obj_Mage_Fireball );
    with ( inst ) {
        speed = 7;
        direction = 0;
    }
 // otherwise spawn a left facing death ball
 } else {
-    inst = instance_create( x - 20 , y - 40, obj_Mage_Fireball );
+    inst = instance_create( x - 20 , y - 52, obj_Mage_Fireball );
     with ( inst ) {
         speed = 7;
         direction = 180;
