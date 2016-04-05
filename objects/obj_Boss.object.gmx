@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>/// Initial stats
-max_health = 3000;
+max_health = 1000;
 monster_health = max_health;
 invincible = false;
 
@@ -63,6 +63,7 @@ alarm[3] = room_speed * 3;
             <kind>1</kind>
             <string>/// Reset the attacking variable
 attacking = false;
+image_speed = .1;
 </string>
           </argument>
         </arguments>
@@ -220,13 +221,32 @@ alarm[3] = room_speed * 20;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Boss Spell Attack
-if( monster_health &gt; 0 ){
-    attacking = true;
+            <string>/// Boss Special Attack
+attacking = true;
+
+if( phase == 1){
+    image_speed = .5;
+    sprite_index = spr_Boss_Attack_Whirlwind;
+    alarm[5] = room_speed/4;
+
+} else if( phase == 2){
     sprite_index = spr_MageCast;
     image_index = 0;
     image_speed = .1;
     alarm[4] = .4 * room_speed;
+       
+} else {  // phase 3 - Mage/Warrior
+    d2 = floor(random(2)) + 1 // 2 sided dice
+    if( d2 == 1){ // Magic
+        sprite_index = spr_MageCast;
+        image_index = 0;
+        image_speed = .1;
+        alarm[4] = .4 * room_speed;    
+    } else { // Whirlwind
+        image_speed = .5;
+        sprite_index = spr_Boss_Attack_Whirlwind;
+        alarm[5] = room_speed/4;
+    }
 }    
 </string>
           </argument>
@@ -252,8 +272,9 @@ if( monster_health &gt; 0 ){
             <kind>1</kind>
             <string>/// Melee 
 attacking = true;
+image_speed = .15;
 sprite_index = spr_Boss_Attack;
-alarm[5] = room_speed/4;
+alarm[5] = room_speed/2;
 
 
 </string>
@@ -404,7 +425,7 @@ if( distance_to_object(obj_Player) &gt; 25 &amp;&amp; phase == 1 &amp;&amp; !att
 
 // Melee/Mage Mixed Phase?        
 } else if( distance_to_object(obj_Player) &gt; 25 &amp;&amp; phase == 3 &amp;&amp; !attacking){
-    move_towards_point( obj_Player.x, y, 3.25);
+    move_towards_point( obj_Player.x, y, 2.5);
 }    
 </string>
           </argument>
@@ -430,17 +451,16 @@ if( distance_to_object(obj_Player) &gt; 25 &amp;&amp; phase == 1 &amp;&amp; !att
 // p1 = melee?
 // p2 = mage
 // p3 = mix
+d4 = floor(random(4)) + 1 // 4 sided dice
 d3 = floor(random(3)) + 1 // 3 sided dice
 d2 = floor(random(2)) + 1 // 2 sided dice
 
 if( !attacking ){
     if( distance_to_object(obj_Player) &lt; 25 &amp;&amp; phase == 1 &amp;&amp; alarm[1] == -1 &amp;&amp; alarm[2] == -1){
-        if( d3 == 1 ){ // Melee Attack 1
+        if( d4 == 1 ){ // Special Whirlwind Attack
+            alarm[2] = 40;
+        } else{ // Melee Attack 
             alarm[1] = 30;
-        } else if( d2 == 1){ // Melee Attack 2 
-            //alarm[2] = 40;
-        } else {
-        //    alarm[3] = 30;
         } 
     } else if( phase == 2 &amp;&amp; alarm[1] == -1 &amp;&amp; alarm[2] == -1){
         if( d3 == 1 ){ // Mage Attack 1
@@ -452,11 +472,9 @@ if( !attacking ){
         } 
     } else if( distance_to_object(obj_Player) &lt; 25 &amp;&amp; phase == 3 &amp;&amp; alarm[1] == -1 &amp;&amp; alarm[2] == -1){
         if( d3 == 1 ){
-            //alarm[1] = 7.5;
-        } else if( d2 == 1){ 
-            //alarm[2] = 10;
-        } else {
-        //    alarm[3] = 7.5;
+            alarm[2] = 7.5; // Melee or Magic Attack
+        } else { 
+            alarm[1] = 7.5; // simple melee attack
         }
     }    
 }
