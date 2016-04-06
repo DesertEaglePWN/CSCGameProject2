@@ -52,7 +52,7 @@
           <argument>
             <kind>1</kind>
             <string>/// Respawn mage here
-instance_create(x,y,obj_Bat);
+instance_create(x,y,obj_Mage);
 instance_destroy();
 </string>
           </argument>
