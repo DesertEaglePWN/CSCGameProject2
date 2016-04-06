@@ -1318,9 +1318,16 @@ if( global.Mana &lt;= 0 )
             <string>/// Melee
 // If player hit attack &amp;&amp; canAttack right now
 if( canAttack &amp;&amp; alarm[3] == -1 ){
+    horizontalSpeed = 2;
     crouched = false; // change if you want to have a sweep attack
     sprite_index = spr_Player_Attack;
-    instance_create(x,y,obj_Player_Attack);
+    
+    if( image_xscale &gt; 0 ){
+        instance_create(x + 15,y,obj_Player_Attack);
+    } else { 
+        instance_create(x - 15,y,obj_Player_Attack);
+    }   
+       
     canAttack = false;
     attacking = true;
     alarm[3] = room_speed/8;
