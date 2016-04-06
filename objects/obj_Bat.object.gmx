@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>/// Initial Stats
+initial_x = x; // for respawning
+initial_y = y;
+
 monster_health = 100;
 invincible = false;
 
@@ -139,8 +142,10 @@ else
           <argument>
             <kind>1</kind>
             <string>/// Check if dead
-if( monster_health &lt;= 0) 
+if( monster_health &lt;= 0){
+    instance_create(initial_x,initial_y,obj_Bat_Respawn_Controller);
     instance_destroy();
+}    
 </string>
           </argument>
         </arguments>

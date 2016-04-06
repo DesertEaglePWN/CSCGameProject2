@@ -111,6 +111,9 @@
       <object>objects\obj_Resume_Button</object>
       <object>objects\obj_spellSpawner</object>
       <object>objects\obj_Boss_Health</object>
+      <object>objects\obj_Skeleton_Respawn_Controller</object>
+      <object>objects\obj_Bat_Respawn_Controller</object>
+      <object>objects\obj_Mage_Respawn_Controller</object>
     </objects>
     <objects name="Collision">
       <object>objects\obj_Collision</object>
