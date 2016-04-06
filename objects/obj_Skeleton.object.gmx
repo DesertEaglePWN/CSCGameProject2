@@ -31,6 +31,7 @@ initial_y = y;
 
 monster_health = 100;
 invincible = false;
+knockedback = false;
 
 image_speed = .2;
 </string>
@@ -58,6 +59,30 @@ image_speed = .2;
           <argument>
             <kind>0</kind>
             <string>2</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Reset knockedback
+speed = 2;
+</string>
           </argument>
         </arguments>
       </action>
@@ -182,6 +207,8 @@ if( invincible == false &amp;&amp; alarm[0] == -1){
     monster_health -= 50;
     invincible = true;
     alarm[0] = 1;
+    speed -= 22;
+    alarm[3] = 3;
 }
 </string>
           </argument>
@@ -313,6 +340,30 @@ if( invincible == false &amp;&amp; alarm[0] == -1){
     <event eventtype="4" ename="obj_Collision_Enemy">
       <action>
         <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>speed</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>2</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -354,6 +405,30 @@ if( direction == 0 ){ // going right
       </action>
     </event>
     <event eventtype="4" ename="obj_Collision">
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>speed</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>2</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
