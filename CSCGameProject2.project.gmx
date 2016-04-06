@@ -57,6 +57,7 @@
     </sprites>
     <sprites name="Spells">
       <sprite>sprites\spr_Fireball</sprite>
+      <sprite>sprites\spr_Fireball_Trap</sprite>
       <sprite>sprites\spr_Fireball_Flipped</sprite>
       <sprite>sprites\spr_Stone</sprite>
       <sprite>sprites\spr_Life_Pull</sprite>
@@ -114,6 +115,7 @@
       <object>objects\obj_Skeleton_Respawn_Controller</object>
       <object>objects\obj_Bat_Respawn_Controller</object>
       <object>objects\obj_Mage_Respawn_Controller</object>
+      <object>objects\obj_Fireball_Trap_Controller</object>
     </objects>
     <objects name="Collision">
       <object>objects\obj_Collision</object>
@@ -124,6 +126,7 @@
       <object>objects\obj_Mage_Fireball</object>
       <object>objects\obj_Lifepull</object>
       <object>objects\obj_Stoner</object>
+      <object>objects\obj_FireballTrap</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_Player</object>
