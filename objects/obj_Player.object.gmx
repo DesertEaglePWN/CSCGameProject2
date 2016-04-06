@@ -934,7 +934,7 @@ if( global.Mana &lt;= 0 )
             <string>/// Melee
 // If player hit attack &amp;&amp; canAttack right now
 if( canAttack &amp;&amp; alarm[3] == -1 ){
-    horizontalSpeed = 0;
+    horizontalSpeed = 2;
     crouched = false; // change if you want to have a sweep attack
     sprite_index = spr_Player_Attack;
     
