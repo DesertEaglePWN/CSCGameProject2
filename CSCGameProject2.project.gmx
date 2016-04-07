@@ -46,6 +46,7 @@
       <sprite>sprites\spr_Boss_Whirlwind_Collision</sprite>
       <sprite>sprites\spr_Boss_Run</sprite>
       <sprite>sprites\spr_Boss</sprite>
+      <sprite>sprites\spr_Boss_Barrier</sprite>
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\spr_Skeleton</sprite>
@@ -97,6 +98,7 @@
       <object>objects\obj_Boss</object>
       <object>objects\obj_Boss_Attack</object>
       <object>objects\obj_Boss_Whirlwind</object>
+      <object>objects\obj_Boss_Barrier</object>
     </objects>
     <objects name="Enemy">
       <object>objects\obj_Bat</object>

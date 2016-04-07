@@ -41,6 +41,8 @@ p3_speed = 2.5;
 attacking = false;
 num_Summons = 0;
 alarm[3] = room_speed * 10;
+
+num_Barriers = 0;
 </string>
           </argument>
         </arguments>
@@ -307,14 +309,25 @@ attacking = true;
 speed = 0;
 image_speed = .15;
 
-if( image_xscale &gt; 0 ){
-    instance_create(x + 10,y,obj_Boss_Attack);
-} else { 
-    instance_create(x - 10,y,obj_Boss_Attack);
-}   
+if( phase != 2 || (num_Barriers &gt;= 3 || distance_to_object(obj_Player) &lt; 10) ){
+    if( image_xscale &gt; 0 ){ // facing right
+        instance_create(x + 10,y,obj_Boss_Attack);
+    } else { // facing left
+        instance_create(x - 10,y,obj_Boss_Attack);
+    }   
+    
+    sprite_index = spr_Boss_Attack;
+// phase 2
+} else {
+    num_Barriers++;
+    if( image_xscale &gt; 0 ){ // facing right
+        instance_create(obj_Player.x - 45, y - 16, obj_Boss_Barrier);
+    } else { 
+        instance_create(obj_Player.x + 45 ,y - 16, obj_Boss_Barrier); 
+    }       
+}    
 
 
-sprite_index = spr_Boss_Attack;
 alarm[5] = room_speed/3;
 
 
@@ -507,9 +520,9 @@ if( !attacking ){
             alarm[1] = 30;
         } 
     } else if( phase == 2 &amp;&amp; alarm[1] == -1 &amp;&amp; alarm[2] == -1){
-        if( d3 == 1 ){ // Mage Attack 1
-            //alarm[1] = 15;
-        } else if( d2 == 1){ // Mage Attack 2  
+        if( d4 == 1 ){ // Mage Attack 1: barrier
+            alarm[1] = 15; 
+        } else if( d2 == 1){ // Mage Attack 2:  fireball
             alarm[2] = (floor(random(2)) + 1) * room_speed * .85;
         } else {
             //alarm[3] = 15;
