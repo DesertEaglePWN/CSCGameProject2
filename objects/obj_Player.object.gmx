@@ -161,6 +161,30 @@ else
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Melee CD
+canAttack = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="4">
       <action>
         <libid>1</libid>
@@ -210,8 +234,9 @@ else
             <kind>1</kind>
             <string>/// Resets Attacking Variables
 
-canAttack = true
-attacking = false
+//canAttack = true
+attacking = false;
+alarm[5] = room_speed/5
 </string>
           </argument>
         </arguments>
@@ -961,7 +986,7 @@ if( global.Mana &lt;= 0 )
             <kind>1</kind>
             <string>/// Melee
 // If player hit attack &amp;&amp; canAttack right now
-if( canAttack &amp;&amp; alarm[3] == -1 ){
+if( canAttack &amp;&amp; alarm[3] == -1 &amp;&amp; alarm[5] == -1 ){
     horizontalSpeed = 2;
     crouched = false; // change if you want to have a sweep attack
     sprite_index = spr_Player_Attack;
