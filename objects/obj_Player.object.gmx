@@ -31,6 +31,9 @@ godMode = false;
 crouched = false;
 depth = 0;
 
+checkpoint_x = obj_Player_Respawn.x;
+checkpoint_y = obj_Player_Respawn.y;
+
 // Current Health/mana
 global.Stamina = 100;
 global.Mana = 100;
@@ -349,7 +352,11 @@ if (godMode){
 
 if( global.Stamina &lt;= 0 ){
     show_message("You are dead");
-    game_restart();
+    x = checkpoint_x;
+    y = checkpoint_y;
+    global.Stamina = global.max_Stamina;
+    global.Mana = global.max_Mana;
+    //game_restart();
 }   
 
 if( global.Mana &lt; global.max_Mana )

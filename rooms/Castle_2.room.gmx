@@ -205,6 +205,7 @@
     <instance objName="obj_Bat" x="96" y="96" name="inst_22D5BE65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Health_Up" x="832" y="640" name="inst_2396D09A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Mana_Up" x="128" y="160" name="inst_B957ACB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Player_Respawn" x="128" y="960" name="inst_9360542E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_CastleTiles" x="0" y="992" w="32" h="32" xo="44" yo="4" id="10005623" name="inst_B549AE3A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

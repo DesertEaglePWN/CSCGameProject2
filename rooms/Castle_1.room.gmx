@@ -199,6 +199,8 @@
     <instance objName="obj_Mage" x="928" y="384" name="inst_F618B5B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision_Enemy" x="1312" y="352" name="inst_F89EB2AF" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_Boss" x="864" y="640" name="inst_C17C7F08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Player_Respawn" x="672" y="640" name="inst_7B3D6DE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Player_Respawn" x="1856" y="192" name="inst_AB22EACC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_CastleTiles" x="32" y="288" w="32" h="32" xo="124" yo="4" id="10000468" name="inst_D030AC81" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

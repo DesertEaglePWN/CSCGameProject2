@@ -124,6 +124,7 @@
       <object>objects\obj_Bat_Respawn_Controller</object>
       <object>objects\obj_Mage_Respawn_Controller</object>
       <object>objects\obj_Fireball_Trap_Controller</object>
+      <object>objects\obj_Player_Respawn</object>
     </objects>
     <objects name="Collision">
       <object>objects\obj_Collision</object>
