@@ -911,7 +911,7 @@ if ( global.Mana &gt;= cost[spellIndex] &amp;&amp; crouched == false ){
          
          // otherwise spawn a left facing death ball
         } else {
-            inst = instance_create( x - 10 , y - 35, obj_Deathball );
+            inst = instance_create( x - 35 , y - 35, obj_Deathball );
             with ( inst ) {
                 speed = 10;
                 direction = 180;
@@ -1296,7 +1296,7 @@ if ( global.Mana &gt;= cost[spellIndex] &amp;&amp; crouched == false ){
          
          // otherwise spawn a left facing death ball
         } else {
-            inst = instance_create( x - 10 , y - 35, obj_Deathball );
+            inst = instance_create( x - 35 , y - 35, obj_Deathball );
             with ( inst ) {
                 speed = 10;
                 direction = 180;

@@ -36,6 +36,8 @@
     </sprites>
     <sprites name="Boss">
       <sprite>sprites\spr_Boss_Base</sprite>
+      <sprite>sprites\spr_Boss_Casting</sprite>
+      <sprite>sprites\spr_Boss_Crouch_Casting</sprite>
       <sprite>sprites\spr_Boss_Attack</sprite>
       <sprite>sprites\spr_Boss_Attack_Base</sprite>
       <sprite>sprites\spr_Boss_Dead</sprite>
