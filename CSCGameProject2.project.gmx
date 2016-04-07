@@ -142,9 +142,9 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\Castle_1</room>
+    <room>rooms\Castle_4</room>
     <room>rooms\Castle_2</room>
     <room>rooms\Castle_3</room>
-    <room>rooms\Castle_4</room>
     <room>rooms\Gauntlet</room>
     <room>rooms\Main_Menu</room>
   </rooms>
