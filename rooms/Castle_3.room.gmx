@@ -111,6 +111,7 @@
     <instance objName="obj_Collision_Enemy" x="696" y="152" name="inst_F00E2297" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Spike" x="640" y="160" name="inst_CD221ADC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Spike" x="672" y="160" name="inst_5B07FA75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Player_Respawn" x="960" y="224" name="inst_71E69BF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_CastleObjectTiles" x="416" y="480" w="160" h="128" xo="356" yo="36" id="10009258" name="inst_671028F5" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

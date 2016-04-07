@@ -563,6 +563,34 @@ if( !attacking &amp;&amp; !crouched){
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_Boss_Fireball">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Damage Player by Boss Fireball
+if( !invincible ){
+    global.Stamina -= 15;
+    invincible = true;
+    alarm[2] = room_speed*.25;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_MessageTrigger">
       <action>
         <libid>1</libid>
