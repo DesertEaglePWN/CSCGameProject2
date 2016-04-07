@@ -50,6 +50,7 @@
       <sprite>sprites\spr_SkeletonRun</sprite>
       <sprite>sprites\spr_SkeletonRun_Flipped</sprite>
       <sprite>sprites\spr_Mage</sprite>
+      <sprite>sprites\spr_StoneMage</sprite>
       <sprite>sprites\spr_MageCast</sprite>
       <sprite>sprites\spr_StoneEnemy</sprite>
       <sprite>sprites\spr_Bat</sprite>
@@ -97,7 +98,8 @@
       <object>objects\obj_Bat</object>
       <object>objects\obj_Skeleton</object>
       <object>objects\obj_Mage</object>
-      <object>objects\obj_Stone_Monster</object>
+      <object>objects\obj_Stone_Skeleton</object>
+      <object>objects\obj_Stone_Mage</object>
     </objects>
     <objects name="Pickups">
       <object>objects\obj_Health_Up</object>
