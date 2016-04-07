@@ -2,7 +2,7 @@
 <room>
   <caption></caption>
   <width>1024</width>
-  <height>2048</height>
+  <height>768</height>
   <vsnap>32</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
@@ -51,17 +51,15 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
+    <instance objName="obj_Player" x="368" y="320" name="inst_EA400C4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="0" y="416" name="inst_5EFE4E02" locked="0" code="" scaleX="128" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="256" y="416" name="inst_78C35891" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="288" y="352" name="inst_0B6B5086" locked="0" code="" scaleX="12" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="352" y="320" name="inst_DB52B5AF" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="416" y="288" name="inst_6AB5D72E" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="480" y="256" name="inst_8132FAE6" locked="0" code="" scaleX="8" scaleY="8" colour="4294967295" rotation="0"/>
-    <instance objName="obj_RoomTeleport" x="992" y="1888" name="inst_FDE8C937" locked="0" code="//The direction the player faces when exiting this teleport&#xA;//Left = 0&#xA;//Right = 1&#xA;teleportDirection = 0;&#xA;&#xA;//The room containing the destination teleport&#xA;dest_room = Castle_1;&#xA;&#xA;//The instance id of the destination teleport&#xA;dest_id = inst_111D65C6;&#xA;" scaleX="4" scaleY="12" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Collision" x="544" y="1984" name="inst_7056CDA9" locked="0" code="" scaleX="60" scaleY="8" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Collision" x="960" y="1824" name="inst_A2D0F2E2" locked="0" code="" scaleX="8" scaleY="8" colour="4294967295" rotation="0"/>
-    <instance objName="obj_RoomTeleport" x="992" y="320" name="inst_27019186" locked="0" code="//The direction the player faces when exiting this teleport&#xA;//Left = 0&#xA;//Right = 1&#xA;teleportDirection = 0;&#xA;&#xA;//The room containing the destination teleport&#xA;dest_room = Boss;&#xA;&#xA;//The instance id of the destination teleport&#xA;dest_id = inst_5774E480;&#xA;" scaleX="4" scaleY="12" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Boss" x="960" y="544" name="inst_61C3C71E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Controller" x="88" y="80" name="inst_3E1488FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_RoomTeleport" x="0" y="320" name="inst_5774E480" locked="0" code="//The direction the player faces when exiting this teleport&#xA;//Left = 0&#xA;//Right = 1&#xA;teleportDirection = 1;&#xA;&#xA;//The room containing the destination teleport&#xA;dest_room = Gauntlet;&#xA;&#xA;//The instance id of the destination teleport&#xA;dest_id = inst_27019186;&#xA;" scaleX="4" scaleY="12" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_CastleTiles" x="192" y="416" w="32" h="32" xo="32" yo="0" id="10000003" name="inst_CB49823A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -120,40 +118,6 @@
     <tile bgName="bg_CastleTiles" x="224" y="320" w="32" h="32" xo="480" yo="128" id="10000057" name="inst_8EB32554" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="224" y="288" w="32" h="32" xo="416" yo="128" id="10000058" name="inst_25F67D18" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="224" y="384" w="32" h="32" xo="64" yo="160" id="10000063" name="inst_5F8B3EFF" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="992" y="2016" w="32" h="32" xo="44" yo="4" id="10009261" name="inst_FCFB3E03" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="992" y="1984" w="32" h="32" xo="44" yo="4" id="10009262" name="inst_BBD66389" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="960" y="2016" w="32" h="32" xo="44" yo="4" id="10009264" name="inst_E95FB166" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="928" y="2016" w="32" h="32" xo="44" yo="4" id="10009265" name="inst_A4A2802E" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="960" y="1984" w="32" h="32" xo="44" yo="4" id="10009271" name="inst_BB554684" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="928" y="1984" w="32" h="32" xo="44" yo="4" id="10009272" name="inst_9858C88E" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="896" y="1984" w="32" h="32" xo="44" yo="4" id="10009273" name="inst_BAFB7294" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="864" y="1984" w="32" h="32" xo="44" yo="4" id="10009274" name="inst_FE217DC4" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="832" y="1984" w="32" h="32" xo="44" yo="4" id="10009275" name="inst_6DD146F1" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="800" y="1984" w="32" h="32" xo="44" yo="4" id="10009276" name="inst_768879CB" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="768" y="1984" w="32" h="32" xo="44" yo="4" id="10009277" name="inst_99A508AB" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="736" y="1984" w="32" h="32" xo="44" yo="4" id="10009278" name="inst_5D84ADD9" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="704" y="1984" w="32" h="32" xo="44" yo="4" id="10009279" name="inst_CCE92659" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="640" y="1984" w="32" h="32" xo="44" yo="4" id="10009281" name="inst_B9FE1797" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="672" y="1984" w="32" h="32" xo="44" yo="4" id="10009282" name="inst_8A28D8F0" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="736" y="2016" w="32" h="32" xo="44" yo="4" id="10009284" name="inst_14BC6F6D" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="896" y="2016" w="32" h="32" xo="44" yo="4" id="10009289" name="inst_F5A6EE76" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="864" y="2016" w="32" h="32" xo="44" yo="4" id="10009290" name="inst_A4685271" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="832" y="2016" w="32" h="32" xo="44" yo="4" id="10009291" name="inst_5E81937B" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="800" y="2016" w="32" h="32" xo="44" yo="4" id="10009292" name="inst_151095AC" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="768" y="2016" w="32" h="32" xo="44" yo="4" id="10009293" name="inst_C079980E" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="704" y="2016" w="32" h="32" xo="44" yo="4" id="10009294" name="inst_71C3C39E" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="672" y="2016" w="32" h="32" xo="44" yo="4" id="10009295" name="inst_5960FE3E" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="640" y="2016" w="32" h="32" xo="44" yo="4" id="10009296" name="inst_899AD178" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="608" y="2016" w="32" h="32" xo="44" yo="4" id="10009297" name="inst_5ADB6774" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="576" y="2016" w="32" h="32" xo="44" yo="4" id="10009298" name="inst_091D6E3A" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="544" y="2016" w="32" h="32" xo="44" yo="4" id="10009299" name="inst_3552C176" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="992" y="1824" w="32" h="32" xo="44" yo="4" id="10009300" name="inst_A69A5DF9" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="960" y="1824" w="32" h="32" xo="44" yo="4" id="10009301" name="inst_B596A96C" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="960" y="1856" w="32" h="32" xo="44" yo="4" id="10009302" name="inst_1EE23755" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="992" y="1856" w="32" h="32" xo="44" yo="4" id="10009303" name="inst_364E1794" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="608" y="1984" w="32" h="32" xo="44" yo="4" id="10009304" name="inst_B9F75CDF" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="576" y="1984" w="32" h="32" xo="44" yo="4" id="10009305" name="inst_D6EC9C6C" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="544" y="1984" w="32" h="32" xo="44" yo="4" id="10009306" name="inst_E1AEE316" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

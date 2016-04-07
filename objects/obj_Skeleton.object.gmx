@@ -250,9 +250,9 @@ if( invincible == false &amp;&amp; alarm[0] == -1){
             <kind>1</kind>
             <string>/// Stone effect
 inst = instance_create( x, y, obj_Stone_Skeleton );
-with( inst ){
-    sprite_index = spr_Stoned_Skeleton;
-}
+xscale = image_xscale;
+inst.image_xscale = xscale;
+
 
 instance_destroy();
 </string>

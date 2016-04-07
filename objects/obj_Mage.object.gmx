@@ -304,7 +304,11 @@ if( invincible == false &amp;&amp; alarm[0] == -1){
           <argument>
             <kind>1</kind>
             <string>/// Stone effect
-instance_create( x, y, obj_Stone_Mage );
+inst = instance_create( x, y, obj_Stone_Mage );
+xscale = image_xscale;
+inst.image_xscale = xscale;
+
+    
 instance_destroy();
 </string>
           </argument>
