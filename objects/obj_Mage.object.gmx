@@ -123,18 +123,22 @@ image_speed = .2;
           <argument>
             <kind>1</kind>
             <string>///Cast Spell
+var inst;
+
 if( monster_health &gt; 0 ){
 
-    if( image_xscale &gt; 0 ){
+    if( image_xscale &gt; 0 ){ // facing right
         inst = instance_create( x - 10 , y - 52, obj_Mage_Fireball );
         with ( inst ) {
+            image_xscale = 1;
             speed = 7;
             direction = 0;
         }
      // otherwise spawn a left facing death ball
-    } else {
+    } else { // facing left
         inst = instance_create( x - 20 , y - 52, obj_Mage_Fireball );
         with ( inst ) {
+            image_xscale = -1;
             speed = 7;
             direction = 180;
         } 

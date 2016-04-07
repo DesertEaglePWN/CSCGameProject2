@@ -66,20 +66,15 @@ haveSpell[2] = false; // gorgon's eye
 */
 
 //Check the pickup spell (defined in room creation code)
-if (spellIndex == 1)
-{
+if ( obj_Player.haveSpell[1] == false){
     //Pickup is for Soul Blast Ability
     sprite_index = spr_SoulBlastPickup;
     image_speed = .1;
-}
-else if (spellIndex == 2)
-{
+} else if (obj_Player.haveSpell[2] == false){
     //Pickup is for Gorgon's Eye Ability
     sprite_index = spr_GorgonEyePickup;
     image_speed = .1;
-}
-else 
-{
+} else {
     //Invalid option, go ahead and destroy the pickup
     instance_destroy();
 }

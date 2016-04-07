@@ -23,6 +23,7 @@
     </sprites>
     <sprites name="Pickups">
       <sprite>sprites\spr_Health_Ext</sprite>
+      <sprite>sprites\spr_Health_Ext_2</sprite>
       <sprite>sprites\spr_Empty</sprite>
       <sprite>sprites\spr_Mana_Ext</sprite>
       <sprite>sprites\spr_GorgonEyePickup</sprite>
@@ -99,6 +100,7 @@
       <object>objects\obj_Boss_Attack</object>
       <object>objects\obj_Boss_Whirlwind</object>
       <object>objects\obj_Boss_Barrier</object>
+      <object>objects\obj_Boss_Fireball</object>
     </objects>
     <objects name="Enemy">
       <object>objects\obj_Bat</object>

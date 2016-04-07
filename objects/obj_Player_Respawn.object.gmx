@@ -2,7 +2,7 @@
 <object>
   <spriteName>spr_PlayerIdle</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>-50</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>obj_Player.checkpoint_x = x;
+            <string>/// Update players respawn
+obj_Player.checkpoint_x = x;
 obj_Player.checkpoint_y = y;
 </string>
           </argument>

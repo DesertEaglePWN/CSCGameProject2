@@ -94,14 +94,14 @@ speed = 2;
             <string>/// Cast the spell
 if( sprite_index == spr_Boss_Casting ){
     if( image_xscale &gt; 0 ){
-       inst = instance_create( x - 10 , y - 52, obj_Mage_Fireball );
+       inst = instance_create( x - 10 , y - 52, obj_Boss_Fireball );
        with ( inst ) {
            speed = 7;
            direction = 0;
        }
     // otherwise spawn a left facing death ball
     } else {
-        inst = instance_create( x - 20 , y - 52, obj_Mage_Fireball );
+        inst = instance_create( x - 20 , y - 52, obj_Boss_Fireball );
         with ( inst ) {
             speed = 7;
             direction = 180;
@@ -110,14 +110,14 @@ if( sprite_index == spr_Boss_Casting ){
 // The boss is crouched    
 } else { 
     if( image_xscale &gt; 0 ){
-       inst = instance_create( x - 10 , y - 45, obj_Mage_Fireball );
+       inst = instance_create( x - 10 , y - 45, obj_Boss_Fireball );
        with ( inst ) {
            speed = 7;
            direction = 0;
        }
     // otherwise spawn a left facing death ball
     } else {
-        inst = instance_create( x - 20 , y - 45, obj_Mage_Fireball );
+        inst = instance_create( x - 20 , y - 45, obj_Boss_Fireball );
         with ( inst ) {
             speed = 7;
             direction = 180;

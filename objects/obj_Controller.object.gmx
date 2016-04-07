@@ -171,7 +171,10 @@ if(cheat_code = "god"){
 } else if( cheat_code == "3" ){
     room_goto(3);
 } else if( cheat_code == "4" ){
-    room_goto(4);
+    obj_Player.x = 64;
+    obj_Player.y = 384;
+    //room_goto(4);
+    room_goto(Boss);
 } else if( cheat_code == "5" ){
     room_goto(5);    
 } else {
