@@ -246,13 +246,13 @@ alarm[3] = room_speed * 20;
             <string>/// Boss Special Attack
 attacking = true;
 
-if( phase == 1){
+if( phase == 1){ // Melee Phase
     image_speed = .5;
     sprite_index = spr_Boss_Attack_Whirlwind;
     instance_create(x,y,obj_Boss_Whirlwind);
     alarm[5] = room_speed/4;
 
-} else if( phase == 2){
+} else if( phase == 2){ // Mage Phase
     sprite_index = spr_Boss_Casting;
     crouched = floor(random(2)) + 1 // 2 sided dice
         
@@ -516,11 +516,11 @@ if( !attacking ){
     if( distance_to_object(obj_Player) &lt; 10 &amp;&amp; phase == 1 &amp;&amp; alarm[1] == -1 &amp;&amp; alarm[2] == -1){
         if( d4 == 1 ){ // Special Whirlwind Attack
             alarm[2] = 40;
-        } else{ // Melee Attack 
+        } else{        // Basic Melee Attack 
             alarm[1] = 30;
         } 
     } else if( phase == 2 &amp;&amp; alarm[1] == -1 &amp;&amp; alarm[2] == -1){
-        if( d4 == 1 ){ // Mage Attack 1: barrier
+        if( d4 == 1 ){       // Mage Attack 1: barrier
             alarm[1] = 15; 
         } else if( d2 == 1){ // Mage Attack 2:  fireball
             alarm[2] = (floor(random(2)) + 1) * room_speed * .85;

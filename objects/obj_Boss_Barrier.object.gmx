@@ -51,10 +51,10 @@ hits = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Melee Destroys Barrier After 5 Hits
+            <string>/// Melee Destroys Barrier After 2 Hits
 
 hits++;
-if(hits == 5){
+if(hits == 2){
     obj_Boss.num_Barriers--;
     instance_destroy();
 }
