@@ -236,7 +236,7 @@ canAttack = true;
 
 //canAttack = true
 attacking = false;
-alarm[5] = room_speed/5
+alarm[5] = room_speed/5;
 </string>
           </argument>
         </arguments>
@@ -1371,7 +1371,7 @@ if( global.Mana &lt;= 0 )
             <kind>1</kind>
             <string>/// Melee
 // If player hit attack &amp;&amp; canAttack right now
-if( canAttack &amp;&amp; alarm[3] == -1 ){
+if( canAttack &amp;&amp; alarm[3] == -1 &amp;&amp; alarm[5] == -1 ){
     horizontalSpeed = 2;
     crouched = false; // change if you want to have a sweep attack
     sprite_index = spr_Player_Attack;
