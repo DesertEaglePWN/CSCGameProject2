@@ -843,7 +843,7 @@ if ( global.Mana &gt;= cost[spellIndex] &amp;&amp; crouched == false ){
         global.Mana -= fireball_cost;
         // if the image is facing right, spawn a right facing death ball
          if ( image_xscale &gt; 0 ) {
-            inst = instance_create( x - 10 , y - 45, obj_Deathball );
+            inst = instance_create( x - 10  , y - 45, obj_Deathball );
             with ( inst ) {
                 speed = 8;
                 direction = 0;
@@ -851,7 +851,7 @@ if ( global.Mana &gt;= cost[spellIndex] &amp;&amp; crouched == false ){
          
          // otherwise spawn a left facing death ball
         } else {
-            inst = instance_create( x - 10 , y - 45, obj_Deathball );
+            inst = instance_create( x - 35 , y - 45, obj_Deathball );
             with ( inst ) {
                 speed = 10;
                 direction = 180;
