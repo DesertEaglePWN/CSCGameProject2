@@ -236,7 +236,7 @@ canAttack = true;
 
 //canAttack = true
 attacking = false;
-alarm[5] = room_speed/5;
+alarm[5] = room_speed/6;
 </string>
           </argument>
         </arguments>
