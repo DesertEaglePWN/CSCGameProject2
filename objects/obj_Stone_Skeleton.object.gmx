@@ -159,7 +159,7 @@ if( hitCounter == 2 ){
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_Mage_Fireball">
+    <event eventtype="4" ename="obj_Deathball">
       <action>
         <libid>1</libid>
         <id>203</id>
@@ -175,7 +175,7 @@ if( hitCounter == 2 ){
         <isnot>0</isnot>
       </action>
     </event>
-    <event eventtype="4" ename="obj_Deathball">
+    <event eventtype="4" ename="obj_Mage_Fireball">
       <action>
         <libid>1</libid>
         <id>203</id>
