@@ -48,6 +48,7 @@
       <sprite>sprites\spr_Boss_Run</sprite>
       <sprite>sprites\spr_Boss</sprite>
       <sprite>sprites\spr_Boss_Barrier</sprite>
+      <sprite>sprites\spr_Boss_Gust</sprite>
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\spr_Skeleton</sprite>
@@ -101,6 +102,7 @@
       <object>objects\obj_Boss_Whirlwind</object>
       <object>objects\obj_Boss_Barrier</object>
       <object>objects\obj_Boss_Fireball</object>
+      <object>objects\obj_Boss_Gust</object>
     </objects>
     <objects name="Enemy">
       <object>objects\obj_Bat</object>
@@ -108,6 +110,7 @@
       <object>objects\obj_Mage</object>
       <object>objects\obj_Stone_Skeleton</object>
       <object>objects\obj_Stone_Mage</object>
+      <object>objects\obj_Mage_Fireball</object>
     </objects>
     <objects name="Pickups">
       <object>objects\obj_Health_Up</object>
@@ -134,7 +137,6 @@
     </objects>
     <objects name="Spells">
       <object>objects\obj_Deathball</object>
-      <object>objects\obj_Mage_Fireball</object>
       <object>objects\obj_Lifepull</object>
       <object>objects\obj_Stoner</object>
       <object>objects\obj_FireballTrap</object>

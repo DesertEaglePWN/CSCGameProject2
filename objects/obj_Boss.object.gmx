@@ -40,9 +40,33 @@ p3_speed = 2.5;
 
 attacking = false;
 num_Summons = 0;
+gust_cd = 5;
 alarm[3] = room_speed * 10;
 
 num_Barriers = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="6">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alarm[6] = -1;
 </string>
           </argument>
         </arguments>
@@ -513,6 +537,13 @@ d3 = floor(random(3)) + 1 // 3 sided dice
 d2 = floor(random(2)) + 1 // 2 sided dice
 
 if( !attacking ){
+    
+    // Checks in phase 2 if player is close enough to throw back
+    if( phase == 2 &amp;&amp; distance_to_object(obj_Player) &lt; 25 &amp;&amp; alarm[6] == -1){ // push back
+           instance_create(x, y - 32, obj_Boss_Gust);
+           alarm[6] = room_speed * gust_cd;
+    }
+
     if( distance_to_object(obj_Player) &lt; 10 &amp;&amp; phase == 1 &amp;&amp; alarm[1] == -1 &amp;&amp; alarm[2] == -1){
         if( d4 == 1 ){ // Special Whirlwind Attack
             alarm[2] = 40;
@@ -520,6 +551,7 @@ if( !attacking ){
             alarm[1] = 30;
         } 
     } else if( phase == 2 &amp;&amp; alarm[1] == -1 &amp;&amp; alarm[2] == -1){
+        
         if( d4 == 1 ){       // Mage Attack 1: barrier
             alarm[1] = 15; 
         } else if( d2 == 1){ // Mage Attack 2:  fireball
