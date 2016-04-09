@@ -77,6 +77,7 @@
       <sprite>sprites\spr_FreePlatform</sprite>
       <sprite>sprites\spr_Spike</sprite>
       <sprite>sprites\spr_Walls</sprite>
+      <sprite>sprites\spr_Princess_Bed</sprite>
     </sprites>
     <sprites name="Icon">
       <sprite>sprites\spr_Stone_Icon</sprite>
@@ -89,7 +90,6 @@
       <sprite>sprites\spr_Quit_Button</sprite>
       <sprite>sprites\spr_Resume_Button</sprite>
     </sprites>
-    <sprite>sprites\spr_Princess_Bed</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_CastleTiles</background>
