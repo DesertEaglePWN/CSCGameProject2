@@ -56,7 +56,7 @@ canBePickedUp = true; // can we pick that up in the current room?
 if( orgin_room == room &amp;&amp; global.pickups[index] == false ){
     canBePickedUp = true;
     visible = 1;
-}
+} 
 
 if( global.pickups[index] == true || orgin_room != room ){
     canBePickedUp = false;

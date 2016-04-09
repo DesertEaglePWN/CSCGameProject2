@@ -187,7 +187,7 @@
     <instance objName="obj_Collision_Enemy" x="1912" y="640" name="inst_AD39C88C" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bat" x="128" y="736" name="inst_C03C6DAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bat" x="512" y="800" name="inst_A90D58AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Bat" x="832" y="800" name="inst_60A9B665" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Bat" x="928" y="832" name="inst_60A9B665" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bat" x="1792" y="800" name="inst_F0603066" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bat" x="1536" y="320" name="inst_D6D8CD49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Spell_Pickup" x="960" y="480" name="inst_229E945E" locked="0" code="spellIndex = 1; //Soul Blast Tome&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
