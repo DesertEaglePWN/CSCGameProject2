@@ -219,15 +219,15 @@ sprite_index = spr_Boss;
 d2 = floor(random(2)) + 1 // 2 sided roll for first summon
 
 if( d2 == 1 )
-    instance_create( x+10, y, obj_Skeleton );
+    instance_create( x+10, y, obj_Boss_Skeleton );
 else
-    instance_create( x+10, y, obj_Mage );
+    instance_create( x+10, y, obj_Boss_Mage );
 
 d2 = floor(random(2)) + 1 // 2 sided roll for 2nd summon    
 if( d2 == 1 )
-    instance_create( x+10, y, obj_Skeleton );
+    instance_create( x+10, y, obj_Boss_Skeleton );
 else
-    instance_create( x+10, y, obj_Mage );  
+    instance_create( x+10, y, obj_Boss_Mage );  
     
 num_Summons += 2;
 alarm[3] = room_speed * 20;
