@@ -173,8 +173,8 @@ if(cheat_code = "god"){
     obj_Player.y = 160;
     room_goto(2);
 } else if( cheat_code == "3" ){  // Gauntlet
-    obj_Player.x = 920;
-    obj_Player.y = 1920;
+    obj_Player.x = 928;
+    obj_Player.y = 512;
     room_goto(3);
 } else if( cheat_code == "4" ){  // Boss
     obj_Player.x = 160;
