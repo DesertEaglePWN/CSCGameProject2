@@ -4,7 +4,14 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_Castle_1</sound>
+    <sound>sound\snd_Castle_2_Menu</sound>
+    <sound>sound\snd_Castle_3</sound>
+    <sound>sound\snd_Gautlet</sound>
+    <sound>sound\snd_Boss</sound>
+    <sound>sound\snd_Princess</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_ArmorGold</sprite>
     <sprites name="Player">
@@ -136,6 +143,7 @@
       <object>objects\obj_Mage_Respawn_Controller</object>
       <object>objects\obj_Fireball_Trap_Controller</object>
       <object>objects\obj_Player_Respawn</object>
+      <object>objects\obj_SND_Controller</object>
     </objects>
     <objects name="Collision">
       <object>objects\obj_Collision</object>
