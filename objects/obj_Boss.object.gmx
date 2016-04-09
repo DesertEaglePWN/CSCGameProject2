@@ -506,7 +506,7 @@ if( distance_to_object(obj_Player) &lt; 5  ){
             }
             
         } else {     
-            move_towards_point( 736, y, 5); // moves toward cent of room to begin casting
+            move_towards_point( 972, y, 5); // moves toward cent of room to begin casting
         }
     
     // Melee/Mage Mixed Phase?        
