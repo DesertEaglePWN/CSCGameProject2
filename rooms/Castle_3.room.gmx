@@ -178,6 +178,7 @@
     <instance objName="obj_Collision" x="64" y="480" name="inst_9F62D5F2" locked="0" code="" scaleX="60" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="1472" y="672" name="inst_E10C1505" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_Spell_Pickup" x="832" y="928" name="inst_A3A6EA6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision" x="1376" y="672" name="inst_5CFCE2A0" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_CastleTiles" x="416" y="896" w="32" h="32" xo="124" yo="1204" id="10009703" name="inst_F7D10085" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -2477,6 +2478,7 @@
     <tile bgName="bg_CastleTiles" x="1248" y="640" w="32" h="32" xo="124" yo="724" id="10011116" name="inst_51BF1BA2" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="1344" y="512" w="32" h="32" xo="124" yo="724" id="10011117" name="inst_1138A201" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="1312" y="512" w="32" h="32" xo="124" yo="724" id="10011118" name="inst_FD4731AD" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_CastleTiles" x="1376" y="672" w="32" h="32" xo="124" yo="724" id="10014242" name="inst_8334A1FB" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
