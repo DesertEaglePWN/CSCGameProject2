@@ -409,6 +409,12 @@ if( monster_health &lt;= 0){
     with(inst){
         instance_destroy();
     } 
+    
+    // Destroys barrier blockers
+    with( obj_Boss_Level_Blocker ){
+        instance_destroy();
+    }    
+    
     //instance_destroy();    
     sprite_index = spr_Boss_Dead_2;
 }    
@@ -486,7 +492,7 @@ if( distance_to_object(obj_Player) &lt; 5  ){
     
     // Mage Phase
     } else if( phase == 2 &amp;&amp; !attacking ){ 
-        if( distance_to_point( 736, y) &lt;= 5 ){ // If boss is at center stop moving
+        if( distance_to_point( 972, y) &lt;= 5 ){ // If boss is at center stop moving
             speed = 0; 
             sprite_index = spr_Boss;
             

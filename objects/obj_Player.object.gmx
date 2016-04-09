@@ -375,12 +375,12 @@ if (godMode){
 }
 
 if( global.Stamina &lt;= 0 ){
-    show_message("You are dead");
+    show_message("You died");
     x = checkpoint_x;
     y = checkpoint_y;
     global.Stamina = global.max_Stamina;
     global.Mana = global.max_Mana;
-    //game_restart();
+    room_restart();
 }   
 
 if( global.Mana &lt; global.max_Mana )

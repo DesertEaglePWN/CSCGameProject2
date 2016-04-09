@@ -31,6 +31,7 @@
     </sprites>
     <sprites name="Misc">
       <sprite>sprites\spr_Collision</sprite>
+      <sprite>sprites\spr_Boss_Block_Checker</sprite>
       <sprite>sprites\spr_Collision_Enemy</sprite>
       <sprite>sprites\spr_Teleport</sprite>
       <sprite>sprites\spr_Invisible</sprite>
@@ -88,6 +89,7 @@
       <sprite>sprites\spr_Quit_Button</sprite>
       <sprite>sprites\spr_Resume_Button</sprite>
     </sprites>
+    <sprite>sprites\spr_Princess_Bed</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_CastleTiles</background>
@@ -101,8 +103,11 @@
       <object>objects\obj_Boss_Attack</object>
       <object>objects\obj_Boss_Whirlwind</object>
       <object>objects\obj_Boss_Barrier</object>
+      <object>objects\obj_Boss_Level_Blocker</object>
       <object>objects\obj_Boss_Fireball</object>
       <object>objects\obj_Boss_Gust</object>
+      <object>objects\obj_Boss_Mage</object>
+      <object>objects\obj_Boss_Skeleton</object>
     </objects>
     <objects name="Enemy">
       <object>objects\obj_Bat</object>
@@ -133,6 +138,7 @@
     </objects>
     <objects name="Collision">
       <object>objects\obj_Collision</object>
+      <object>objects\obj_Boss_Block_Checker</object>
       <object>objects\obj_Collision_Enemy</object>
     </objects>
     <objects name="Spells">
@@ -151,6 +157,7 @@
       <object>objects\obj_FreePlatform</object>
       <object>objects\obj_Spike</object>
       <object>objects\obj_MessageTrigger</object>
+      <object>objects\obj_Princess_Bed</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -159,6 +166,7 @@
     <room>rooms\Castle_3</room>
     <room>rooms\Gauntlet</room>
     <room>rooms\Boss</room>
+    <room>rooms\Princess_Room</room>
     <room>rooms\Main_Menu</room>
   </rooms>
   <help>

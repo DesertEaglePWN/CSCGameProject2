@@ -4,7 +4,7 @@
   <width>1024</width>
   <height>2048</height>
   <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -61,7 +61,8 @@
     <instance objName="obj_Collision" x="544" y="1984" name="inst_7056CDA9" locked="0" code="" scaleX="60" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="960" y="1824" name="inst_A2D0F2E2" locked="0" code="" scaleX="8" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="obj_RoomTeleport" x="992" y="320" name="inst_27019186" locked="0" code="//The direction the player faces when exiting this teleport&#xA;//Left = 0&#xA;//Right = 1&#xA;teleportDirection = 0;&#xA;&#xA;//The room containing the destination teleport&#xA;dest_room = Boss;&#xA;&#xA;//The instance id of the destination teleport&#xA;dest_id = inst_5774E480;&#xA;" scaleX="4" scaleY="12" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Boss" x="960" y="544" name="inst_61C3C71E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Player_Respawn" x="960" y="416" name="inst_3CCCDF7D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Player_Respawn" x="928" y="1984" name="inst_3793FC9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_CastleTiles" x="192" y="416" w="32" h="32" xo="32" yo="0" id="10000003" name="inst_CB49823A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
