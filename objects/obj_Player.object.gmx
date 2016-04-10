@@ -71,13 +71,20 @@ life_pull_cost = 35;
 fireball_cost = 25;
 stone_cost = 15;
 
+// Have the spell?
 haveSpell[0] = true; // life pull
 haveSpell[1] = false; // fireball
 haveSpell[2] = false; // stoned
 
+// Cost of Spell
 cost[0] = life_pull_cost
 cost[1] = fireball_cost;
 cost[2] = stone_cost;
+
+// Dmg of Spell
+dmg[0] = 25; // Life Transfer
+dmg[1] = 50; // Fireball Dmg
+dmg[2] = 0;
 
 </string>
           </argument>

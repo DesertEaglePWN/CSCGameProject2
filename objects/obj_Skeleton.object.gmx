@@ -279,14 +279,14 @@ instance_destroy();
             <kind>1</kind>
             <string>/// Life-Pull effect
 if( invincible == false &amp;&amp; alarm[0] == -1){
-    monster_health -= 10;
+    monster_health -= obj_Player.dmg[0];
     invincible = true;
     alarm[0] = room_speed;
     
-    if( global.Stamina + 10 &gt; global.max_Stamina ){
+    if( global.Stamina + obj_Player.dmg[0] &gt; global.max_Stamina ){
         global.Stamina = global.max_Stamina;
     } else {
-        global.Stamina += 10;
+        global.Stamina += obj_Player.dmg[0];
     }
 }
 </string>
@@ -313,7 +313,7 @@ if( invincible == false &amp;&amp; alarm[0] == -1){
             <kind>1</kind>
             <string>/// Enemy Take DMG
 if( invincible == false &amp;&amp; alarm[0] == -1){
-    monster_health -= 50;
+    monster_health -= obj_Player.dmg[1];
     invincible = true;
     alarm[0] = 1;
 }

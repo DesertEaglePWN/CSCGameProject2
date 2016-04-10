@@ -41,6 +41,7 @@
     </sprites>
     <sprites name="Misc">
       <sprite>sprites\spr_Collision</sprite>
+      <sprite>sprites\spr_Story_Collision</sprite>
       <sprite>sprites\spr_Boss_Block_Checker</sprite>
       <sprite>sprites\spr_Collision_Enemy</sprite>
       <sprite>sprites\spr_Teleport</sprite>
@@ -151,6 +152,7 @@
       <object>objects\obj_Collision</object>
       <object>objects\obj_Boss_Block_Checker</object>
       <object>objects\obj_Collision_Enemy</object>
+      <object>objects\obj_Story_Collision</object>
     </objects>
     <objects name="Spells">
       <object>objects\obj_Deathball</object>

@@ -4,7 +4,7 @@
   <width>1024</width>
   <height>768</height>
   <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -59,6 +59,7 @@
     <instance objName="obj_Collision" x="160" y="128" name="inst_0162945B" locked="0" code="" scaleX="108" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="864" y="224" name="inst_1A9091B6" locked="0" code="" scaleX="20" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="896" y="256" name="inst_2C54D5BB" locked="0" code="" scaleX="16" scaleY="16" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Story_Collision" x="784" y="352" name="inst_6EA61F22" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_CastleTiles" x="0" y="0" w="32" h="32" xo="124" yo="1204" id="10017851" name="inst_0D133B96" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
