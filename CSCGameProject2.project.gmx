@@ -16,6 +16,7 @@
     <sprite>sprites\spr_ArmorGold</sprite>
     <sprites name="Player">
       <sprite>sprites\spr_PlayerIdle</sprite>
+      <sprite>sprites\spr_PlayerRespawn</sprite>
       <sprite>sprites\spr_PlayerSpell</sprite>
       <sprite>sprites\spr_PlayerGorgonEye</sprite>
       <sprite>sprites\spr_PlayerGorgonEye_Low</sprite>
@@ -144,7 +145,6 @@
       <object>objects\obj_Bat_Respawn_Controller</object>
       <object>objects\obj_Mage_Respawn_Controller</object>
       <object>objects\obj_Fireball_Trap_Controller</object>
-      <object>objects\obj_Player_Respawn</object>
       <object>objects\obj_SND_Controller</object>
     </objects>
     <objects name="Collision">
@@ -162,6 +162,7 @@
       <object>objects\obj_Player</object>
       <object>objects\obj_Player_Attack</object>
     </objects>
+    <object>objects\obj_Player_Respawn</object>
     <objects name="LevelObjects">
       <object>objects\obj_Barrier</object>
       <object>objects\obj_RoomTeleport</object>
