@@ -159,8 +159,8 @@
       <object>objects\obj_FireballTrap</object>
     </objects>
     <objects name="Player">
-      <object>objects\obj_Player</object>
       <object>objects\obj_Player_Attack</object>
+      <object>objects\obj_Player</object>
     </objects>
     <object>objects\obj_Player_Respawn</object>
     <objects name="LevelObjects">

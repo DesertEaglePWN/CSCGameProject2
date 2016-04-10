@@ -145,6 +145,7 @@
     <instance objName="obj_Collision_Enemy" x="608" y="640" name="inst_93A6FB03" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="800" y="544" name="inst_CC41D438" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="928" y="448" name="inst_98A993F1" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision" x="320" y="416" name="inst_BB71622C" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_CastleTiles" x="96" y="32" w="32" h="32" xo="124" yo="1444" id="10014805" name="inst_EEC3B8D6" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
