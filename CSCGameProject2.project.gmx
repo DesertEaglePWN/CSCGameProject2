@@ -56,7 +56,8 @@
       <sprite>sprites\spr_Boss_Dead</sprite>
       <sprite>sprites\spr_Boss_Dead_2</sprite>
       <sprite>sprites\spr_Boss_Attack_Whirlwind</sprite>
-      <sprite>sprites\spr_Boss_Whirlwind_Collision</sprite>
+      <sprite>sprites\spr_Bpss_Whirlwind_Collision</sprite>
+      <sprite>sprites\spr_Boss_Whirlwind_Collision1</sprite>
       <sprite>sprites\spr_Boss_Run</sprite>
       <sprite>sprites\spr_Boss</sprite>
       <sprite>sprites\spr_Boss_Barrier</sprite>
@@ -89,6 +90,7 @@
       <sprite>sprites\spr_Spike</sprite>
       <sprite>sprites\spr_Walls</sprite>
       <sprite>sprites\spr_Princess_Bed</sprite>
+      <sprite>sprites\spr_Flame</sprite>
     </sprites>
     <sprites name="Icon">
       <sprite>sprites\spr_Stone_Icon</sprite>
@@ -173,6 +175,7 @@
       <object>objects\obj_Spike</object>
       <object>objects\obj_MessageTrigger</object>
       <object>objects\obj_Princess_Bed</object>
+      <object>objects\obj_TorchFlame</object>
     </objects>
   </objects>
   <rooms name="rooms">

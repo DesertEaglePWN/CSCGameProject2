@@ -53,7 +53,7 @@
   <instances>
     <instance objName="obj_Collision" x="352" y="416" name="inst_5EFE4E02" locked="0" code="" scaleX="64" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_RoomTeleport" x="928" y="928" name="inst_FDE8C937" locked="0" code="//The direction the player faces when exiting this teleport&#xA;//Left = 0&#xA;//Right = 1&#xA;teleportDirection = 0;&#xA;&#xA;//The room containing the destination teleport&#xA;dest_room = Castle_1;&#xA;&#xA;//The instance id of the destination teleport&#xA;dest_id = inst_111D65C6;" scaleX="4" scaleY="12" colour="4294967295" rotation="0"/>
-    <instance objName="obj_RoomTeleport" x="896" y="64" name="inst_27019186" locked="0" code="//The direction the player faces when exiting this teleport&#xA;//Left = 0&#xA;//Right = 1&#xA;teleportDirection = 0;&#xA;&#xA;//The room containing the destination teleport&#xA;dest_room = Boss;&#xA;&#xA;//The instance id of the destination teleport&#xA;dest_id = inst_5774E480;" scaleX="4" scaleY="12" colour="4294967295" rotation="0"/>
+    <instance objName="obj_RoomTeleport" x="928" y="64" name="inst_27019186" locked="0" code="//The direction the player faces when exiting this teleport&#xA;//Left = 0&#xA;//Right = 1&#xA;teleportDirection = 0;&#xA;&#xA;//The room containing the destination teleport&#xA;dest_room = Boss;&#xA;&#xA;//The instance id of the destination teleport&#xA;dest_id = inst_5774E480;" scaleX="4" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="64" y="288" name="inst_26FF3F58" locked="0" code="" scaleX="64" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="256" y="512" name="inst_D42D4F42" locked="0" code="" scaleX="68" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="160" y="416" name="inst_EDFADCA1" locked="0" code="" scaleX="12" scaleY="20" colour="4294967295" rotation="0"/>
@@ -1795,7 +1795,6 @@
     <tile bgName="bg_CastleTiles" x="352" y="224" w="32" h="32" xo="44" yo="1444" id="10021241" name="inst_0A4B6D0E" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="352" y="256" w="32" h="32" xo="44" yo="1444" id="10021242" name="inst_A9D655C1" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="320" y="256" w="32" h="32" xo="44" yo="1444" id="10021243" name="inst_30078336" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleObjectTiles" x="416" y="864" w="32" h="32" xo="244" yo="124" id="10021298" name="inst_CD92B11A" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="800" y="544" w="32" h="32" xo="444" yo="1444" id="10021377" name="inst_991F0FD2" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="928" y="448" w="32" h="32" xo="44" yo="1444" id="10021378" name="inst_AF473D49" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="320" y="416" w="32" h="32" xo="444" yo="1444" id="10021438" name="inst_50781513" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
