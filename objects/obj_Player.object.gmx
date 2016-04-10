@@ -947,13 +947,15 @@ if ( global.Mana &gt;= cost[spellIndex] &amp;&amp; crouched == false ){
     } else if( spellIndex == 2 &amp;&amp; haveSpell[2]) {
         sprite_index = spr_PlayerGorgonEye;
         global.Mana -= stone_cost;
-        // if the image is facing right, spawn a right facing life pull
+        // if the image is facing right, spawn right facing
         if ( image_xscale &gt; 0 ) {
-            inst = instance_create( x + 50 , y - 20, obj_Stoner );
+            inst = instance_create( x + 18  , y - 40, obj_Stoner );
+            inst.image_xscale = 2;
         
-        // otherwise spawn a left facing life pull
+        // otherwise spawn left facing
         } else {
-            inst = instance_create( x - 50 , y - 20, obj_Stoner );
+            inst = instance_create( x - 18 , y - 40, obj_Stoner );
+            inst.image_xscale = -2;
         }
         
     } else {} 
@@ -970,14 +972,14 @@ if ( global.Mana &gt;= cost[spellIndex] &amp;&amp; crouched == false ){
         global.Mana -= life_pull_cost;
         // if the image is facing right, spawn a right facing life pull
         if ( image_xscale &gt; 0 ) {
-            inst = instance_create( x + 20 , y - 30, obj_Lifepull );
+            inst = instance_create( x + 20 , y - 35, obj_Lifepull );
             with ( inst ) {
                 direction = 0;
             }
         
         // otherwise spawn a left facing life pull
         } else {
-            inst = instance_create( x - 20 , y - 30, obj_Lifepull );
+            inst = instance_create( x - 20 , y - 35, obj_Lifepull );
             with ( inst ) {
                 direction = 180;
                 image_xscale = -1;
@@ -1009,13 +1011,15 @@ if ( global.Mana &gt;= cost[spellIndex] &amp;&amp; crouched == false ){
     } else if( spellIndex == 2 &amp;&amp; haveSpell[2]) {
         sprite_index = spr_PlayerGorgonEye_Low;
         global.Mana -= stone_cost;
-        // if the image is facing right, spawn a right facing life pull
+        // if the image is facing right, spawn right facing
         if ( image_xscale &gt; 0 ) {
-            inst = instance_create( x + 50 , y - 35, obj_Stoner );
-        
-        // otherwise spawn a left facing life pull
+            inst = instance_create( x + 18 , y - 30, obj_Stoner );
+            inst.image_xscale = 2;
+            
+        // otherwise spawn left facing
         } else {
-            inst = instance_create( x - 50 , y - 35, obj_Stoner );
+            inst = instance_create( x - 18 , y - 30, obj_Stoner );
+            inst.image_xscale = -2;
         }
         
     } else {} 
