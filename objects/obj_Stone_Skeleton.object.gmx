@@ -27,11 +27,10 @@
             <kind>1</kind>
             <string>/// Create collisionPlatform
 
-collisionPlatform = instance_create(self.bbox_left, self.bbox_top,obj_Collision);
+collisionPlatform = instance_create(self.bbox_left, self.bbox_top + 12,obj_Collision);
 collisionPlatform.image_xscale = 4;
 
 hitCounter = 0;
-
 </string>
           </argument>
         </arguments>

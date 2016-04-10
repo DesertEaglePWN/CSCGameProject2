@@ -52,26 +52,23 @@
   </views>
   <instances>
     <instance objName="obj_RoomTeleport" x="1984" y="128" name="inst_44CA984C" locked="0" code="//The direction the player faces when exiting this teleport&#xA;//Left = 0&#xA;//Right = 1&#xA;teleportDirection = 0;&#xA;&#xA;//The room containing the destination teleport&#xA;dest_room = Castle_1;&#xA;&#xA;//The instance id of the destination teleport&#xA;dest_id = inst_8B161C53;&#xA;" scaleX="4" scaleY="12" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Mana_Up" x="1824" y="928" name="inst_6A9BA961" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Mana_Up" x="1920" y="512" name="inst_6A9BA961" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Health_Up" x="224" y="928" name="inst_C16B187F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Health_Up" x="1952" y="928" name="inst_F7CE097E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Health_Up" x="96" y="576" name="inst_F7CE097E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Mana_Up" x="96" y="384" name="inst_C4D21463" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Mage" x="960" y="128" name="inst_8A516A2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Mage" x="704" y="160" name="inst_4B095755" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Mage" x="192" y="448" name="inst_22DEB5C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Mage" x="320" y="960" name="inst_82757881" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Mage" x="1312" y="960" name="inst_A3E5342F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Mage" x="1920" y="736" name="inst_365883FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Mage" x="1856" y="736" name="inst_365883FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Mage" x="1408" y="320" name="inst_7521BA47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Skeleton" x="416" y="128" name="inst_D42FB60B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Skeleton" x="352" y="448" name="inst_B4CC75C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Skeleton" x="1696" y="160" name="inst_4D7AD63E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Skeleton" x="416" y="128" name="inst_D42FB60B" locked="0" code="Castle3Skeleton = false;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Skeleton" x="352" y="448" name="inst_B4CC75C8" locked="0" code="Castle3Skeleton = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Skeleton" x="1696" y="160" name="inst_4D7AD63E" locked="0" code="Castle3Skeleton = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision_Enemy" x="1632" y="128" name="inst_146BDD0B" locked="0" code="" scaleX="-4" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Skeleton" x="1696" y="608" name="inst_72E66443" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Skeleton" x="192" y="672" name="inst_FFCF831F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Skeleton" x="960" y="640" name="inst_D8C5ECD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Skeleton" x="896" y="960" name="inst_072B0ED3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Collision_Enemy" x="768" y="896" name="inst_C551E34B" locked="0" code="" scaleX="4" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Skeleton" x="1696" y="608" name="inst_72E66443" locked="0" code="Castle3Skeleton = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Skeleton" x="192" y="672" name="inst_FFCF831F" locked="0" code="Castle3Skeleton = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Skeleton" x="960" y="640" name="inst_D8C5ECD3" locked="0" code="Castle3Skeleton = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Skeleton" x="1024" y="960" name="inst_072B0ED3" locked="0" code="Castle3Skeleton = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="160" y="800" name="inst_734A9AAE" locked="0" code="" scaleX="4" scaleY="16" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="192" y="832" name="inst_97D68AFD" locked="0" code="" scaleX="4" scaleY="17" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="224" y="864" name="inst_EB062D0D" locked="0" code="" scaleX="16" scaleY="4" colour="4294967295" rotation="0"/>
@@ -152,7 +149,7 @@
     <instance objName="obj_Collision_Enemy" x="256" y="120" name="inst_BA780F52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision_Enemy" x="600" y="120" name="inst_F05C8142" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision_Enemy" x="1536" y="576" name="inst_DAE68095" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Skeleton" x="408" y="864" name="inst_509F3BE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Skeleton" x="408" y="864" name="inst_509F3BE9" locked="0" code="Castle3Skeleton = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Spike" x="1568" y="192" name="inst_F6CECCD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Spike" x="1600" y="192" name="inst_15B85406" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Spike" x="640" y="640" name="inst_DFE7B0EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -164,7 +161,7 @@
     <instance objName="obj_Collision" x="1328" y="512" name="inst_9C3B80E5" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_Barrier" x="1328" y="544" name="inst_7FEB6805" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision_Enemy" x="1344" y="736" name="inst_ECF96E76" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Skeleton" x="1440" y="768" name="inst_B6FE9FBC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Skeleton" x="1440" y="768" name="inst_B6FE9FBC" locked="0" code="Castle3Skeleton = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Barrier" x="1392" y="96" name="inst_F4EE4366" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="1856" y="320" name="inst_FCF3B8F8" locked="0" code="" scaleX="8" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="1920" y="256" name="inst_9C869CE9" locked="0" code="" scaleX="8" scaleY="4" colour="4294967295" rotation="0"/>
@@ -176,13 +173,17 @@
     <instance objName="obj_Collision" x="832" y="384" name="inst_F43C97F2" locked="0" code="" scaleX="8" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="64" y="480" name="inst_9F62D5F2" locked="0" code="" scaleX="60" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="1504" y="672" name="inst_E10C1505" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Spell_Pickup" x="832" y="928" name="inst_A3A6EA6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Spell_Pickup" x="1888" y="896" name="inst_A3A6EA6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="1344" y="672" name="inst_5CFCE2A0" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_Mana_Up" x="96" y="736" name="inst_7EEE3846" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_FreePlatform" x="1376" y="640" name="inst_3D5744E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_FreePlatform" x="1472" y="688" name="inst_6619E95D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="1376" y="640" name="inst_888EA5F0" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="1472" y="688" name="inst_E6AAEEA6" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision_Enemy" x="736" y="896" name="inst_31B87F62" locked="0" code="" scaleX="4" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision_Enemy" x="1440" y="896" name="inst_F927D57C" locked="0" code="" scaleX="4" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision" x="1888" y="928" name="inst_97607AAB" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Skeleton" x="864" y="960" name="inst_A772D88D" locked="0" code="Castle3Skeleton = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_CastleTiles" x="416" y="896" w="32" h="32" xo="124" yo="1204" id="10009703" name="inst_F7D10085" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -224,7 +225,6 @@
     <tile bgName="bg_CastleTiles" x="672" y="896" w="32" h="32" xo="124" yo="1204" id="10009749" name="inst_6E02C847" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="704" y="896" w="32" h="32" xo="124" yo="1204" id="10009750" name="inst_D63F9698" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="736" y="928" w="32" h="32" xo="124" yo="1204" id="10009752" name="inst_DFA424E7" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="736" y="896" w="32" h="32" xo="124" yo="1204" id="10009753" name="inst_548D2FD3" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="736" y="864" w="32" h="32" xo="124" yo="1204" id="10009754" name="inst_4BDC5C05" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="768" y="832" w="32" h="32" xo="124" yo="1204" id="10009756" name="inst_E2C10A3C" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="800" y="832" w="32" h="32" xo="124" yo="1204" id="10009757" name="inst_493957BF" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -280,7 +280,7 @@
     <tile bgName="bg_CastleTiles" x="832" y="928" w="32" h="32" xo="124" yo="1204" id="10009845" name="inst_CBFFBACA" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="800" y="928" w="32" h="32" xo="124" yo="1204" id="10009846" name="inst_0DFCC8DA" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="768" y="928" w="32" h="32" xo="124" yo="1204" id="10009847" name="inst_9571D88D" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="768" y="896" w="32" h="32" xo="124" yo="1204" id="10009848" name="inst_C3BC90EC" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_CastleTiles" x="736" y="896" w="32" h="32" xo="124" yo="1204" id="10009848" name="inst_C3BC90EC" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="768" y="864" w="32" h="32" xo="124" yo="1204" id="10009849" name="inst_C51BD75A" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="832" y="896" w="32" h="32" xo="124" yo="1204" id="10009852" name="inst_2400B5E3" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="800" y="896" w="32" h="32" xo="124" yo="1204" id="10009853" name="inst_400FB82B" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -391,11 +391,8 @@
     <tile bgName="bg_CastleTiles" x="896" y="896" w="32" h="32" xo="124" yo="1204" id="10009983" name="inst_7EB95F90" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="896" y="928" w="32" h="32" xo="124" yo="1204" id="10009984" name="inst_915F6F07" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="928" y="928" w="32" h="32" xo="124" yo="1204" id="10009985" name="inst_366B8E04" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="960" y="928" w="32" h="32" xo="124" yo="1204" id="10009986" name="inst_8D780513" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="992" y="928" w="32" h="32" xo="124" yo="1204" id="10009987" name="inst_FB68CF97" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="1024" y="928" w="32" h="32" xo="124" yo="1204" id="10009988" name="inst_114059BA" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="1056" y="928" w="32" h="32" xo="124" yo="1204" id="10009989" name="inst_A04986B6" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="1088" y="928" w="32" h="32" xo="124" yo="1204" id="10009990" name="inst_0F17FC10" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_CastleTiles" x="1088" y="928" w="32" h="32" xo="124" yo="1204" id="10009989" name="inst_A04986B6" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="1120" y="928" w="32" h="32" xo="124" yo="1204" id="10009991" name="inst_0938072B" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="1152" y="928" w="32" h="32" xo="124" yo="1204" id="10009992" name="inst_9B19BF95" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="1184" y="928" w="32" h="32" xo="124" yo="1204" id="10009993" name="inst_312E90A0" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -416,11 +413,9 @@
     <tile bgName="bg_CastleTiles" x="1664" y="928" w="32" h="32" xo="124" yo="1204" id="10010008" name="inst_B93BC5BF" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="1696" y="928" w="32" h="32" xo="124" yo="1204" id="10010009" name="inst_1B2D506F" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="1728" y="928" w="32" h="32" xo="124" yo="1204" id="10010010" name="inst_C8596A98" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="1760" y="928" w="32" h="32" xo="124" yo="1204" id="10010011" name="inst_8372FAE6" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="1792" y="928" w="32" h="32" xo="124" yo="1204" id="10010012" name="inst_25A0FABA" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="1824" y="928" w="32" h="32" xo="124" yo="1204" id="10010013" name="inst_A8978717" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="1856" y="928" w="32" h="32" xo="124" yo="1204" id="10010014" name="inst_0D6BFF2E" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="1888" y="928" w="32" h="32" xo="124" yo="1204" id="10010015" name="inst_9EAF6A71" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="1920" y="928" w="32" h="32" xo="124" yo="1204" id="10010016" name="inst_32D141C5" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="1952" y="928" w="32" h="32" xo="124" yo="1204" id="10010017" name="inst_7F07907C" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="1984" y="896" w="32" h="32" xo="124" yo="1204" id="10010019" name="inst_44A70B0C" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1504,6 +1499,14 @@
     <tile bgName="bg_CastleTiles" x="1888" y="96" w="32" h="32" xo="124" yo="1204" id="10012140" name="inst_8752AB5A" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="1888" y="128" w="32" h="32" xo="124" yo="1204" id="10012141" name="inst_A729A9C6" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="1888" y="160" w="32" h="32" xo="124" yo="1204" id="10012142" name="inst_618CC7BD" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_CastleTiles" x="960" y="928" w="32" h="32" xo="124" yo="1204" id="10021427" name="inst_98EDFBE1" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_CastleTiles" x="992" y="928" w="32" h="32" xo="124" yo="1204" id="10021428" name="inst_2FA7D0E6" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_CastleTiles" x="1056" y="928" w="32" h="32" xo="124" yo="1204" id="10021429" name="inst_0FA76639" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_CastleTiles" x="1824" y="992" w="32" h="32" xo="44" yo="1204" id="10021430" name="inst_8BD19AE1" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_CastleTiles" x="1824" y="960" w="32" h="32" xo="44" yo="1204" id="10021431" name="inst_815D8615" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_CastleTiles" x="1760" y="960" w="32" h="32" xo="44" yo="1204" id="10021433" name="inst_E9B45C9E" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_CastleTiles" x="1760" y="928" w="32" h="32" xo="124" yo="1204" id="10021435" name="inst_04661B99" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_CastleTiles" x="1888" y="928" w="32" h="32" xo="44" yo="4" id="10021436" name="inst_FEF1E583" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="992" y="0" w="32" h="32" xo="124" yo="724" id="10007977" name="inst_526AF4E1" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="968" y="0" w="32" h="32" xo="124" yo="724" id="10007984" name="inst_D03D8BD5" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="944" y="0" w="32" h="32" xo="124" yo="724" id="10008038" name="inst_ECB5BE94" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
