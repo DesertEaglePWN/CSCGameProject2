@@ -184,6 +184,22 @@ if( direction &gt;=  180 ){
         <isnot>0</isnot>
       </action>
     </event>
+    <event eventtype="4" ename="obj_Player">
+      <action>
+        <libid>1</libid>
+        <id>113</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_reverse_xdir</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_Player_Attack">
       <action>
         <libid>1</libid>
@@ -212,22 +228,6 @@ if( invincible == false &amp;&amp; alarm[0] == -1){
 </string>
           </argument>
         </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_Player">
-      <action>
-        <libid>1</libid>
-        <id>113</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_reverse_xdir</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="4" ename="obj_Stoner">
