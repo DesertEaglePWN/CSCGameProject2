@@ -22,10 +22,12 @@
       <sound>sound\snd_Sword_Swing_1</sound>
       <sound>sound\snd_Sword_Swing_2</sound>
       <sound>sound\snd_Sword_Swing_3</sound>
+      <sound>sound\snd_Sword_Stone</sound>
     </sounds>
     <sounds name="Player">
       <sound>sound\snd_Player_Getting_Hit</sound>
       <sound>sound\snd_Jump</sound>
+      <sound>sound\snd_Death</sound>
     </sounds>
     <sounds name="Pickup">
       <sound>sound\snd_Pickup_Fireball</sound>
@@ -36,6 +38,10 @@
       <sound>sound\snd_Mage_Hit</sound>
       <sound>sound\snd_Skeleton_Hit</sound>
       <sound>sound\snd_Bat_Hit</sound>
+    </sounds>
+    <sounds name="Boss">
+      <sound>sound\snd_Barrier</sound>
+      <sound>sound\snd_Gust</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">

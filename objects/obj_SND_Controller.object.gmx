@@ -64,16 +64,16 @@ if( room == 0 ){
           <argument>
             <kind>1</kind>
             <string>/// Check Sound
-if( room == 0 &amp;&amp; audio_is_playing(0) == false){
+if( room == 0 &amp;&amp; audio_is_playing(0) == false){ // castle_1
     audio_stop_all();
     audio_play_sound(snd_Castle_1, 10, true);
-} else if( room == 1 &amp;&amp; audio_is_playing(1) == false ){
+} else if( room == 1 &amp;&amp; audio_is_playing(1) == false ){  // castle_2
     audio_stop_all();
     audio_play_sound(snd_Castle_2_Menu, 10, true);  
-} else if( room == 2 &amp;&amp; audio_is_playing(2) == false){
+} else if( room == 2 &amp;&amp; audio_is_playing(2) == false){  // castle_3
     audio_stop_all();
     audio_play_sound(snd_Castle_3, 10, true);    
-} else if( room == 3 &amp;&amp; audio_is_playing(3) == false){
+} else if( room == 3 &amp;&amp; audio_is_playing(3) == false){ // Gautlet
     audio_stop_all();
     audio_play_sound(snd_Gautlet, 10, true);  
 } else if( room == 4 &amp;&amp; ( audio_is_playing(4) == false || audio_is_playing(5) == false ) ){ // boss
@@ -90,10 +90,10 @@ if( room == 0 &amp;&amp; audio_is_playing(0) == false){
             audio_play_sound(snd_Princess, 10, true); 
         }
     }
-} else if( room == 5 &amp;&amp; audio_is_playing(5) == false ){
+} else if( room == 5 &amp;&amp; audio_is_playing(5) == false ){ // Princess
     audio_stop_all();
     audio_play_sound(snd_Princess, 10, true);  
-} else if( room == 6 &amp;&amp; audio_is_playing(6) == false){
+} else if( room == 6 &amp;&amp; audio_is_playing(1) == false){ // Main Menu
     audio_stop_all();
     audio_play_sound(snd_Castle_2_Menu, 10, true);         
 }          

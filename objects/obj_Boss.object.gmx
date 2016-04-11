@@ -826,11 +826,12 @@ alarm[5] = room_speed/3;
 if( monster_health &lt;= 0 ){
     
 if (firstDeathFrame){
+    audio_play_sound(snd_Death, 10, false); 
     //Start Slo-Mo
     firstDeathFrame = false;
     orig_room_speed = room_speed;
-    room_speed = 20;
-    alarm[7] = 1.5 * room_speed;
+    room_speed = 30;
+    alarm[7] = 1 * room_speed;
     sprite_index = spr_Boss_Dead;
     image_index = 0;
     image_speed = .05;
