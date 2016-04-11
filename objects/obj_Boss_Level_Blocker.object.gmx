@@ -29,7 +29,6 @@
 image_speed = .2;
 image_yscale = 15;
 
-hits = 0;
 </string>
           </argument>
         </arguments>
