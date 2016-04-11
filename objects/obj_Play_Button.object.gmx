@@ -26,6 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>/// Pause Menu
+if( room == 6 ){
+    view_visible[0]=false; 
+    view_visible[1]=true; 
+}
+
 global.pause = false
 instance_activate_all();  
 
