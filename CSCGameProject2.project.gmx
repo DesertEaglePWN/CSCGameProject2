@@ -104,6 +104,8 @@
       <sprite>sprites\spr_Fireball_Icon_CD</sprite>
       <sprite>sprites\spr_Quit_Button</sprite>
       <sprite>sprites\spr_Resume_Button</sprite>
+      <sprite>sprites\spr_Play_Button</sprite>
+      <sprite>sprites\spr_Title</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -144,6 +146,7 @@
       <object>objects\obj_Pause_Menu</object>
       <object>objects\obj_Quit_Button</object>
       <object>objects\obj_Resume_Button</object>
+      <object>objects\obj_Play_Button</object>
       <object>objects\obj_spellSpawner</object>
       <object>objects\obj_Boss_Health</object>
       <object>objects\obj_Skeleton_Respawn_Controller</object>
@@ -179,6 +182,7 @@
       <object>objects\obj_Princess_Bed</object>
       <object>objects\obj_TorchFlame</object>
     </objects>
+    <object>objects\obj_Title</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Castle_1</room>

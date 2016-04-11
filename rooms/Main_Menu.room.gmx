@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1920</width>
   <height>768</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>8</vsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -58,6 +58,13 @@
     <instance objName="obj_Mage" x="512" y="192" name="inst_E425ED67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Mage" x="1344" y="192" name="inst_5511B31A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Player" x="416" y="672" name="inst_656B09A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Skeleton" x="896" y="672" name="inst_D1CAA42F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision_Enemy" x="960" y="672" name="inst_F7CED007" locked="0" code="" scaleX="-4" scaleY="-4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision_Enemy" x="672" y="640" name="inst_770417E4" locked="0" code="" scaleX="-4" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Title" x="696" y="32" name="inst_709094C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Resume_Button" x="928" y="376" name="inst_D993DF9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Quit_Button" x="928" y="472" name="inst_1AFF4B55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Play_Button" x="928" y="288" name="inst_FE7620CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_CastleTiles" x="384" y="704" w="32" h="32" xo="44" yo="724" id="10021533" name="inst_346B1541" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
