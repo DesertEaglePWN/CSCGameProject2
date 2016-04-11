@@ -32,6 +32,11 @@
       <sound>sound\snd_Pickup_Gorgon_s_Eye</sound>
       <sound>sound\snd_Pickup_HM_Pickup</sound>
     </sounds>
+    <sounds name="Enemy">
+      <sound>sound\snd_Mage_Hit</sound>
+      <sound>sound\snd_Skeleton_Hit</sound>
+      <sound>sound\snd_Bat_Hit</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_ArmorGold</sprite>
@@ -186,8 +191,8 @@
       <object>objects\obj_FireballTrap</object>
     </objects>
     <objects name="Player">
-      <object>objects\obj_Player_Attack</object>
       <object>objects\obj_Player</object>
+      <object>objects\obj_Player_Attack</object>
     </objects>
     <objects name="LevelObjects">
       <object>objects\obj_Barrier</object>
