@@ -67,7 +67,7 @@
     <instance objName="obj_Collision_Enemy" x="1632" y="128" name="inst_146BDD0B" locked="0" code="" scaleX="-4" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_Skeleton" x="1696" y="608" name="inst_72E66443" locked="0" code="Castle3Skeleton = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Skeleton" x="192" y="672" name="inst_FFCF831F" locked="0" code="Castle3Skeleton = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Skeleton" x="960" y="640" name="inst_D8C5ECD3" locked="0" code="Castle3Skeleton = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Skeleton" x="960" y="640" name="inst_D8C5ECD3" locked="0" code="Castle3Skeleton = false;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Skeleton" x="1024" y="960" name="inst_072B0ED3" locked="0" code="Castle3Skeleton = true;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="160" y="800" name="inst_734A9AAE" locked="0" code="" scaleX="4" scaleY="16" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="192" y="832" name="inst_97D68AFD" locked="0" code="" scaleX="4" scaleY="17" colour="4294967295" rotation="0"/>
