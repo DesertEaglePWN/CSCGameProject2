@@ -13,6 +13,25 @@
       <sound>sound\snd_Boss</sound>
       <sound>sound\snd_Princess</sound>
     </sounds>
+    <sounds name="Spells">
+      <sound>sound\snd_Fireball</sound>
+      <sound>sound\snd_LifeSteal</sound>
+      <sound>sound\snd_Stone</sound>
+    </sounds>
+    <sounds name="Melee">
+      <sound>sound\snd_Sword_Swing_1</sound>
+      <sound>sound\snd_Sword_Swing_2</sound>
+      <sound>sound\snd_Sword_Swing_3</sound>
+    </sounds>
+    <sounds name="Player">
+      <sound>sound\snd_Player_Getting_Hit</sound>
+      <sound>sound\snd_Jump</sound>
+    </sounds>
+    <sounds name="Pickup">
+      <sound>sound\snd_Pickup_Fireball</sound>
+      <sound>sound\snd_Pickup_Gorgon_s_Eye</sound>
+      <sound>sound\snd_Pickup_HM_Pickup</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_ArmorGold</sprite>

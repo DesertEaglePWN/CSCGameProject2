@@ -86,6 +86,7 @@ if( global.pickups[index] == true || orgin_room != room ){
             <kind>1</kind>
             <string>///Increase Max Mana
 if( global.pickups[index] == false &amp;&amp; canBePickedUp == true ){
+    audio_play_sound(snd_Pickup_HM_Pickup, 10, false); 
     global.pickups[index] = true; // it has been picked up by player
     global.max_Mana += 25
     global.Mana = global.max_Mana

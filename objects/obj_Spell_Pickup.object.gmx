@@ -29,9 +29,11 @@
 
 if( obj_Player.haveSpell[1] == false ){
     obj_Player.haveSpell[1] = true;
+    audio_play_sound(snd_Pickup_Fireball, 10, false); 
     instance_destroy();
 } else if( obj_Player.haveSpell[2] == false){
     sprite_index = spr_GorgonEyePickup;
+    audio_play_sound(snd_Pickup_Gorgon_s_Eye, 10, false); 
     obj_Player.haveSpell[2] = true;
     instance_destroy();
 } else { }
