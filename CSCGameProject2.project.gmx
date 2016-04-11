@@ -5,12 +5,14 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\snd_Castle_1</sound>
-    <sound>sound\snd_Castle_2_Menu</sound>
-    <sound>sound\snd_Castle_3</sound>
-    <sound>sound\snd_Gautlet</sound>
-    <sound>sound\snd_Boss</sound>
-    <sound>sound\snd_Princess</sound>
+    <sounds name="Level_Music">
+      <sound>sound\snd_Castle_1</sound>
+      <sound>sound\snd_Castle_2_Menu</sound>
+      <sound>sound\snd_Castle_3</sound>
+      <sound>sound\snd_Gautlet</sound>
+      <sound>sound\snd_Boss</sound>
+      <sound>sound\snd_Princess</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_ArmorGold</sprite>
@@ -150,6 +152,7 @@
       <object>objects\obj_Mage_Respawn_Controller</object>
       <object>objects\obj_Fireball_Trap_Controller</object>
       <object>objects\obj_SND_Controller</object>
+      <object>objects\obj_Player_Respawn</object>
     </objects>
     <objects name="Collision">
       <object>objects\obj_Collision</object>
@@ -167,7 +170,6 @@
       <object>objects\obj_Player_Attack</object>
       <object>objects\obj_Player</object>
     </objects>
-    <object>objects\obj_Player_Respawn</object>
     <objects name="LevelObjects">
       <object>objects\obj_Barrier</object>
       <object>objects\obj_RoomTeleport</object>
