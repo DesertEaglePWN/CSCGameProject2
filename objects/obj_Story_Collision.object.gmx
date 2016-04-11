@@ -25,7 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sprite_index = spr_PlayerDuck;
+            <string>if( room == 6 ){ // main menu
+    obj_Player.x = 656;
+    obj_Player.y = 640;
+    room_goto(0);
+} else if( room == 5){
+    sprite_index = spr_PlayerDuck;
+}
 </string>
           </argument>
         </arguments>
