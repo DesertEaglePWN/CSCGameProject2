@@ -635,30 +635,6 @@ else
     <event eventtype="4" ename="obj_FireballTrap">
       <action>
         <libid>1</libid>
-        <id>211</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sound</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>6</kind>
-            <sound>snd_Player_Getting_Hit</sound>
-          </argument>
-          <argument>
-            <kind>3</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -675,6 +651,7 @@ else
             <kind>1</kind>
             <string>/// Damage Player by Fireball Trap
 if( !invincible ){
+    audio_play_sound(snd_Player_Getting_Hit, 10, false); 
     global.Stamina -= 15;
     invincible = true;
     alarm[2] = room_speed*.25;
@@ -703,6 +680,7 @@ if( !invincible ){
             <kind>1</kind>
             <string>/// Damage Player by Mage Fireball
 if( !invincible ){
+    audio_play_sound(snd_Player_Getting_Hit, 10, false); 
     global.Stamina -= 15;
     invincible = true;
     alarm[2] = room_speed*.25;
@@ -715,30 +693,6 @@ if( !invincible ){
     <event eventtype="4" ename="obj_Skeleton">
       <action>
         <libid>1</libid>
-        <id>211</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sound</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>6</kind>
-            <sound>snd_Player_Getting_Hit</sound>
-          </argument>
-          <argument>
-            <kind>3</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -755,6 +709,7 @@ if( !invincible ){
             <kind>1</kind>
             <string>/// Damage Player
 if( !invincible ){
+    audio_play_sound(snd_Player_Getting_Hit, 10, false); 
     global.Stamina -= 10;
     invincible = true;
     alarm[2] = room_speed*.25;
@@ -767,30 +722,6 @@ if( !invincible ){
     <event eventtype="4" ename="obj_Bat">
       <action>
         <libid>1</libid>
-        <id>211</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sound</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>6</kind>
-            <sound>snd_Player_Getting_Hit</sound>
-          </argument>
-          <argument>
-            <kind>3</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -807,6 +738,7 @@ if( !invincible ){
             <kind>1</kind>
             <string>/// Damage Player
 if( !invincible ){
+    audio_play_sound(snd_Player_Getting_Hit, 10, false); 
     global.Stamina -= 5;
     invincible = true;
     alarm[2] = room_speed*.25;
@@ -817,30 +749,6 @@ if( !invincible ){
       </action>
     </event>
     <event eventtype="4" ename="obj_Boss_Fireball">
-      <action>
-        <libid>1</libid>
-        <id>211</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sound</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>6</kind>
-            <sound>snd_Player_Getting_Hit</sound>
-          </argument>
-          <argument>
-            <kind>3</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -859,6 +767,7 @@ if( !invincible ){
             <kind>1</kind>
             <string>/// Damage Player by Boss Fireball
 if( !invincible ){
+    audio_play_sound(snd_Player_Getting_Hit, 10, false); 
     global.Stamina -= 15;
     invincible = true;
     alarm[2] = room_speed*.25;
@@ -871,30 +780,6 @@ if( !invincible ){
     <event eventtype="4" ename="obj_Boss_Whirlwind">
       <action>
         <libid>1</libid>
-        <id>211</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sound</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>6</kind>
-            <sound>snd_Player_Getting_Hit</sound>
-          </argument>
-          <argument>
-            <kind>3</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -911,6 +796,7 @@ if( !invincible ){
             <kind>1</kind>
             <string>/// Damage Player by Boss Melee
 if( !invincible ){
+    audio_play_sound(snd_Player_Getting_Hit, 10, false); 
     global.Stamina -= 25;
     invincible = true;
     alarm[2] = room_speed * .25;
@@ -923,30 +809,6 @@ if( !invincible ){
     <event eventtype="4" ename="obj_Boss_Attack">
       <action>
         <libid>1</libid>
-        <id>211</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sound</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>6</kind>
-            <sound>snd_Player_Getting_Hit</sound>
-          </argument>
-          <argument>
-            <kind>3</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -963,6 +825,7 @@ if( !invincible ){
             <kind>1</kind>
             <string>/// Damage Player by Boss Melee
 if( !invincible ){
+    audio_play_sound(snd_Player_Getting_Hit, 10, false); 
     global.Stamina -= 15;
     invincible = true;
     alarm[2] = room_speed * .25;
