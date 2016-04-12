@@ -17,6 +17,7 @@
       <sound>sound\snd_Fireball</sound>
       <sound>sound\snd_LifeSteal</sound>
       <sound>sound\snd_Stone</sound>
+      <sound>sound\snd_Enemy_Fireball</sound>
     </sounds>
     <sounds name="Melee">
       <sound>sound\snd_Sword_Swing_1</sound>

@@ -249,8 +249,9 @@ if( x - obj_Player.x &gt;  0 ){
           <argument>
             <kind>1</kind>
             <string>/// Randomly shoot spell
-if( distance_to_object(obj_Player) &lt; 250 &amp;&amp; can_Attack == true ){
-    //Wait a variable amount of time before attacking
+//if( distance_to_object(obj_Player) &lt; 250 &amp;&amp; can_Attack == true ){
+if( abs(x-obj_Player.x) &lt; 250 &amp;&amp; abs(y-obj_Player.y) &lt; 70 &amp;&amp; can_Attack == true ){
+        //Wait a variable amount of time before attacking
     can_Attack = false;
     sprite_index = spr_MageCast;
     image_index = 0;
