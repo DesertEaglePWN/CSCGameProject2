@@ -133,7 +133,7 @@ speed = 2;
           <argument>
             <kind>1</kind>
             <string>/// Check if dead
-if( room = 2) Castle3Skeleton = true;
+if( room = 2 || room = 6 ) Castle3Skeleton = true;
 
 if( monster_health &lt;= 0){
     if (Castle3Skeleton){
