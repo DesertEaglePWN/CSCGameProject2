@@ -68,7 +68,6 @@
     <instance objName="obj_Collision" x="1536" y="576" name="inst_DD3E306F" locked="0" code="" scaleX="4" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="obj_Player_Respawn" x="544" y="672" name="inst_FB9B5BDD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Story_Collision" x="1184" y="576" name="inst_D7492541" locked="0" code="" scaleX="4" scaleY="12" colour="4294967295" rotation="0"/>
-    <instance objName="spr_Instructions_Button" x="928" y="384" name="inst_060D8209" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TorchFlame" x="480" y="416" name="inst_CFED961A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TorchFlame" x="512" y="416" name="inst_8F0DE95A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TorchFlame" x="544" y="416" name="inst_BA5D61F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -81,6 +80,7 @@
     <instance objName="obj_TorchFlame" x="1280" y="416" name="inst_7A9584D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TorchFlame" x="1312" y="416" name="inst_1535FBAF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TorchFlame" x="1344" y="416" name="inst_E57FB2AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="spr_Instructions_Button" x="928" y="384" name="inst_A355EB60" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_CastleTiles" x="384" y="704" w="32" h="32" xo="44" yo="724" id="10021533" name="inst_346B1541" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
