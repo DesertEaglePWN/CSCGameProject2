@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1024</width>
   <height>1088</height>
-  <vsnap>8</vsnap>
-  <hsnap>8</hsnap>
+  <vsnap>32</vsnap>
+  <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -87,7 +87,7 @@
     <instance objName="obj_Collision" x="800" y="864" name="inst_B8761A90" locked="0" code="" scaleX="20" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="896" y="800" name="inst_5817F28B" locked="0" code="" scaleX="8" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="608" y="736" name="inst_DD1B9366" locked="0" code="" scaleX="28" scaleY="8" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Collision" x="416" y="672" name="inst_1C344767" locked="0" code="" scaleX="24" scaleY="12" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision" x="448" y="672" name="inst_1C344767" locked="0" code="" scaleX="20" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="128" y="672" name="inst_542A66C2" locked="0" code="" scaleX="36" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="192" y="864" name="inst_19337D2B" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="448" y="864" name="inst_E359EB23" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
@@ -146,6 +146,7 @@
     <instance objName="obj_Collision" x="928" y="448" name="inst_98A993F1" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_Fireball_Trap_Controller" x="320" y="320" name="inst_FE37EE52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Player_Respawn" x="832" y="1024" name="inst_CA01D1D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision" x="416" y="672" name="inst_82A77A4F" locked="0" code="" scaleX="4" scaleY="8" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_CastleTiles" x="96" y="32" w="32" h="32" xo="124" yo="1444" id="10014805" name="inst_EEC3B8D6" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -831,8 +832,7 @@
     <tile bgName="bg_CastleTiles" x="608" y="672" w="32" h="32" xo="124" yo="1444" id="10015779" name="inst_62A3A4F7" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="576" y="672" w="32" h="32" xo="124" yo="1444" id="10015780" name="inst_9C2DF3AB" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="544" y="672" w="32" h="32" xo="124" yo="1444" id="10015781" name="inst_41486F03" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="512" y="672" w="32" h="32" xo="124" yo="1444" id="10015782" name="inst_39D09D60" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="480" y="672" w="32" h="32" xo="124" yo="1444" id="10015783" name="inst_68EAA6EB" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_CastleTiles" x="512" y="672" w="32" h="32" xo="124" yo="1444" id="10015783" name="inst_68EAA6EB" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="448" y="672" w="32" h="32" xo="124" yo="1444" id="10015784" name="inst_375AE3B5" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="416" y="672" w="32" h="32" xo="124" yo="1444" id="10015785" name="inst_B3BBA442" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="384" y="672" w="32" h="32" xo="124" yo="1444" id="10015786" name="inst_8D1E2C93" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -896,7 +896,6 @@
     <tile bgName="bg_CastleTiles" x="512" y="736" w="32" h="32" xo="124" yo="1444" id="10015850" name="inst_CA80D9DC" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="480" y="736" w="32" h="32" xo="124" yo="1444" id="10015851" name="inst_FFFD9A25" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="448" y="736" w="32" h="32" xo="124" yo="1444" id="10015852" name="inst_E99248E0" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_CastleTiles" x="416" y="736" w="32" h="32" xo="124" yo="1444" id="10015853" name="inst_17857097" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="384" y="736" w="32" h="32" xo="124" yo="1444" id="10015854" name="inst_A46F2C37" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="352" y="736" w="32" h="32" xo="124" yo="1444" id="10015855" name="inst_434ED8ED" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="320" y="736" w="32" h="32" xo="124" yo="1444" id="10015856" name="inst_2D40BC9A" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1236,6 +1235,8 @@
     <tile bgName="bg_CastleTiles" x="896" y="416" w="32" h="32" xo="124" yo="1444" id="10021373" name="inst_67EBF17B" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="288" y="224" w="32" h="32" xo="124" yo="1444" id="10021399" name="inst_DB2388AA" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="320" y="416" w="32" h="32" xo="124" yo="1444" id="10021437" name="inst_1A671AF1" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_CastleTiles" x="416" y="736" w="32" h="32" xo="124" yo="1444" id="10022598" name="inst_4991141C" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_CastleTiles" x="480" y="672" w="32" h="32" xo="124" yo="1444" id="10022599" name="inst_997DE081" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="0" y="1056" w="32" h="32" xo="44" yo="1444" id="10020305" name="inst_43DE07B5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="32" y="1056" w="32" h="32" xo="44" yo="1444" id="10020306" name="inst_B69B331C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="0" y="1024" w="32" h="32" xo="44" yo="1444" id="10020314" name="inst_45574567" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
