@@ -34,6 +34,7 @@ global.i = 0;
 
 for(j = 0; j &lt; 50; j++)
     global.pickups[j] = false;
+  
 </string>
           </argument>
         </arguments>
@@ -243,9 +244,9 @@ global.pickups[global.i] = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Pause Menu
+            <string>/// Entering Pause Menu
 if( room != 6){
-
+    window_set_cursor(cr_default);  // turn on cursor
     p_x = obj_Player.x;
     p_y = obj_Player.y;
     

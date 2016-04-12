@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Pause Menu
+            <string>/// Leaving Pause Menu
+window_set_cursor(cr_none); // turn off cursor
 global.pause = false
 instance_activate_all();  
 
