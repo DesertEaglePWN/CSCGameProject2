@@ -200,6 +200,7 @@
     <objects name="Player">
       <object>objects\obj_Player</object>
       <object>objects\obj_Player_Attack</object>
+      <object>objects\obj_Player_Kneeling</object>
     </objects>
     <objects name="LevelObjects">
       <object>objects\obj_Barrier</object>
@@ -213,6 +214,7 @@
     <objects name="Buttons">
       <object>objects\obj_Quit_Button</object>
       <object>objects\obj_Resume_Button</object>
+      <object>objects\spr_Instructions_Button</object>
       <object>objects\obj_Play_Button</object>
       <object>objects\obj_Title</object>
     </objects>

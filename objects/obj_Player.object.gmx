@@ -86,7 +86,7 @@ dmg[0] = 25; // Life Transfer
 dmg[1] = 50; // Fireball Dmg
 dmg[2] = 0;
 
-x = 352;
+x = 640;
 y = 608;
 room_goto(6)
 
