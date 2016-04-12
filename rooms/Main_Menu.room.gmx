@@ -64,9 +64,9 @@
     <instance objName="obj_Quit_Button" x="928" y="472" name="inst_1AFF4B55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Play_Button" x="928" y="288" name="inst_FE7620CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="320" y="672" name="inst_76C7D2A5" locked="0" code="" scaleX="152" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Collision" x="288" y="576" name="inst_8874882E" locked="0" code="" scaleX="4" scaleY="12" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision" x="416" y="576" name="inst_8874882E" locked="0" code="" scaleX="4" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="1536" y="576" name="inst_DD3E306F" locked="0" code="" scaleX="4" scaleY="12" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Player_Respawn" x="352" y="672" name="inst_FB9B5BDD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Player_Respawn" x="544" y="672" name="inst_FB9B5BDD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Story_Collision" x="1184" y="576" name="inst_D7492541" locked="0" code="" scaleX="4" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="spr_Instructions_Button" x="928" y="384" name="inst_060D8209" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

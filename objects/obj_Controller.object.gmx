@@ -185,7 +185,7 @@ if(cheat_code = "god"){
     obj_Player.y = 320;
     room_goto(5);    
 } else if( cheat_code == "6" ){ // Main Menu
-    obj_Player.x = 416;
+    obj_Player.x = 640;
     obj_Player.y = 608;
     room_goto(6);    
 } else {
@@ -244,18 +244,22 @@ global.pickups[global.i] = false;
           <argument>
             <kind>1</kind>
             <string>/// Pause Menu
-p_x = obj_Player.x;
-p_y = obj_Player.y;
+if( room != 6){
 
-if( global.pause == false) { 
-    global.pause = true;
-    instance_deactivate_all( false ); //Do deactivate the controller as well
-    //Now everything is inactive
-    //Something needs to be active or the game is effectively frozen
-    instance_create(view_xview[view_current]+view_wview[view_current]/2, view_yview[view_current]+225, obj_Quit_Button);
-    instance_create(view_xview[view_current]+view_wview[view_current]/2, view_yview[view_current]+150, obj_Resume_Button);
-    instance_create( x, y, obj_Pause_Menu ); //This will be active
-    //It was created after everything was deactivated
+    p_x = obj_Player.x;
+    p_y = obj_Player.y;
+    
+    if( global.pause == false) { 
+        global.pause = true;
+        instance_deactivate_all( false ); //Do deactivate the controller as well
+        //Now everything is inactive
+        //Something needs to be active or the game is effectively frozen
+        instance_create(view_xview[view_current]+view_wview[view_current]/2, view_yview[view_current]+225, obj_Quit_Button);
+        instance_create(view_xview[view_current]+view_wview[view_current]/2, view_yview[view_current]+150, obj_Resume_Button);
+        instance_create( x, y, obj_Pause_Menu ); //This will be active
+        //It was created after everything was deactivated
+    }
+
 }
 </string>
           </argument>
