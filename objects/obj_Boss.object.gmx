@@ -112,7 +112,7 @@ num_Barriers = 0;
             <kind>1</kind>
             <string>///Stop Slo-Mo
 sprite_index = spr_Boss_Dead_2
-room_speed = orig_room_speed;
+
 </string>
           </argument>
         </arguments>
