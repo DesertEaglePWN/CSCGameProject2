@@ -34,6 +34,7 @@ invincible = false;
 can_Attack = true;
 
 image_speed = .2;
+
 </string>
           </argument>
         </arguments>

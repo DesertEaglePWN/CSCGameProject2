@@ -90,6 +90,7 @@ sprite_index = spr_Invisible;
 global.dest_id = dest_id;
 other.canTeleport = 0;
 room_goto(dest_room);
+
 </string>
           </argument>
         </arguments>
