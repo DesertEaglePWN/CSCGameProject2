@@ -149,7 +149,6 @@
     <instance objName="obj_Spike" x="224" y="384" name="inst_90613944" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
-    <tile bgName="bg_CastleTiles" x="384" y="640" w="32" h="32" xo="124" yo="1444" id="10015730" name="inst_C1D3A234" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="0" y="0" w="32" h="32" xo="124" yo="724" id="10022607" name="inst_1CEAE501" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="32" y="0" w="32" h="32" xo="124" yo="724" id="10022608" name="inst_B9DB957C" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="64" y="0" w="32" h="32" xo="124" yo="724" id="10022609" name="inst_F310752E" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1237,6 +1236,7 @@
     <tile bgName="bg_CastleTiles" x="64" y="1056" w="32" h="32" xo="124" yo="724" id="10024052" name="inst_F210DA94" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="32" y="1056" w="32" h="32" xo="124" yo="724" id="10024053" name="inst_0EFC730C" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleTiles" x="0" y="1056" w="32" h="32" xo="124" yo="724" id="10024054" name="inst_0E1D75E4" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_CastleTiles" x="384" y="640" w="32" h="32" xo="124" yo="724" id="10024830" name="inst_60AED978" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="" x="640" y="928" w="16" h="16" xo="0" yo="0" id="10021313" name="inst_CBBC8C01" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleObjectTiles2" x="192" y="928" w="32" h="32" xo="4" yo="44" id="10021323" name="inst_40CE77AB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_CastleObjectTiles2" x="320" y="928" w="32" h="32" xo="4" yo="44" id="10021324" name="inst_D61B82BB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
