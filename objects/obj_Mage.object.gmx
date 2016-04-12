@@ -129,7 +129,7 @@ var inst;
 if( monster_health &gt; 0 ){
 
     if( image_xscale &gt; 0 ){ // facing right
-        inst = instance_create( x - 10 , y - 52, obj_Mage_Fireball );
+        inst = instance_create( x - 10 , y - 40, obj_Mage_Fireball );
         with ( inst ) {
             image_xscale = 1;
             speed = 7;
@@ -137,7 +137,7 @@ if( monster_health &gt; 0 ){
         }
      // otherwise spawn a left facing death ball
     } else { // facing left
-        inst = instance_create( x - 20 , y - 52, obj_Mage_Fireball );
+        inst = instance_create( x - 20 , y - 40, obj_Mage_Fireball );
         with ( inst ) {
             image_xscale = -1;
             speed = 7;
