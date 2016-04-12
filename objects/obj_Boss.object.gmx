@@ -112,6 +112,7 @@ num_Barriers = 0;
             <kind>1</kind>
             <string>///Stop Slo-Mo
 sprite_index = spr_Boss_Dead_2
+room_speed = 60;
 
 </string>
           </argument>
@@ -831,7 +832,7 @@ if( monster_health &lt;= 0 ){
         firstDeathFrame = false;
         orig_room_speed = room_speed;
         room_speed = 30;
-        alarm[7] = 1 * room_speed;
+        alarm[7] = 2 * room_speed;
         sprite_index = spr_Boss_Dead;
         image_index = 0;
         image_speed = .05;
