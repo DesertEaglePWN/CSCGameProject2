@@ -3,7 +3,7 @@
   <caption></caption>
   <width>2048</width>
   <height>1024</height>
-  <vsnap>32</vsnap>
+  <vsnap>512</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
@@ -202,7 +202,7 @@
     <instance objName="obj_Bat" x="96" y="96" name="inst_22D5BE65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Health_Up" x="832" y="640" name="inst_2396D09A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Mana_Up" x="128" y="160" name="inst_B957ACB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Player_Respawn" x="160" y="960" name="inst_9360542E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Player_Respawn" x="192" y="960" name="inst_9360542E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Spell_Pickup" x="1024" y="384" name="inst_379F59C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bat" x="832" y="864" name="inst_0AD5244A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bat" x="1664" y="896" name="inst_767DAC5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
