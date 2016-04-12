@@ -40,8 +40,6 @@ if( room == 6 ){ // main menu
     with( obj_Controller){ instance_destroy(); }
     with( obj_Player ){ instance_destroy(); }  
     
-    
-    //sprite_index = spr_PlayerDuck;
 }
 </string>
           </argument>
