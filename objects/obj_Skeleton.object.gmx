@@ -34,7 +34,7 @@ invincible = false;
 knockedback = false;
 
 Castle3Skeleton = false;
-
+alreadyDead = false;
 image_speed = .2;
 </string>
           </argument>
@@ -135,7 +135,8 @@ speed = 2;
             <string>/// Check if dead
 if( room = 2 || room = 6 ) Castle3Skeleton = true;
 
-if( monster_health &lt;= 0){
+if( monster_health &lt;= 0 &amp;&amp; (!alreadyDead)){
+    alreadyDead = true;
     if (Castle3Skeleton){
         instance_create(initial_x,initial_y,obj_C3Skeleton_Respawn_Controller);
         instance_destroy();

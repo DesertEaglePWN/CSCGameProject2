@@ -138,9 +138,11 @@
       <sprite>sprites\spr_Fireball_Icon_CD</sprite>
       <sprite>sprites\spr_Quit_Button</sprite>
       <sprite>sprites\spr_Resume_Button</sprite>
-      <sprite>sprites\spr_Play_Button</sprite>
       <sprite>sprites\spr_Title</sprite>
       <sprite>sprites\spr_Splash</sprite>
+      <sprite>sprites\sprite80</sprite>
+      <sprite>sprites\spr_Play_Button</sprite>
+      <sprite>sprites\spr_Instructions_Button</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -219,7 +221,7 @@
     <objects name="Buttons">
       <object>objects\obj_Quit_Button</object>
       <object>objects\obj_Resume_Button</object>
-      <object>objects\spr_Instructions_Button</object>
+      <object>objects\obj_Instructions_Button</object>
       <object>objects\obj_Play_Button</object>
       <object>objects\obj_Title</object>
       <object>objects\obj_Splash</object>
